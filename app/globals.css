@@ -74,18 +74,20 @@
 }
 
 @keyframes float1 {
-  0%,
-  100% {
+  0%, 100%{
     transform: translateY(0) rotate(12deg);
   }
   50% {
     transform: translateY(-10px) rotate(12deg);
   }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes float2 {
-  0%,
-  100% {
+  0% {
     transform: translateY(0) rotate(-12deg);
   }
   50% {
@@ -101,3 +103,31 @@
   animation: float2 5s ease-in-out infinite;
 }
 
+
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px);
+  }
+  
+}@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px);
+  }
+  50% {
+    transform: translateY(10px) translateX(-5px);
+  }
+  75% {
+    transform: translateY(-5px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}

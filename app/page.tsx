@@ -143,7 +143,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#d6dce6] relative overflow-hidden">
       {/* Animated background shapes */}
       <div ref={shapesRef} className="absolute inset-0 z-0 overflow-hidden">
-        <div className="shape absolute top-[20%] right-[10%] w-32 h-32 bg-[#e9f0f2] rounded-full opacity-80"></div>
+        <div className="shape absolute top-[20%] right-[10%] w-32 h-32 bg-[#87909b] rounded-full opacity-80"></div>
         <div className="shape absolute top-[60%] left-[5%] w-40 h-20 bg-[#d3b77b] rounded-full opacity-70"></div>
         <div className="shape absolute bottom-[15%] right-[15%] w-48 h-48 bg-[#e9f0f2] rounded-3xl opacity-80"></div>
         <div className="shape absolute top-[40%] right-[20%] w-64 h-32 bg-[#d3b77b] rounded-full opacity-70"></div>
@@ -228,11 +228,11 @@ export default function Home() {
         <section className="mb-16 flex flex-col md:flex-row items-center justify-between">
           <div className="max-w-3xl mb-8 md:mb-0">
             <div className="flex items-center space-x-2 mb-4">
-              <Badge className="bg-[#d3b77b] text-white hover:bg-[#c4a86c]">New</Badge>
-              <span className="text-sm text-[#0f1e45]">Research Initiative 2025</span>
+              {/*<Badge className="bg-[#d3b77b] text-white hover:bg-[#c4a86c]">New</Badge>
+              <span className="text-sm text-[#0f1e45]">Research Initiative 2025</span>*/}
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0f1e45] mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0f1e45] mb-4 leading-tight drop-shadow-md">
               Advanced<br />Research For Industrial IoT
             </h1>
             
@@ -248,7 +248,7 @@ export default function Home() {
                 Join Our Team
               </Button>
             </div>
-            
+            {/* need conformation */}
             <div className="mt-8 flex items-center space-x-4">
               <div className="flex -space-x-2">
                 <Avatar className="border-2 border-white">
@@ -296,12 +296,14 @@ export default function Home() {
               </Button>
             </div>
           </div>
+          
         </section>
 
         {/* Additional Card Row */}
         <section className="mb-16 flex flex-wrap gap-6">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
+            {/* <Link href="/home" className="w-full md:w-64 h-32 bg-[#e9f0f2] rounded-full shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer"> */}
               <div className="w-full md:w-64 h-32 bg-[#e9f0f2] rounded-full shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
                 <div className="flex items-center space-x-3 px-6">
                   <Calendar className="text-[#d3b77b]" size={24} />
@@ -343,6 +345,7 @@ export default function Home() {
           
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
+            {/* <Link href="/collaboration" className="w-full md:w-72 h-32 bg-[#d3b77b] rounded-3xl shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer"> */}
               <div className="w-full md:w-72 h-32 bg-[#d3b77b] rounded-3xl shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
                 <div className="flex items-center space-x-3 px-6">
                   <Users className="text-white" size={24} />
@@ -385,7 +388,8 @@ export default function Home() {
           
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <div className="w-full md:w-64 h-32 bg-[#e9f0f2] rounded-3xl shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
+            {/* <Link href="/about" className="w-full md:w-64 h-32 bg-[#e9f0f2] rounded-full shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer"> */}
+              <div className="w-full md:w-64 h-32 bg-[#e9f0f2] rounded-full shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
                 <div className="flex items-center space-x-3 px-6">
                   <BookOpen className="text-[#d3b77b]" size={24} />
                   <span className="text-[#0f1e45] font-medium">Publications</span>
@@ -432,6 +436,8 @@ export default function Home() {
         </section>
 
         {/* Image Card with Overlay */}
+        {/* should customize */}
+        {/* link to collaboration page */}
         <section className="mb-16 flex justify-end">
           <div className="w-full md:w-2/3 lg:w-1/2 overflow-hidden rounded-3xl shadow-lg transform transition-all hover:scale-105 relative group">
             <img 
@@ -440,7 +446,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0f1e45]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-              <Badge className="self-start mb-2 bg-[#d3b77b] text-white">Featured</Badge>
+              {/* <Badge className="self-start mb-2 bg-[#d3b77b] text-white">Featured</Badge> */}
               <h3 className="text-white text-xl font-bold mb-2">Collaborative Research Environment</h3>
               <p className="text-white/90 text-sm mb-4">Our state-of-the-art facilities foster innovation and teamwork among researchers and students.</p>
               <Button className="self-start bg-white text-[#0f1e45] hover:bg-white/90 rounded-full">
@@ -479,7 +485,7 @@ export default function Home() {
                     <Badge variant="outline" className="bg-white/50">Sensors</Badge>
                     <Badge variant="outline" className="bg-white/50">Prototyping</Badge>
                   </div>
-                  <Link href="#" className="flex items-center text-[#d3b77b] font-medium hover:underline">
+                  <Link href="about" className="flex items-center text-[#d3b77b] font-medium hover:underline">
                     Learn more <ArrowRight size={16} className="ml-1" />
                   </Link>
                 </Card>
@@ -493,7 +499,7 @@ export default function Home() {
                     <Badge variant="outline" className="bg-white/20 text-white border-white/30">Academia</Badge>
                     <Badge variant="outline" className="bg-white/20 text-white border-white/30">Startups</Badge>
                   </div>
-                  <Link href="#" className="flex items-center text-white font-medium hover:underline">
+                  <Link href="collaboration" className="flex items-center text-white font-medium hover:underline">
                     Join us <ArrowRight size={16} className="ml-1" />
                   </Link>
                 </Card>
@@ -507,7 +513,7 @@ export default function Home() {
                     <Badge variant="outline" className="bg-white/50">Automation</Badge>
                     <Badge variant="outline" className="bg-white/50">Security</Badge>
                   </div>
-                  <Link href="#" className="flex items-center text-[#d3b77b] font-medium hover:underline">
+                  <Link href="about" className="flex items-center text-[#d3b77b] font-medium hover:underline">
                     Discover <ArrowRight size={16} className="ml-1" />
                   </Link>
                 </Card>
@@ -703,9 +709,9 @@ export default function Home() {
                 222, 2nd block, 1st<br />
                 floor
               </p>
-              <Button variant="outline" size="sm" className="mt-4 rounded-full border-[#d3b77b] text-[#d3b77b]">
+              {/* <Button variant="outline" size="sm" className="mt-4 rounded-full border-[#d3b77b] text-[#d3b77b]"> 
                 <MapPin size={14} className="mr-1" /> Get Directions
-              </Button>
+              </Button>*/}
             </div>
             
             <div className="mb-6 md:mb-0">
@@ -751,7 +757,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-[#0f1e45] mb-2">Stay Updated</h3>
               <p className="text-gray-700 max-w-md">Subscribe to our newsletter to receive updates on research opportunities, events, and publications.</p>
             </div>
-            <div className="w-full md:w-auto flex flex-col sm:flex-row gap-3">
+            {/*<div className="w-full md:w-auto flex flex-col sm:flex-row gap-3">
               <input 
                 type="email" 
                 placeholder="Your email address" 
@@ -760,14 +766,14 @@ export default function Home() {
               <Button className="bg-[#d3b77b] text-white rounded-full hover:bg-[#c4a86c]">
                 Subscribe
               </Button>
-            </div>
+            </div>*/}
           </div>
         </section>
       </main>
 
       {/* Footer */}
       <footer className="relative z-10 bg-[#0f1e45] text-white py-12 px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
           <div>
             <div className="flex items-center mb-4">
               <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-[#0f1e45] font-bold text-lg mr-2">
@@ -797,19 +803,20 @@ export default function Home() {
             </div>
           </div>
           
+          
           <div>
             <h4 className="font-medium mb-4 text-[#d3b77b]">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Home</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">About Us</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Research</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Faculty</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Events</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Contact</Link></li>
+              <li><Link href="home" className="hover:text-[#d3b77b] transition-colors">Home</Link></li>
+              <li><Link href="about" className="hover:text-[#d3b77b] transition-colors">About Us</Link></li>
+              <li><Link href="faculty" className="hover:text-[#d3b77b] transition-colors">Faculty</Link></li>
+              <li><Link href="collaboration" className="hover:text-[#d3b77b] transition-colors">Collaboration</Link></li>
+              <li><Link href="consulation" className="hover:text-[#d3b77b] transition-colors">Consultation</Link></li>
+              {/* <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Contact</Link></li> */}
             </ul>
           </div>
           
-          <div>
+          {/*<div>
             <h4 className="font-medium mb-4 text-[#d3b77b]">Research Areas</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Industrial IoT</Link></li>
@@ -819,8 +826,8 @@ export default function Home() {
               <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Edge Computing</Link></li>
               <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">IoT Security</Link></li>
             </ul>
-          </div>
-          
+          </div>*/}
+          <div className="flex justify-evenly"></div>
           <div>
             <h4 className="font-medium mb-4 text-[#d3b77b]">Contact Us</h4>
             <address className="not-italic text-sm space-y-2">
