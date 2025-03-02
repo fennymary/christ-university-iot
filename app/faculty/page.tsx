@@ -211,42 +211,65 @@ function App() {
     },
   ];
 
+  // Function to handle navigation
+  const navigateTo = (path: string) => {
+    // Use window.location for navigation
+    window.location.href = path;
+  };
+
   return (
     <div className="min-h-screen bg-slate-200">
       {/* Header */}
       <header className="bg-white py-4 px-6 flex justify-between items-center shadow-sm">
         <div className="flex items-center gap-3">
-          <img
-            src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294"
-            alt="Christ University Logo"
-            className="w-12 h-12 rounded-full object-cover"
-          />
-          <div>
-            <h1 className="font-bold text-[#1e2949] text-lg">
-              CHRIST UNIVERSITY
-            </h1>
+          <div
+            onClick={() => navigateTo("/")}
+            className="flex items-center gap-3 cursor-pointer"
+          >
+            <img
+              src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294"
+              alt="Christ University Logo"
+              className="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+              <h1 className="font-bold text-[#1e2949] text-lg">
+                CHRIST UNIVERSITY
+              </h1>
+            </div>
           </div>
         </div>
 
         <nav className="hidden md:flex space-x-8">
-          <a href="#" className="text-[#1e2949] hover:text-[#1e2949]/80">
+          <div
+            onClick={() => navigateTo("/")}
+            className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+          >
             Home
-          </a>
-          <a href="#" className="text-[#1e2949] hover:text-[#1e2949]/80">
+          </div>
+          <div
+            onClick={() => navigateTo("/about")}
+            className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+          >
             About
-          </a>
-          <a
-            href="#"
-            className="text-[#1e2949] hover:text-[#1e2949]/80 font-medium"
+          </div>
+          <div
+            onClick={() => navigateTo("/faculty")}
+            className="text-[#1e2949] hover:text-[#1e2949]/80 font-medium cursor-pointer"
           >
             Faculty
-          </a>
-          <a href="#" className="text-[#1e2949] hover:text-[#1e2949]/80">
+          </div>
+          <div
+            onClick={() => navigateTo("/collaboration")}
+            className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+          >
             Collaboration
-          </a>
-          <a href="#" className="text-[#1e2949] hover:text-[#1e2949]/80">
+          </div>
+          <div
+            onClick={() => navigateTo("/consultation")}
+            className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+          >
             Consultation
-          </a>
+          </div>
         </nav>
 
         <div className="flex items-center">
@@ -446,6 +469,9 @@ function App() {
                     <h2 className="font-bold text-white text-lg">
                       CHRIST UNIVERSITY
                     </h2>
+                    <p className="text-xs text-gray-400">
+                      INSTITUTE OF MANAGEMENT
+                    </p>
                   </div>
                 </div>
                 <p className="text-sm text-gray-300 mb-6">
@@ -473,44 +499,44 @@ function App() {
                 <h3 className="text-amber-400 font-medium mb-4">Quick Links</h3>
                 <ul className="space-y-2">
                   <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white text-sm"
+                    <div
+                      onClick={() => navigateTo("/")}
+                      className="text-gray-300 hover:text-white text-sm cursor-pointer"
                     >
                       Home
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white text-sm"
+                    <div
+                      onClick={() => navigateTo("/about")}
+                      className="text-gray-300 hover:text-white text-sm cursor-pointer"
                     >
                       About Us
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white text-sm"
+                    <div
+                      onClick={() => navigateTo("/faculty")}
+                      className="text-gray-300 hover:text-white text-sm cursor-pointer"
                     >
                       Faculty
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white text-sm"
+                    <div
+                      onClick={() => navigateTo("/collaboration")}
+                      className="text-gray-300 hover:text-white text-sm cursor-pointer"
                     >
                       Collaboration
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white text-sm"
+                    <div
+                      onClick={() => navigateTo("/consultation")}
+                      className="text-gray-300 hover:text-white text-sm cursor-pointer"
                     >
                       Consultation
-                    </a>
+                    </div>
                   </li>
                 </ul>
               </div>
