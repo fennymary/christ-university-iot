@@ -1,6 +1,21 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import { MapPin, Mail, Cpu, X, BookOpen, Award, FileText } from "lucide-react";
+import {
+  MapPin,
+  Mail,
+  Cpu,
+  X,
+  BookOpen,
+  Award,
+  FileText,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  MapPin as LocationIcon,
+  Phone,
+  AtSign,
+} from "lucide-react";
 
 interface Faculty {
   id: number;
@@ -413,72 +428,120 @@ function App() {
         </div>
       )}
 
-      {/* Footer with Lab Venue */}
+      {/* Footer - Updated to match the design in the image */}
       <footer className="mt-16">
-        {/* Lab Venue Section */}
-        <div className="bg-[#d8dee3] py-8 px-6">
-          <div className="container mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-start">
-              <div className="mb-6 md:mb-0">
-                <h3 className="font-bold text-[#1e2949] text-lg mb-3">
-                  Lab Venue
-                </h3>
-                <p className="text-[#7f8899]">222, 2nd block, 1st floor</p>
-                <a
-                  href="https://www.christuniversity.in"
-                  className="text-[#1e2949] hover:underline text-sm mt-2 inline-block"
-                >
-                  www.christuniversity.in
-                </a>
+        {/* New Footer Design */}
+        <div className="bg-[#0a1633] text-white py-12">
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Logo and Description */}
+              <div className="flex flex-col">
+                <div className="flex items-center gap-3 mb-4">
+                  <img
+                    src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294"
+                    alt="Christ University Logo"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div>
+                    <h2 className="font-bold text-white text-lg">
+                      CHRIST UNIVERSITY
+                    </h2>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-300 mb-6">
+                  Pioneering research in Industrial IoT and smart technologies
+                  for a better tomorrow.
+                </p>
+                <div className="flex space-x-4">
+                  <a href="#" className="text-white hover:text-gray-300">
+                    <Facebook size={18} />
+                  </a>
+                  <a href="#" className="text-white hover:text-gray-300">
+                    <Twitter size={18} />
+                  </a>
+                  <a href="#" className="text-white hover:text-gray-300">
+                    <Instagram size={18} />
+                  </a>
+                  <a href="#" className="text-white hover:text-gray-300">
+                    <Linkedin size={18} />
+                  </a>
+                </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="font-bold text-[#1e2949] mb-3">Quick Links</h3>
-                  <ul className="space-y-2">
-                    <li>
-                      <a
-                        href="#"
-                        className="text-[#7f8899] hover:text-[#1e2949] text-sm"
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="text-[#7f8899] hover:text-[#1e2949] text-sm"
-                      >
-                        About
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="text-[#7f8899] hover:text-[#1e2949] text-sm"
-                      >
-                        Faculty
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="text-[#7f8899] hover:text-[#1e2949] text-sm"
-                      >
-                        Research
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              {/* Quick Links */}
+              <div>
+                <h3 className="text-amber-400 font-medium mb-4">Quick Links</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-white text-sm"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-white text-sm"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-white text-sm"
+                    >
+                      Faculty
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-white text-sm"
+                    >
+                      Collaboration
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:text-white text-sm"
+                    >
+                      Consultation
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="font-bold text-[#1e2949] mb-3">Contact</h3>
-                  <p className="text-[#7f8899] text-sm">
-                    Email: info@christ.in
-                  </p>
-                  <p className="text-[#7f8899] text-sm">
-                    Phone: +91 80 4012 9000
-                  </p>
+              {/* Contact Us */}
+              <div>
+                <h3 className="text-amber-400 font-medium mb-4">Contact Us</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <LocationIcon className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-300">
+                      CHRIST (Deemed to be University)
+                      <br />
+                      Kengeri Campus, Bangalore
+                      <br />
+                      Karnataka - 560074
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                    <p className="text-sm text-gray-300">+91 80 4012 9100</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <AtSign className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                    <a
+                      href="mailto:research@christuniversity.in"
+                      className="text-sm text-gray-300 hover:text-white"
+                    >
+                      research@christuniversity.in
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -486,20 +549,22 @@ function App() {
         </div>
 
         {/* Copyright Section */}
-        <div className="bg-slate-200 text-[#7f8899] py-6 px-6 border-t border-gray-300">
+        <div className="bg-[#071328] text-gray-400 py-4 px-6">
           <div className="container mx-auto">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4"></div>
-
-              <div>
-                <p className="text-[#7f8899] text-sm">
-                  Kengeri Campus, Kanmanike, Kumbalgodu, Mysore Road,
-                  <br />
-                  Bangalore, Karnataka - 560074
-                </p>
-                <p className="text-[#1e2949] text-sm mt-2">
-                  © 2025 Christ University. All rights reserved.
-                </p>
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-xs">
+                © 2025 CHRIST (Deemed to be University). All rights reserved.
+              </p>
+              <div className="flex space-x-4 mt-2 md:mt-0">
+                <a href="#" className="text-xs hover:text-white">
+                  Privacy Policy
+                </a>
+                <a href="#" className="text-xs hover:text-white">
+                  Terms of Use
+                </a>
+                <a href="#" className="text-xs hover:text-white">
+                  Cookie Policy
+                </a>
               </div>
             </div>
           </div>
