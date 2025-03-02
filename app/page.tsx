@@ -167,11 +167,11 @@ export default function Home() {
   </div>
   
   <nav className="hidden md:flex space-x-8 text-[#0f1e45] font-medium">
-    <Link href="#" className="hover:text-[#d3b77b] transition-colors">Home</Link>
-    <Link href="#" className="hover:text-[#d3b77b] transition-colors">About</Link>
-    <Link href="#" className="hover:text-[#d3b77b] transition-colors">Faculty</Link>
-    <Link href="#" className="hover:text-[#d3b77b] transition-colors">Collaboration</Link>
-    <Link href="#" className="hover:text-[#d3b77b] transition-colors">Consultation</Link>
+    <Link href="home" className="hover:text-[#d3b77b] transition-colors">Home</Link>
+    <Link href="about" className="hover:text-[#d3b77b] transition-colors">About</Link>
+    <Link href="faculty" className="hover:text-[#d3b77b] transition-colors">Faculty</Link>
+    <Link href="collaboration" className="hover:text-[#d3b77b] transition-colors">Collaboration</Link>
+    <Link href="consultation" className="hover:text-[#d3b77b] transition-colors">Consultation</Link>
   </nav>
 
   <Button 
@@ -210,11 +210,11 @@ export default function Home() {
     </div>
     
     <div className="space-y-6 text-lg font-medium text-[#0f1e45]">
-      <Link href="#" className="block py-2 border-b border-gray-100">Home</Link>
-      <Link href="#" className="block py-2 border-b border-gray-100">About</Link>
-      <Link href="#" className="block py-2 border-b border-gray-100">Faculty</Link>
-      <Link href="#" className="block py-2 border-b border-gray-100">Collaboration</Link>
-      <Link href="#" className="block py-2 border-b border-gray-100">Consultation</Link>
+      <Link href="home" className="block py-2 border-b border-gray-100">Home</Link>
+      <Link href="about" className="block py-2 border-b border-gray-100">About</Link>
+      <Link href="faculty" className="block py-2 border-b border-gray-100">Faculty</Link>
+      <Link href="collabration" className="block py-2 border-b border-gray-100">Collaboration</Link>
+      <Link href="consultation" className="block py-2 border-b border-gray-100">Consultation</Link>
     </div>
   </div>
 )}
@@ -244,10 +244,12 @@ export default function Home() {
               <Button className="bg-[#0f1e45] text-white hover:bg-[#1a2a50] rounded-full px-6">
                 Explore Research
               </Button>
+              <Link href="/faculty">
               <Button variant="outline" className="border-[#d3b77b] text-[#d3b77b] hover:bg-[#d3b77b] hover:text-white rounded-full px-6">
                 Join Our Team
               </Button>
-            </div>
+            </Link>
+          </div>
             {/* need conformation */}
             <div className="mt-8 flex items-center space-x-4">
               <div className="flex -space-x-2">
@@ -303,13 +305,12 @@ export default function Home() {
         <section className="mb-16 flex flex-wrap gap-6">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-            {/* <Link href="/home" className="w-full md:w-64 h-32 bg-[#e9f0f2] rounded-full shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer"> */}
-              <div className="w-full md:w-64 h-32 bg-[#e9f0f2] rounded-full shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
+            <Link href="/home" className="w-full md:w-64 h-32 bg-[#e9f0f2] rounded-full shadow-lg overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
                 <div className="flex items-center space-x-3 px-6">
                   <Calendar className="text-[#d3b77b]" size={24} />
                   <span className="text-[#0f1e45] font-medium">Upcoming Events</span>
                 </div>
-              </div>
+              </Link>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-80 p-0" align="start">
               <div className="p-4 border-b">
@@ -336,9 +337,11 @@ export default function Home() {
                 </DropdownMenuItem>
               ))}
               <div className="p-2 border-t">
+                <Link href="/home">
                 <Button variant="ghost" size="sm" className="w-full justify-start text-[#d3b77b]">
                   View all events <ArrowRight size={14} className="ml-2" />
                 </Button>
+              </Link>
               </div>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -438,23 +441,25 @@ export default function Home() {
         {/* Image Card with Overlay */}
         {/* should customize */}
         {/* link to collaboration page */}
-        <section className="mb-16 flex justify-end">
-          <div className="w-full md:w-2/3 lg:w-1/2 overflow-hidden rounded-3xl shadow-lg transform transition-all hover:scale-105 relative group">
-            <img 
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
-              alt="Students collaborating" 
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0f1e45]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-              {/* <Badge className="self-start mb-2 bg-[#d3b77b] text-white">Featured</Badge> */}
-              <h3 className="text-white text-xl font-bold mb-2">Collaborative Research Environment</h3>
-              <p className="text-white/90 text-sm mb-4">Our state-of-the-art facilities foster innovation and teamwork among researchers and students.</p>
-              <Button className="self-start bg-white text-[#0f1e45] hover:bg-white/90 rounded-full">
-                Learn More
-              </Button>
-            </div>
-          </div>
-        </section>
+       
+
+<section className="mb-16 flex justify-end">
+  <Link href="/collaboration" className="w-full md:w-2/3 lg:w-1/2 overflow-hidden rounded-3xl shadow-lg transform transition-all hover:scale-105 relative group block">
+    <img 
+      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+      alt="Students collaborating" 
+      className="w-full h-full object-cover cursor-pointer"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-[#0f1e45]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+      <h3 className="text-white text-xl font-bold mb-2">Collaborative Research Environment</h3>
+      <p className="text-white/90 text-sm mb-4">Our state-of-the-art facilities foster innovation and teamwork among researchers and students.</p>
+      <Button className="self-start bg-white text-[#0f1e45] hover:bg-white/90 rounded-full">
+        Learn More
+      </Button>
+    </div>
+  </Link>
+</section>
+
 
         {/* Tabs Section */}
         <section className="mb-16">
@@ -700,11 +705,11 @@ export default function Home() {
 
         {/* Event Details Section */}
         <section className="mt-24">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0f1e45] mb-8">Event Details</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0f1e45] mb-8">Lab Venue</h2>
           
           <div className="flex flex-col md:flex-row justify-between">
             <div className="mb-6 md:mb-0">
-              <h3 className="font-medium text-[#0f1e45] mb-2">Lab Venue</h3>
+              {/* <h3 className="font-medium text-[#0f1e45] mb-2">Lab Venue</h3> */}
               <p className="text-gray-700">
                 222, 2nd block, 1st<br />
                 floor
@@ -816,17 +821,6 @@ export default function Home() {
             </ul>
           </div>
           
-          {/*<div>
-            <h4 className="font-medium mb-4 text-[#d3b77b]">Research Areas</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Industrial IoT</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Smart Cities</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">AI & Machine Learning</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Cloud Computing</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Edge Computing</Link></li>
-              <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">IoT Security</Link></li>
-            </ul>
-          </div>*/}
           <div className="flex justify-evenly"></div>
           <div>
             <h4 className="font-medium mb-4 text-[#d3b77b]">Contact Us</h4>
@@ -865,3 +859,6 @@ export default function Home() {
     </div>
   );
 }
+
+
+
