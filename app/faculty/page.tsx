@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { MapPin, Mail, Cpu, X, BookOpen, Award, FileText } from "lucide-react";
 
 interface Faculty {
@@ -16,6 +16,46 @@ interface Faculty {
 
 function App() {
   const [selectedFaculty, setSelectedFaculty] = useState<Faculty | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  // Add or remove overflow: hidden from the body based on modal state
+  useEffect(() => {
+    if (selectedFaculty) {
+      document.body.classList.add("no-scrollbar");
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.classList.remove("no-scrollbar");
+      document.body.style.overflow = "auto"; // Enable scrolling
+    }
+
+    // Cleanup function to reset overflow when the component unmounts
+    return () => {
+      document.body.classList.remove("no-scrollbar");
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedFaculty]);
+
+  // Handle click outside modal
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        setSelectedFaculty(null);
+      }
+    }
+
+    // Add event listener if modal is open
+    if (selectedFaculty) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    // Clean up event listener
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [selectedFaculty]);
 
   const facultyMembers: Faculty[] = [
     {
@@ -155,7 +195,6 @@ function App() {
       ],
     },
   ];
-  // Add other faculty members here...
 
   return (
     <div className="min-h-screen bg-slate-200">
@@ -168,26 +207,29 @@ function App() {
             className="w-12 h-12 rounded-full object-cover"
           />
           <div>
-            <h1 className="font-bold text-blue-900 text-lg">
+            <h1 className="font-bold text-[#1e2949] text-lg">
               CHRIST UNIVERSITY
             </h1>
           </div>
         </div>
 
         <nav className="hidden md:flex space-x-8">
-          <a href="#" className="text-blue-800 hover:text-blue-900">
+          <a href="#" className="text-[#1e2949] hover:text-[#1e2949]/80">
             Home
           </a>
-          <a href="#" className="text-blue-800 hover:text-blue-900">
+          <a href="#" className="text-[#1e2949] hover:text-[#1e2949]/80">
             About
           </a>
-          <a href="#" className="text-blue-800 hover:text-blue-900 font-medium">
+          <a
+            href="#"
+            className="text-[#1e2949] hover:text-[#1e2949]/80 font-medium"
+          >
             Faculty
           </a>
-          <a href="#" className="text-blue-800 hover:text-blue-900">
+          <a href="#" className="text-[#1e2949] hover:text-[#1e2949]/80">
             Collaboration
           </a>
-          <a href="#" className="text-blue-800 hover:text-blue-900">
+          <a href="#" className="text-[#1e2949] hover:text-[#1e2949]/80">
             Consultation
           </a>
         </nav>
@@ -202,17 +244,17 @@ function App() {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-blue-900 mb-2">
+          <h1 className="text-4xl font-bold text-[#1e2949] mb-2">
             Advanced Research For Industrial IoT
           </h1>
-          <p className="text-blue-800 max-w-2xl mb-8">
+          <p className="text-[#7f8899] max-w-2xl mb-8">
             Pioneering innovative solutions at the intersection of IoT, AI, and
             industrial applications to transform the future of smart
             manufacturing.
           </p>
         </div>
 
-        <h2 className="text-3xl font-bold text-blue-900 mb-8">
+        <h2 className="text-3xl font-bold text-[#1e2949] mb-8">
           Faculty Members
         </h2>
 
@@ -228,29 +270,29 @@ function App() {
                   alt={faculty.name}
                   className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-sm"
                 />
-                <h3 className="mt-4 font-bold text-blue-900 text-xl">
+                <h3 className="mt-4 font-bold text-[#1e2949] text-xl">
                   {faculty.name}
                 </h3>
-                <p className="text-blue-700">{faculty.title}</p>
+                <p className="text-[#7f8899]">{faculty.title}</p>
               </div>
 
               <div className="p-6">
                 <div className="flex items-start gap-3 mb-3">
-                  <MapPin className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-blue-800 text-sm">{faculty.cabin}</p>
+                  <MapPin className="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0" />
+                  <p className="text-[#7f8899] text-sm">{faculty.cabin}</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-[#1e2949] flex-shrink-0" />
                   <a
                     href={`mailto:${faculty.email}`}
-                    className="text-blue-600 hover:underline text-sm"
+                    className="text-[#1e2949] hover:underline text-sm"
                   >
                     {faculty.email}
                   </a>
                 </div>
                 <div className="mt-5 flex justify-center">
                   <button
-                    className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                    className="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium"
                     onClick={() => setSelectedFaculty(faculty)}
                   >
                     View Profile
@@ -265,37 +307,48 @@ function App() {
       {/* Faculty Profile Modal */}
       {selectedFaculty && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white rounded-3xl shadow-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto">
-            <div className="relative">
+          <div
+            ref={modalRef}
+            className="bg-white rounded-3xl shadow-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto"
+            style={{ scrollbarWidth: "none" }} /* Firefox */
+          >
+            {/* Add this style to hide the scrollbar in webkit browsers */}
+            <style jsx>{`
+              div::-webkit-scrollbar {
+                display: none;
+              }
+            `}</style>
+
+            <div className="relative h-full">
               <button
-                className="absolute top-4 right-4 bg-white rounded-full p-1 shadow-md hover:bg-gray-100"
+                className="absolute top-4 right-4 bg-white rounded-full p-1 shadow-md hover:bg-gray-100 z-10"
                 onClick={() => setSelectedFaculty(null)}
               >
-                <X className="h-6 w-6 text-blue-900" />
+                <X className="h-6 w-6 text-[#1e2949]" />
               </button>
 
-              <div className="bg-blue-50 p-8 flex flex-col items-center">
+              <div className="bg-[#d8dee3] p-8 flex flex-col items-center">
                 <img
                   src={selectedFaculty.image}
                   alt={selectedFaculty.name}
                   className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-sm"
                 />
-                <h2 className="mt-4 font-bold text-blue-900 text-2xl">
+                <h2 className="mt-4 font-bold text-[#1e2949] text-2xl">
                   {selectedFaculty.name}
                 </h2>
-                <p className="text-blue-700">{selectedFaculty.title}</p>
+                <p className="text-[#7f8899]">{selectedFaculty.title}</p>
               </div>
 
               <div className="p-8">
                 <div className="flex items-start gap-3 mb-4">
-                  <MapPin className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-blue-800">{selectedFaculty.cabin}</p>
+                  <MapPin className="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0" />
+                  <p className="text-[#7f8899]">{selectedFaculty.cabin}</p>
                 </div>
                 <div className="flex items-center gap-3 mb-8">
-                  <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-[#1e2949] flex-shrink-0" />
                   <a
                     href={`mailto:${selectedFaculty.email}`}
-                    className="text-blue-600 hover:underline"
+                    className="text-[#1e2949] hover:underline"
                   >
                     {selectedFaculty.email}
                   </a>
@@ -303,15 +356,15 @@ function App() {
 
                 <div className="mb-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <BookOpen className="w-5 h-5 text-blue-500" />
-                    <h3 className="font-bold text-blue-900 text-lg">
+                    <BookOpen className="w-5 h-5 text-[#1e2949]" />
+                    <h3 className="font-bold text-[#1e2949] text-lg">
                       Education
                     </h3>
                   </div>
                   <ul className="list-disc pl-10 space-y-1">
                     {selectedFaculty.education.map(
                       (edu: string, index: number) => (
-                        <li key={index} className="text-blue-800">
+                        <li key={index} className="text-[#7f8899]">
                           {edu}
                         </li>
                       )
@@ -321,15 +374,15 @@ function App() {
 
                 <div className="mb-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <Award className="w-5 h-5 text-blue-500" />
-                    <h3 className="font-bold text-blue-900 text-lg">
+                    <Award className="w-5 h-5 text-[#1e2949]" />
+                    <h3 className="font-bold text-[#1e2949] text-lg">
                       Research Areas
                     </h3>
                   </div>
                   <ul className="list-disc pl-10 space-y-1">
                     {selectedFaculty.research.map(
                       (research: string, index: number) => (
-                        <li key={index} className="text-blue-800">
+                        <li key={index} className="text-[#7f8899]">
                           {research}
                         </li>
                       )
@@ -339,15 +392,15 @@ function App() {
 
                 <div>
                   <div className="flex items-center gap-2 mb-3">
-                    <FileText className="w-5 h-5 text-blue-500" />
-                    <h3 className="font-bold text-blue-900 text-lg">
+                    <FileText className="w-5 h-5 text-[#1e2949]" />
+                    <h3 className="font-bold text-[#1e2949] text-lg">
                       Publications
                     </h3>
                   </div>
                   <ul className="list-disc pl-10 space-y-2">
                     {selectedFaculty.publications.map(
                       (pub: string, index: number) => (
-                        <li key={index} className="text-blue-800">
+                        <li key={index} className="text-[#7f8899]">
                           {pub}
                         </li>
                       )
@@ -363,17 +416,17 @@ function App() {
       {/* Footer with Lab Venue */}
       <footer className="mt-16">
         {/* Lab Venue Section */}
-        <div className="bg-slate-100 py-8 px-6">
+        <div className="bg-[#d8dee3] py-8 px-6">
           <div className="container mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-start">
               <div className="mb-6 md:mb-0">
-                <h3 className="font-bold text-blue-900 text-lg mb-3">
+                <h3 className="font-bold text-[#1e2949] text-lg mb-3">
                   Lab Venue
                 </h3>
-                <p className="text-blue-800">222, 2nd block, 1st floor</p>
+                <p className="text-[#7f8899]">222, 2nd block, 1st floor</p>
                 <a
                   href="https://www.christuniversity.in"
-                  className="text-blue-600 hover:underline text-sm mt-2 inline-block"
+                  className="text-[#1e2949] hover:underline text-sm mt-2 inline-block"
                 >
                   www.christuniversity.in
                 </a>
@@ -381,12 +434,12 @@ function App() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="font-bold text-blue-900 mb-3">Quick Links</h3>
+                  <h3 className="font-bold text-[#1e2949] mb-3">Quick Links</h3>
                   <ul className="space-y-2">
                     <li>
                       <a
                         href="#"
-                        className="text-blue-800 hover:text-blue-900 text-sm"
+                        className="text-[#7f8899] hover:text-[#1e2949] text-sm"
                       >
                         Home
                       </a>
@@ -394,7 +447,7 @@ function App() {
                     <li>
                       <a
                         href="#"
-                        className="text-blue-800 hover:text-blue-900 text-sm"
+                        className="text-[#7f8899] hover:text-[#1e2949] text-sm"
                       >
                         About
                       </a>
@@ -402,7 +455,7 @@ function App() {
                     <li>
                       <a
                         href="#"
-                        className="text-blue-800 hover:text-blue-900 text-sm"
+                        className="text-[#7f8899] hover:text-[#1e2949] text-sm"
                       >
                         Faculty
                       </a>
@@ -410,7 +463,7 @@ function App() {
                     <li>
                       <a
                         href="#"
-                        className="text-blue-800 hover:text-blue-900 text-sm"
+                        className="text-[#7f8899] hover:text-[#1e2949] text-sm"
                       >
                         Research
                       </a>
@@ -419,9 +472,11 @@ function App() {
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-blue-900 mb-3">Contact</h3>
-                  <p className="text-blue-800 text-sm">Email: info@christ.in</p>
-                  <p className="text-blue-800 text-sm">
+                  <h3 className="font-bold text-[#1e2949] mb-3">Contact</h3>
+                  <p className="text-[#7f8899] text-sm">
+                    Email: info@christ.in
+                  </p>
+                  <p className="text-[#7f8899] text-sm">
                     Phone: +91 80 4012 9000
                   </p>
                 </div>
@@ -431,18 +486,18 @@ function App() {
         </div>
 
         {/* Copyright Section */}
-        <div className="bg-slate-200 text-blue-800 py-6 px-6 border-t border-gray-300">
+        <div className="bg-slate-200 text-[#7f8899] py-6 px-6 border-t border-gray-300">
           <div className="container mx-auto">
             <div className="flex flex-col items-center text-center">
               <div className="mb-4"></div>
 
               <div>
-                <p className="text-blue-700 text-sm">
-                  Bangalore Kengeri Campus, Kanmanike, Kumbalgodu, Mysore Road,
+                <p className="text-[#7f8899] text-sm">
+                  Kengeri Campus, Kanmanike, Kumbalgodu, Mysore Road,
                   <br />
                   Bangalore, Karnataka - 560074
                 </p>
-                <p className="text-blue-600 text-sm mt-2">
+                <p className="text-[#1e2949] text-sm mt-2">
                   © 2025 Christ University. All rights reserved.
                 </p>
               </div>
