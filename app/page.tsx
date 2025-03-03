@@ -240,7 +240,7 @@ export default function Home() {
               Pioneering innovative solutions at the intersection of IoT, AI, and industrial applications to transform the future of smart manufacturing.
             </p>
             
-            <div className="flex flex-wrap gap-4">
+           {/* <div className="flex flex-wrap gap-4">
               <Button className="bg-[#0f1e45] text-white hover:bg-[#1a2a50] rounded-full px-6">
                 Explore Research
               </Button>
@@ -249,7 +249,7 @@ export default function Home() {
                 Join Our Team
               </Button>
             </Link>
-          </div>
+          </div>*/}
             {/* need conformation */}
             <div className="mt-8 flex items-center space-x-4">
               <div className="flex -space-x-2">
@@ -786,7 +786,7 @@ export default function Home() {
               </div>
               <div className="text-xs">
                 <div className="font-bold text-base">CHRIST UNIVERSITY</div>
-                <div className="uppercase tracking-wider text-xs">Institute of Management</div>
+                {/* <div className="uppercase tracking-wider text-xs">Institute of Management</div> */}
               </div>
             </div>
             <p className="text-sm text-gray-300 mb-4">
