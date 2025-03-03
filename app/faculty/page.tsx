@@ -171,7 +171,7 @@ function App() {
       publications: [
         "Realization of Humanoid Doctor and Real-Time Diagnostics of Disease Using Internet of Things, Edge Impulse Platform, and ChatGPT",
         "Transformer performance enhancement by optimized charging strategy for electric vehicles",
-        "nternet of things based metaheuristic reliability centered maintenance of distribution transformers",
+        "Internet of things based metaheuristic reliability centered maintenance of distribution transformers",
         "Development of Internet of Things Platform and Its Application in Remote Monitoring and Control of Transformer Operation",
         "Optimal Charging Strategy for Spatially Distributed Electric Vehicles in Power System by Remote Analyser",
         "Internet of Things Based Autonomous Borewell Management System",
