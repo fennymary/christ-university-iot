@@ -32,6 +32,7 @@ interface Faculty {
 function App() {
   const [selectedFaculty, setSelectedFaculty] = useState<Faculty | null>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+  const [activeNavItem, setActiveNavItem] = useState<string>("faculty");
 
   // Add or remove overflow: hidden from the body based on modal state
   useEffect(() => {
@@ -246,22 +247,29 @@ function App() {
     window.location.href = path;
   };
 
+  // Function to handle nav item hover
+  const handleNavHover = (item: string) => {
+    setActiveNavItem(item);
+  };
+
   return (
     <div className="min-h-screen bg-slate-200">
-      {/* Header */}
-      <header className="bg-white py-4 px-6 flex justify-between items-center shadow-sm">
+      {/* Header - Updated to match the design in the images */}
+      <header className="bg-[#e9edf2] py-4 px-6 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <div
             onClick={() => navigateTo("/")}
-            className="flex items-center gap-3 cursor-pointer"
+            className="flex items-center gap-4 cursor-pointer"
           >
-            <img
-              src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294"
-              alt="Christ University Logo"
-              className="w-12 h-12 rounded-full object-cover"
-            />
+            <div className="w-14 h-14 rounded-full bg-[#0a1633] flex items-center justify-center overflow-hidden">
+              <img
+                src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294"
+                alt="Christ University Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div>
-              <h1 className="font-bold text-[#1e2949] text-lg">
+              <h1 className="font-bold text-[#0a1633] text-xl tracking-wide">
                 CHRIST UNIVERSITY
               </h1>
             </div>
@@ -271,31 +279,61 @@ function App() {
         <nav className="hidden md:flex space-x-8">
           <div
             onClick={() => navigateTo("/")}
-            className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+            onMouseEnter={() => handleNavHover("home")}
+            onMouseLeave={() => handleNavHover("faculty")}
+            className={`cursor-pointer transition-colors duration-300 ${
+              activeNavItem === "home"
+                ? "text-[#c8a85c]"
+                : "text-[#0a1633] hover:text-[#c8a85c]"
+            }`}
           >
             Home
           </div>
           <div
             onClick={() => navigateTo("/about")}
-            className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+            onMouseEnter={() => handleNavHover("about")}
+            onMouseLeave={() => handleNavHover("faculty")}
+            className={`cursor-pointer transition-colors duration-300 ${
+              activeNavItem === "about"
+                ? "text-[#c8a85c]"
+                : "text-[#0a1633] hover:text-[#c8a85c]"
+            }`}
           >
             About
           </div>
           <div
             onClick={() => navigateTo("/faculty")}
-            className="text-[#1e2949] hover:text-[#1e2949]/80 font-medium cursor-pointer"
+            onMouseEnter={() => handleNavHover("faculty")}
+            onMouseLeave={() => handleNavHover("faculty")}
+            className={`cursor-pointer transition-colors duration-300 font-medium ${
+              activeNavItem === "faculty"
+                ? "text-[#c8a85c]"
+                : "text-[#0a1633] hover:text-[#c8a85c]"
+            }`}
           >
             Faculty
           </div>
           <div
             onClick={() => navigateTo("/collaboration")}
-            className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+            onMouseEnter={() => handleNavHover("collaboration")}
+            onMouseLeave={() => handleNavHover("faculty")}
+            className={`cursor-pointer transition-colors duration-300 ${
+              activeNavItem === "collaboration"
+                ? "text-[#c8a85c]"
+                : "text-[#0a1633] hover:text-[#c8a85c]"
+            }`}
           >
             Collaboration
           </div>
           <div
             onClick={() => navigateTo("/consultation")}
-            className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+            onMouseEnter={() => handleNavHover("consultation")}
+            onMouseLeave={() => handleNavHover("faculty")}
+            className={`cursor-pointer transition-colors duration-300 ${
+              activeNavItem === "consultation"
+                ? "text-[#c8a85c]"
+                : "text-[#0a1633] hover:text-[#c8a85c]"
+            }`}
           >
             Consultation
           </div>
