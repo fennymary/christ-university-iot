@@ -75,138 +75,167 @@ function App() {
   const facultyMembers: Faculty[] = [
     {
       id: 1,
-      name: "Dr. Angela",
+      name: "Dr. Rakoth Kandan Sambandam",
       title: "(Dept of CSE)",
-      cabin: "Cabin-D.3rd block,2nd floor",
-      email: "angela@christ.in",
+      cabin: "220/10,FIRST Floor,BLOCK II",
+      email: "rakoth.kandan@christuniversity.in",
       image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
+        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E5163.jpg",
       education: [
-        "Ph.D. in Computer Science, Stanford University",
-        "M.S. in Computer Engineering, MIT",
-        "B.Tech in Computer Science, IIT Delhi",
+        "PhD from Annamalai University",
+        "M.Tech in CSE",
+        "BE in ECE",
       ],
-      research: [
-        "Machine Learning for IoT Applications",
-        "Edge Computing Frameworks",
-        "Distributed Systems",
-      ],
+      research: ["AI Based Placement Bot"],
       publications: [
-        'Angela et al. (2024). "Advanced IoT Frameworks for Smart Cities", IEEE IoT Journal',
-        'Angela & Kumar (2023). "Machine Learning at the Edge", ACM Computing Surveys',
-        'Singh, Angela et al. (2022). "Distributed Computing for IoT", International Conference on IoT',
+        "Optimized Multi-Scale Attention Convolutional Neural Network for Micro-Grid Energy Management System Employing in Internet of Things",
+        "A Comprehensive Review of Small Building Detection in Collapsed Images: Advancements and Applications of Machine Learning Algorithms",
+        "Smart Air Pollution Monitoring System Using Arduino Based on Wireless Sensor Networks",
+        "Secure Identity Based Authentication for Emergency Communications",
+        "Comparison of Machine Learning-Based Intrusion Detection Systems Using UNSW-NB15 Dataset",
+        "Review on Image Processing-Based Building Damage Assessment Techniques",
+        "An Advanced and Ideal Method for Tumor Detection and Classification from MRI Image Using Gamma Distribution and Support Vector Machine",
+        "Applications of Classification and Recommendation Techniques to Analyze Soil Data and Water Using IOT",
+        "3D CNN-Based Classification of Severity in COVID-19 Using CT Images",
+        "Security Issues in Intrusion Detection - Review",
+        "Smart Precision Irrigation Techniques Using Wireless Underground Sensors in Wireless Sensors",
+        "Self-adaptive dragonfly based optimal thresholding for multilevel segmentation of digital images",
       ],
     },
     {
       id: 2,
-      name: "Dr. Samuel J",
+      name: "Dr. Shamanth N",
       title: "(Dept of CSE)",
-      cabin: "Cabin-23, second block,2nd floor",
-      email: "samuel@christ.in",
+      cabin: "51,GROUND Floor,BLOCK III",
+      email: "shamanth.n@christuniversity.in",
       image:
-        "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
+        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E5581.jpg",
       education: [
-        "Ph.D. in Artificial Intelligence, Carnegie Mellon University",
-        "M.S. in Computer Science, University of California, Berkeley",
-        "B.E. in Information Technology, Anna University",
+        "PhD from BITS Pilani",
+        "M.Tech in Computer Network Engineering",
+        "B.Tech in CSE",
       ],
       research: [
-        "Natural Language Processing",
-        "Computer Vision",
-        "AI for Healthcare",
+        "Development of AI Enabled Contactless Remote Health Monitoring System for Neonatal care",
       ],
       publications: [
-        'Samuel et al. (2024). "Transformer Models for Medical Diagnosis", Nature Machine Intelligence',
-        'Samuel & Johnson (2023). "Vision Transformers in Healthcare", IEEE Transactions on Medical Imaging',
-        'Williams, Samuel et al. (2022). "NLP for Clinical Decision Support", Journal of Biomedical Informatics',
+        "Cost Effective and Energy Efficient Drip Irrigation System for IoT Enabled Smart Agriculture",
+        "Augmented Reality based Navigation for Indoor Environment using Unity Platform",
+        "Energy-Efficient Long-Range Sectored Antenna for Directional Sensor Network Applications",
+        "Dynamic Channel Allocation in Wireless Personal Area Networks for Industrial IoT Applications",
+        "Multiple token-based neighbor discovery for directional sensor networks",
+        "Hybrid area exploration?based mobility-assisted localization with sectored antenna in wireless sensor networks",
+        "Mobility assisted localization for mission critical Wireless Sensor Network applications using hybrid area exploration approach",
+        "A Band-notched Ultra-wideband Compact Planar Monopole Antenna With U-shaped Parasitic Element",
       ],
     },
     {
       id: 3,
-      name: "Prof. Elizabeth S",
+      name: "Dr. Manu Elappila",
       title: "(Dept of CSE)",
-      cabin: "Cabin-03,first block,3rd floor",
-      email: "elizabeth@christ.in",
+      cabin: "250/34,THIRD Floor,BLOCK II",
+      email: "manu.elappila@christuniversity.in",
       image:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
-      education: [
-        "Ph.D. in Data Science, ETH Zurich",
-        "M.S. in Statistics, London School of Economics",
-        "B.Sc in Mathematics, University of Oxford",
-      ],
+        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E5177.jpg",
+      education: ["Ph.D from NIT Rourkela", "M.Tech in CSE", "B.Tech in IT"],
       research: [
-        "Big Data Analytics",
-        "Statistical Learning",
-        "Data Visualization",
+        "Development of AI Enabled Contactless Remote Health Monitoring System for Neonatal care",
       ],
       publications: [
-        'Elizabeth et al. (2024). "Statistical Methods for Large-Scale Data", Journal of Big Data',
-        'Elizabeth & Chen (2023). "Visualization Techniques for Complex Data", IEEE Transactions on Visualization',
-        'Roberts, Elizabeth et al. (2022). "Interactive Data Exploration", ACM CHI Conference',
+        "Cost Effective and Energy Efficient Drip Irrigation System for IoT Enabled Smart Agriculture",
+        "Augmented Reality based Navigation for Indoor Environment using Unity Platform",
+        "Implementation of survivability aware protocols in WSN for IoT applications using Contiki-OS and hardware testbed evaluation",
+        "Dynamic Channel Allocation in Wireless Personal Area Networks for Industrial IoT Applications",
+        "Survivability Aware Channel Allocation in WSN for IoT applications",
+        "Survivable Path Routing in WSN for IoT applications",
+      ],
+    },
+    // Moving Dr. Venkataswamy R (the last faculty) to the middle position
+    {
+      id: 6,
+      name: "Dr. Venkataswamy R",
+      title: "(Dept of EEE)",
+      cabin: "88,THIRD Floor,BLOCK III",
+      email: "venkataswamy.r@christuniversity.in",
+      image:
+        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E1737.jpg",
+      education: [
+        "Ph.D from Visvesvaraya Technological University",
+        "M.Tech in Control and Computing",
+        "B.E in EEE",
+      ],
+      research: [
+        "Retrofitting of conventional CNC Milling Machine to digitalized transformation for smart manufacturing",
+      ],
+      publications: [
+        "Realization of Humanoid Doctor and Real-Time Diagnostics of Disease Using Internet of Things, Edge Impulse Platform, and ChatGPT",
+        "Transformer performance enhancement by optimized charging strategy for electric vehicles",
+        "nternet of things based metaheuristic reliability centered maintenance of distribution transformers",
+        "Development of Internet of Things Platform and Its Application in Remote Monitoring and Control of Transformer Operation",
+        "Optimal Charging Strategy for Spatially Distributed Electric Vehicles in Power System by Remote Analyser",
+        "Internet of Things Based Autonomous Borewell Management System",
       ],
     },
     {
       id: 4,
-      name: "Dr. Michael Chen",
+      name: "Prof. Sharon Roji Priya C",
       title: "(Dept of CSE)",
-      cabin: "Cabin-12, first block,1st floor",
-      email: "michael@christ.in",
+      cabin: "48,GROUND Floor,BLOCK III",
+      email: "sharon.roji@christuniversity.in",
       image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
-      education: [
-        "Ph.D. in Computer Networks, University of California, San Diego",
-        "M.S. in Electrical Engineering, Georgia Tech",
-        "B.Tech in Electronics, Tsinghua University",
-      ],
-      research: [
-        "Network Security",
-        "Wireless Communications",
-        "Internet of Things",
-      ],
+        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E6206.jpg",
+      education: ["M.E CSE", "B.E CSE"],
+      research: [],
       publications: [
-        'Chen et al. (2024). "Secure IoT Communication Protocols", IEEE Network',
-        'Chen & Smith (2023). "Lightweight Encryption for IoT", ACM Transactions on IoT',
-        'Johnson, Chen et al. (2022). "5G for IoT Applications", IEEE Communications Magazine',
+        "Classification of HHO-based Machine Learning Techniques for Clone Attack Detection in WSN",
       ],
     },
     {
       id: 5,
-      name: "Prof. Sarah Kim",
+      name: "Prof. Shruti Jalapur",
       title: "(Dept of CSE)",
-      cabin: "Cabin-15, third block,2nd floor",
-      email: "sarah@christ.in",
+      cabin: "636,193,Fourth Floor,BLOCK VI",
+      email: "shruti.jalapur@christuniversity.in",
       image:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
-      education: [
-        "Ph.D. in Human-Computer Interaction, University of Washington",
-        "M.S. in Interaction Design, Royal College of Art",
-        "B.Des in Digital Design, KAIST",
-      ],
-      research: ["User Experience Design", "Accessibility", "Mobile Computing"],
+        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E6692.jpg",
+      education: ["M.Tech in CSE", "B.E in CSE"],
+      research: [],
       publications: [
-        'Kim et al. (2024). "Inclusive Design for IoT Interfaces", ACM Transactions on Accessible Computing',
-        'Kim & Garcia (2023). "Mobile UX for Diverse Users", International Journal of Human-Computer Studies',
-        'Lee, Kim et al. (2022). "Designing for Accessibility", ACM ASSETS Conference',
+        "An Integrated Scalable Healthcare Management System Using IOT",
+        "Text Summarization Techniques for Kannada Language",
       ],
     },
     {
-      id: 6,
-      name: "Dr. James Wilson",
-      title: "(Dept of CSE)",
-      cabin: "Cabin-08, second block,3rd floor",
-      email: "james@christ.in",
+      id: 7,
+      name: "Dr. Praghash K",
+      title: "(Dept of ECE)",
+      cabin: "19,GROUND Floor,DEVADAN BLOCK",
+      email: "praghash.k@christuniversity.in",
       image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
+        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E5933.jpg",
       education: [
-        "Ph.D. in Software Engineering, University of Toronto",
-        "M.S. in Computer Science, University of Edinburgh",
-        "B.Sc in Computing, Imperial College London",
+        "Ph.D from Anna University",
+        "M.Tech in Communication Systems",
+        "B.E in ECE",
       ],
-      research: ["Software Architecture", "DevOps", "Cloud Computing"],
+      research: [
+        "VRSMT Steiner Minimum Tree based routing protocol to mitigate the bottleneck in WSN",
+        "Indian Road Safety Enhancement using Adaptive Driver Assistance and Communication System",
+      ],
       publications: [
-        'Wilson et al. (2024). "Microservices for IoT Systems", IEEE Software',
-        'Wilson & Brown (2023). "DevOps Practices for Edge Computing", Journal of Systems and Software',
-        'Taylor, Wilson et al. (2022). "Cloud-Native IoT Architectures", IEEE Cloud Computing',
+        "An extensive critique on expert system control in solar photovoltaic dominated microgrids",
+        "Development of an Efficient and Secured E-Voting Mobile Application Using Android",
+        "A Modified Seven-Level Inverter with Inverted Sine Wave Carrier for PWM Control",
+        "Optimization and Design of a Sustainable Industrial Grid System",
+        "Implementation and Investigation of an Optimal Full Adder Design for Low Power and Reduced Delay Conditions",
+        "An efficient MIMO cognitive radio (CR) model for mid-band 5G applications",
+        "Comprehensive Assessment of Electric Vehicle Development, Deployment, and Policy Initiatives to Reduce GHG Emissions: Opportunities and Challenges",
+        "CMY Color Spaced-Based Visual Cryptography Scheme for Secret Sharing of Data",
+        "Integrating renewable energy in electric V2G: Improved optimization assisting dispatch model",
+        "A Combined PWM and AEM-Based AC Voltage Controller for Resistive Loads",
+        "Data Privacy Preservation and Trade-off Balance Between Privacy and Utility Using Deep Adaptive Clustering and Elliptic Curve Digital Signature Algorithm",
+        "Improved Authentication in Secured Multicast Wireless Sensor Network (MWSN) Using Opposition Frog Leaping Algorithm to Resist Man-in-Middle Attack",
+        "An Investigation of Garbage Disposal Electric Vehicles (GDEVs) Integrated with Deep Neural Networking (DNN) and Intelligent Transportation System (ITS) in Smart City Management System (SCMS)",
       ],
     },
   ];
@@ -297,17 +326,23 @@ function App() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {facultyMembers.map((faculty) => (
+          {facultyMembers.map((faculty, index) => (
             <div
               key={faculty.id}
-              className="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300"
+              className={`
+        bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300
+        ${index === 6 ? "md:col-start-2 md:col-end-3" : ""} // Add this line
+      `}
             >
+              {/* Card content remains the same */}
               <div className="bg-slate-100 p-8 flex flex-col items-center">
-                <img
-                  src={faculty.image}
-                  alt={faculty.name}
-                  className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-sm"
-                />
+                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                  <img
+                    src={faculty.image}
+                    alt={faculty.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="mt-4 font-bold text-[#1e2949] text-xl">
                   {faculty.name}
                 </h3>
@@ -366,11 +401,13 @@ function App() {
               </button>
 
               <div className="bg-[#d8dee3] p-8 flex flex-col items-center">
-                <img
-                  src={selectedFaculty.image}
-                  alt={selectedFaculty.name}
-                  className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-sm"
-                />
+                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                  <img
+                    src={selectedFaculty.image}
+                    alt={selectedFaculty.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h2 className="mt-4 font-bold text-[#1e2949] text-2xl">
                   {selectedFaculty.name}
                 </h2>
@@ -410,23 +447,26 @@ function App() {
                   </ul>
                 </div>
 
-                <div className="mb-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Award className="w-5 h-5 text-[#1e2949]" />
-                    <h3 className="font-bold text-[#1e2949] text-lg">
-                      Research Areas
-                    </h3>
+                {/* Only show Research Project section if there are research items */}
+                {selectedFaculty.research.length > 0 && (
+                  <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Award className="w-5 h-5 text-[#1e2949]" />
+                      <h3 className="font-bold text-[#1e2949] text-lg">
+                        Research Project
+                      </h3>
+                    </div>
+                    <ul className="list-disc pl-10 space-y-1">
+                      {selectedFaculty.research.map(
+                        (research: string, index: number) => (
+                          <li key={index} className="text-[#7f8899]">
+                            {research}
+                          </li>
+                        )
+                      )}
+                    </ul>
                   </div>
-                  <ul className="list-disc pl-10 space-y-1">
-                    {selectedFaculty.research.map(
-                      (research: string, index: number) => (
-                        <li key={index} className="text-[#7f8899]">
-                          {research}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
+                )}
 
                 <div>
                   <div className="flex items-center gap-2 mb-3">
@@ -469,9 +509,6 @@ function App() {
                     <h2 className="font-bold text-white text-lg">
                       CHRIST UNIVERSITY
                     </h2>
-                    <p className="text-xs text-gray-400">
-                      INSTITUTE OF MANAGEMENT
-                    </p>
                   </div>
                 </div>
                 <p className="text-sm text-gray-300 mb-6">
