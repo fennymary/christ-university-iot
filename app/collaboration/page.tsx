@@ -145,10 +145,7 @@ function App() {
           <a href="#" className="text-[#162750] hover:text-[#d4b47c]">
             Faculty
           </a>
-          <a
-            href="/collaboration"
-            className="text-[#162750] hover:text-[#d4b47c] font-medium"
-          >
+          <a href="#" className="text-[#c19434] hover:text-[#c19434]/80">
             Collaboration
           </a>
           <a href="#" className="text-[#162750] hover:text-[#d4b47c]">
