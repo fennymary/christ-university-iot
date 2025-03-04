@@ -81,3 +81,17 @@ module.exports = {
   plugins: [require("tailwindcss-animate")],
 }
 
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        'navy': {
+          800: '#0d2150',
+          900: '#0a1b3d',
+        }
+      }
+    },
+  },
+  plugins: [],
+};
