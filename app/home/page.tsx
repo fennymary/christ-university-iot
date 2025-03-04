@@ -55,14 +55,14 @@ export default function Home() {
             </div>
           </div>
           
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex  space-x-8">
             <a 
               href="#" 
               onClick={(e) => {
                 e.preventDefault();
                 navigateTo('/');
               }} 
-              className="text-[#0f172a] hover:text-blue-700"
+             className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
             >
               Home
             </a>
@@ -72,7 +72,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/about');
               }} 
-              className="text-[#0f172a] hover:text-blue-700"
+              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
             >
               About
             </a>
@@ -82,7 +82,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/faculty');
               }} 
-              className="text-[#0f172a] hover:text-blue-700"
+              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
             >
               Faculty
             </a>
@@ -92,7 +92,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/collaboration');
               }} 
-              className="text-[#0f172a] hover:text-blue-700"
+              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
             >
               Collaboration
             </a>
@@ -102,7 +102,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/consultation');
               }} 
-              className="text-[#0f172a] hover:text-blue-700"
+              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
             >
               Consultation
             </a>
@@ -112,7 +112,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/profile');
               }} 
-              className="text-[#0f172a] hover:text-[#d3b77b]"
+              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
             >
               <UserCircle className="w-6 h-6" />
             </a>
@@ -151,7 +151,7 @@ export default function Home() {
                 </button>
                 <button 
                   className="border border-[#d3b77b] text-[#d3b77b] hover:bg-[#d3b77b] hover:text-white rounded-full px-6 py-2 transition-all duration-300 hover:shadow-lg"
-                  onClick={() => navigateTo('/join-team')}
+                  onClick={() => navigateTo('/faculty')}
                 >
                   Join Our Team
                 </button>
@@ -328,7 +328,6 @@ export default function Home() {
                 </div>
                 <div className="ml-3">
                   <h3 className="text-white font-bold">CHRIST UNIVERSITY</h3>
-                  <p className="text-gray-300 text-sm">INSTITUTE OF MANAGEMENT</p>
                 </div>
               </div>
               <p className="text-gray-300 mb-6">
