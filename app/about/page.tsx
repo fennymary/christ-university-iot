@@ -21,11 +21,11 @@ function App() {
             </div>
             
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-slate-600 hover:text-navy-900">Home</a>
-              <a href="#" className="text-amber-500 font-medium">About</a>
-              <a href="#" className="text-slate-600 hover:text-navy-900">Faculty</a>
-              <a href="#" className="text-slate-600 hover:text-navy-900">Collaboration</a>
-              <a href="#" className="text-slate-600 hover:text-navy-900">Consultation</a>
+              <a href="/home" className="text-slate-600 hover:text-navy-900">Home</a>
+              <a href="/about" className="text-amber-500 font-medium">About</a>
+              <a href="/faculty" className="text-slate-600 hover:text-navy-900">Faculty</a>
+              <a href="/collaboration" className="text-slate-600 hover:text-navy-900">Collaboration</a>
+              <a href="/consultation" className="text-slate-600 hover:text-navy-900">Consultation</a>
             </nav>
             
             <div className="flex items-center">
@@ -106,98 +106,21 @@ function App() {
           
           <div className="bg-white rounded-3xl shadow-sm p-8">
             <p className="text-slate-600 leading-relaxed">
-              The Advanced Research for Industrial IoT Laboratory at Christ University Institute of Management is a cutting-edge research facility dedicated to exploring the frontiers of Internet of Things technologies in industrial applications. Our interdisciplinary team combines expertise in computer science, electrical engineering, data analytics, and business management to develop innovative solutions that address real-world challenges in smart manufacturing, supply chain optimization, and industrial automation.
+            The Advanced Research in Industrial IoT (ARIIoT) lab, sponsored by Advantech India, aims to serve as a hub for cutting-edge research and development in Industrial Internet of Things (IIoT). The lab envisions fostering innovation, collaboration, and knowledge dissemination to address industry challenges and advance technology adoption in IIoT.
+            
             </p>
             <p className="text-slate-600 leading-relaxed mt-4">
-              Established in 2023, our laboratory serves as a hub for collaboration between academia and industry partners, fostering knowledge exchange and technological innovation. We are committed to training the next generation of IoT specialists through hands-on research experiences and industry-relevant projects.
+              Established in 2025, our laboratory serves as a hub for collaboration between academia and industry partners, fostering knowledge exchange and technological innovation. We are committed to training the next generation of IoT specialists through hands-on research experiences and industry-relevant projects.
             </p>
             <p className="text-slate-600 leading-relaxed mt-4">
-              Our state-of-the-art facilities include sensor networks, edge computing devices, cloud infrastructure, and advanced data visualization tools that enable our researchers to prototype, test, and deploy IoT solutions in simulated and real industrial environments.
+            Our lab focuses on research, consultancy, and project collaboration opportunities for faculty and students in three strategic domains: Healthcare Management, Video Analytics, and Cold Chain Management. The objective is to create impactful research contributions, provide industry consultancy, and develop real-world projects in these verticals.
             </p>
-          </div>
-        </div>
-      </section>
+            <p  className="text-slate-600 leading-relaxed mt-4">
+            ARIIOT aims to bridge the gap between academia and industry by enabling research, consultancy, and projects in these critical domains. By engaging faculty and students in real-world problem-solving, we drive innovation and contribute to technological advancements with a significant societal impact. This initiative will establish a collaborative ecosystem where academic research translates into practical, industry-ready solutions.
+            </p>
 
-      {/* Research Team Section */}
-      <section className="py-12 px-6 md:px-12">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold text-navy-900">Research Team</h2>
-            <a href="#" className="text-amber-500 hover:text-amber-600 flex items-center">
-              View all team members
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
-          </div>
+           
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Team Member 1 */}
-            <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
-              <div className="h-48 bg-slate-200 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=250&q=80" 
-                  alt="Dr. James Wilson"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-navy-900">Dr. James Wilson</h3>
-                <p className="text-amber-500">Laboratory Director</p>
-                <p className="text-slate-600 mt-3 text-sm">
-                  Ph.D. in Computer Science with 15+ years of experience in IoT systems and industrial automation.
-                </p>
-                <div className="mt-4 flex space-x-3">
-                  <div className="bg-slate-100 px-3 py-1 rounded-full text-xs text-slate-600">AI</div>
-                  <div className="bg-slate-100 px-3 py-1 rounded-full text-xs text-slate-600">IoT</div>
-                  <div className="bg-slate-100 px-3 py-1 rounded-full text-xs text-slate-600">Edge Computing</div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Team Member 2 */}
-            <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
-              <div className="h-48 bg-slate-200 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=250&q=80" 
-                  alt="Dr. Sarah Chen"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-navy-900">Dr. Sarah Chen</h3>
-                <p className="text-amber-500">Senior Researcher</p>
-                <p className="text-slate-600 mt-3 text-sm">
-                  Specializes in industrial sensor networks and real-time data processing for manufacturing systems.
-                </p>
-                <div className="mt-4 flex space-x-3">
-                  <div className="bg-slate-100 px-3 py-1 rounded-full text-xs text-slate-600">Sensors</div>
-                  <div className="bg-slate-100 px-3 py-1 rounded-full text-xs text-slate-600">Data Analytics</div>
-                  <div className="bg-slate-100 px-3 py-1 rounded-full text-xs text-slate-600">Manufacturing</div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Team Member 3 */}
-            <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
-              <div className="h-48 bg-slate-200 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=250&q=80" 
-                  alt="Prof. Michael Rodriguez"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-navy-900">Prof. Michael Rodriguez</h3>
-                <p className="text-amber-500">Research Associate</p>
-                <p className="text-slate-600 mt-3 text-sm">
-                  Expert in supply chain optimization and blockchain applications for industrial IoT security.
-                </p>
-                <div className="mt-4 flex space-x-3">
-                  <div className="bg-slate-100 px-3 py-1 rounded-full text-xs text-slate-600">Blockchain</div>
-                  <div className="bg-slate-100 px-3 py-1 rounded-full text-xs text-slate-600">Security</div>
-                  <div className="bg-slate-100 px-3 py-1 rounded-full text-xs text-slate-600">Supply Chain</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -212,7 +135,7 @@ function App() {
                 <div className="bg-slate-100 p-3 rounded-full">
                   <BookOpen className="h-6 w-6 text-navy-900" />
                 </div>
-                <h3 className="text-xl font-bold text-navy-900 ml-4">Content</h3>
+                <h3 className="text-xl font-bold text-navy-900 ml-4">Domains</h3>
               </div>
               
               <ul className="space-y-4">
@@ -221,9 +144,9 @@ function App() {
                     <div className="bg-amber-400 rounded-full w-2 h-2"></div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium text-navy-900">IoT Architecture for Smart Manufacturing</h4>
+                    <h4 className="font-medium text-navy-900">Healthcare Management</h4>
                     <p className="text-slate-600 text-sm mt-1">
-                      Designing scalable and secure IoT infrastructures for modern manufacturing facilities.
+                    ARIIOT leverages AI, machine learning, and blockchain for smart healthcare, focusing on predictive analytics, telemedicine, and cybersecurity.
                     </p>
                   </div>
                 </li>
@@ -232,9 +155,9 @@ function App() {
                     <div className="bg-amber-400 rounded-full w-2 h-2"></div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium text-navy-900">Edge Computing in Industrial Applications</h4>
+                    <h4 className="font-medium text-navy-900">Video Analytics</h4>
                     <p className="text-slate-600 text-sm mt-1">
-                      Implementing edge computing solutions to reduce latency and enhance real-time decision making.
+                    ARIIOT researches AI-driven video analytics for surveillance, traffic management, and behavior analysis, offering consultancy in smart city security, retail, and automated quality inspection.
                     </p>
                   </div>
                 </li>
@@ -243,9 +166,9 @@ function App() {
                     <div className="bg-amber-400 rounded-full w-2 h-2"></div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium text-navy-900">Data Analytics for Predictive Maintenance</h4>
+                    <h4 className="font-medium text-navy-900">Cold Chain Management</h4>
                     <p className="text-slate-600 text-sm mt-1">
-                      Leveraging machine learning algorithms to predict equipment failures and optimize maintenance schedules.
+                    ARIIOT explores AI, IoT, and blockchain for cold chain monitoring, offering consultancy in smart storage, AI-driven logistics, and energy-efficient supply chain solutions.
                     </p>
                   </div>
                 </li>
@@ -267,19 +190,10 @@ function App() {
                     <div className="bg-amber-400 rounded-full w-2 h-2"></div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium text-navy-900">Smart Factory Simulation Platform</h4>
+                    <h4 className="font-medium text-navy-900"> Video Analytics - IRetail  </h4>
                     <p className="text-slate-600 text-sm mt-1">
-                      Developing a digital twin environment for testing IoT implementations before physical deployment.
+                    Developing an Integrated Video Analytics Solution for optimizing retail layouts, enhancing customer engagement, and enabling data-driven merchandising decisions.
                     </p>
-                    <div className="mt-2">
-                      <div className="w-full bg-slate-200 rounded-full h-1.5">
-                        <div className="bg-amber-400 h-1.5 rounded-full" style={{ width: '75%' }}></div>
-                      </div>
-                      <div className="flex justify-between mt-1">
-                        <span className="text-xs text-slate-500">Progress</span>
-                        <span className="text-xs text-slate-500">75%</span>
-                      </div>
-                    </div>
                   </div>
                 </li>
                 <li className="flex items-start mt-6">
@@ -287,115 +201,43 @@ function App() {
                     <div className="bg-amber-400 rounded-full w-2 h-2"></div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium text-navy-900">Secure IoT Communication Protocol</h4>
+                    <h4 className="font-medium text-navy-900">Medical Imaging (Automation) - iHealthcare</h4>
                     <p className="text-slate-600 text-sm mt-1">
-                      Researching lightweight encryption methods for resource-constrained IoT devices in industrial settings.
+                    Developing AI-powered adaptive exposure control, cloud-based processing, and data masking for high-quality, privacy-compliant medical imaging.
                     </p>
-                    <div className="mt-2">
-                      <div className="w-full bg-slate-200 rounded-full h-1.5">
-                        <div className="bg-amber-400 h-1.5 rounded-full" style={{ width: '40%' }}></div>
-                      </div>
-                      <div className="flex justify-between mt-1">
-                        <span className="text-xs text-slate-500">Progress</span>
-                        <span className="text-xs text-slate-500">40%</span>
-                      </div>
-                    </div>
+                    
                   </div>
                 </li>
+                <li className="flex items-start mt-6">
+                  <div className="bg-amber-100 rounded-full p-1 mt-1">
+                    <div className="bg-amber-400 rounded-full w-2 h-2"></div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-medium text-navy-900">IoT Edge Connectivity Solutions for Smart Buildings</h4>
+                    <p className="text-slate-600 text-sm mt-1">
+                    Developing a modular, secure, and low-latency IoT framework with seamless device integration and a real-time WISE-PaaS dashboard for smart building management.
+                    </p>
+                    
+                      
+                    
+                  </div>
+                  </li>
+                  <li className="flex items-start mt-6">
+                  <div className="bg-amber-100 rounded-full p-1 mt-1">
+                    <div className="bg-amber-400 rounded-full w-2 h-2"></div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-medium text-navy-900"> Cold Chain Management System for Vaccine Storage</h4>
+                    <p className="text-slate-600 text-sm mt-1">
+                    Developing an IoT-driven cold chain system with real-time monitoring, predictive analytics, smart packaging, and energy-efficient transportation to enhance sustainability and efficiency.
+                    </p>
+                    
+                      
+                    
+                  </div>
+                  </li>
+                
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Publications Section */}
-      <section className="py-12 px-6 md:px-12">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold text-navy-900">Publications</h2>
-            <a href="#" className="text-amber-500 hover:text-amber-600 flex items-center">
-              View all publications
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Publication 1 */}
-            <div className="bg-white rounded-2xl shadow-sm p-6">
-              <div className="flex justify-between items-start">
-                <div className="bg-slate-100 p-3 rounded-full">
-                  <Award className="h-5 w-5 text-navy-900" />
-                </div>
-                <span className="text-sm text-slate-500">June 2025</span>
-              </div>
-              <h3 className="text-lg font-bold text-navy-900 mt-4">Enhancing Industrial IoT Security Through Federated Learning Approaches</h3>
-              <p className="text-slate-600 text-sm mt-2">
-                Published in IEEE Transactions on Industrial Informatics
-              </p>
-              <div className="mt-4 flex items-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80" 
-                  alt="Dr. James Wilson"
-                  className="w-6 h-6 rounded-full"
-                />
-                <span className="text-sm text-slate-600 ml-2">Dr. James Wilson, et al.</span>
-              </div>
-              <a href="#" className="mt-4 text-amber-500 hover:text-amber-600 text-sm flex items-center">
-                Read publication
-                <ArrowRight className="ml-1 h-3 w-3" />
-              </a>
-            </div>
-            
-            {/* Publication 2 */}
-            <div className="bg-white rounded-2xl shadow-sm p-6">
-              <div className="flex justify-between items-start">
-                <div className="bg-slate-100 p-3 rounded-full">
-                  <Award className="h-5 w-5 text-navy-900" />
-                </div>
-                <span className="text-sm text-slate-500">March 2025</span>
-              </div>
-              <h3 className="text-lg font-bold text-navy-900 mt-4">Real-time Anomaly Detection in Manufacturing Processes Using Edge AI</h3>
-              <p className="text-slate-600 text-sm mt-2">
-                Published in Journal of Smart Manufacturing
-              </p>
-              <div className="mt-4 flex items-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80" 
-                  alt="Dr. Sarah Chen"
-                  className="w-6 h-6 rounded-full"
-                />
-                <span className="text-sm text-slate-600 ml-2">Dr. Sarah Chen, et al.</span>
-              </div>
-              <a href="#" className="mt-4 text-amber-500 hover:text-amber-600 text-sm flex items-center">
-                Read publication
-                <ArrowRight className="ml-1 h-3 w-3" />
-              </a>
-            </div>
-            
-            {/* Publication 3 */}
-            <div className="bg-white rounded-2xl shadow-sm p-6">
-              <div className="flex justify-between items-start">
-                <div className="bg-slate-100 p-3 rounded-full">
-                  <Award className="h-5 w-5 text-navy-900" />
-                </div>
-                <span className="text-sm text-slate-500">January 2025</span>
-              </div>
-              <h3 className="text-lg font-bold text-navy-900 mt-4">Blockchain-based Supply Chain Verification for Industrial IoT Ecosystems</h3>
-              <p className="text-slate-600 text-sm mt-2">
-                Published in Blockchain for Industrial Applications
-              </p>
-              <div className="mt-4 flex items-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80" 
-                  alt="Prof. Michael Rodriguez"
-                  className="w-6 h-6 rounded-full"
-                />
-                <span className="text-sm text-slate-600 ml-2">Prof. Michael Rodriguez, et al.</span>
-              </div>
-              <a href="#" className="mt-4 text-amber-500 hover:text-amber-600 text-sm flex items-center">
-                Read publication
-                <ArrowRight className="ml-1 h-3 w-3" />
-              </a>
             </div>
           </div>
         </div>
@@ -436,11 +278,11 @@ function App() {
             <div>
               <h3 className="font-bold text-lg mb-4">Quick Links</h3>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Faculty</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Collaboration</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Consultation</a></li>
+                <li><a href="/home" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                <li><a href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/faculty" className="text-gray-300 hover:text-white transition-colors">Faculty</a></li>
+                <li><a href="/collaboration" className="text-gray-300 hover:text-white transition-colors">Collaboration</a></li>
+                <li><a href="/consultation" className="text-gray-300 hover:text-white transition-colors">Consultation</a></li>
               </ul>
             </div>
             
