@@ -278,11 +278,11 @@ function App() {
             <div>
               <h3 className="font-bold text-lg mb-4">Quick Links</h3>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Faculty</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Collaboration</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Consultation</a></li>
+                <li><a href="/home" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                <li><a href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/faculty" className="text-gray-300 hover:text-white transition-colors">Faculty</a></li>
+                <li><a href="/collaboration" className="text-gray-300 hover:text-white transition-colors">Collaboration</a></li>
+                <li><a href="/consultation" className="text-gray-300 hover:text-white transition-colors">Consultation</a></li>
               </ul>
             </div>
             
