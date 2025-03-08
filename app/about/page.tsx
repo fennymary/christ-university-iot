@@ -21,11 +21,11 @@ function App() {
             </div>
             
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-slate-600 hover:text-navy-900">Home</a>
-              <a href="#" className="text-amber-500 font-medium">About</a>
-              <a href="#" className="text-slate-600 hover:text-navy-900">Faculty</a>
-              <a href="#" className="text-slate-600 hover:text-navy-900">Collaboration</a>
-              <a href="#" className="text-slate-600 hover:text-navy-900">Consultation</a>
+              <a href="/home" className="text-slate-600 hover:text-navy-900">Home</a>
+              <a href="/about" className="text-amber-500 font-medium">About</a>
+              <a href="/faculty" className="text-slate-600 hover:text-navy-900">Faculty</a>
+              <a href="/collaboration" className="text-slate-600 hover:text-navy-900">Collaboration</a>
+              <a href="/consultation" className="text-slate-600 hover:text-navy-900">Consultation</a>
             </nav>
             
             <div className="flex items-center">
@@ -106,14 +106,19 @@ function App() {
           
           <div className="bg-white rounded-3xl shadow-sm p-8">
             <p className="text-slate-600 leading-relaxed">
-              The Advanced Research for Industrial IoT Laboratory at Christ University Institute of Management is a cutting-edge research facility dedicated to exploring the frontiers of Internet of Things technologies in industrial applications. Our interdisciplinary team combines expertise in computer science, electrical engineering, data analytics, and business management to develop innovative solutions that address real-world challenges in smart manufacturing, supply chain optimization, and industrial automation.
+            The Advanced Research in Industrial IoT (ARIIoT) lab, sponsored by Advantech India, aims to serve as a hub for cutting-edge research and development in Industrial Internet of Things (IIoT). The lab envisions fostering innovation, collaboration, and knowledge dissemination to address industry challenges and advance technology adoption in IIoT.
+            
             </p>
             <p className="text-slate-600 leading-relaxed mt-4">
-              Established in 2023, our laboratory serves as a hub for collaboration between academia and industry partners, fostering knowledge exchange and technological innovation. We are committed to training the next generation of IoT specialists through hands-on research experiences and industry-relevant projects.
+              Established in 2025, our laboratory serves as a hub for collaboration between academia and industry partners, fostering knowledge exchange and technological innovation. We are committed to training the next generation of IoT specialists through hands-on research experiences and industry-relevant projects.
             </p>
             <p className="text-slate-600 leading-relaxed mt-4">
-              Our state-of-the-art facilities include sensor networks, edge computing devices, cloud infrastructure, and advanced data visualization tools that enable our researchers to prototype, test, and deploy IoT solutions in simulated and real industrial environments.
+            Our lab focuses on research, consultancy, and project collaboration opportunities for faculty and students in three strategic domains: Healthcare Management, Video Analytics, and Cold Chain Management. The objective is to create impactful research contributions, provide industry consultancy, and develop real-world projects in these verticals.
+            
             </p>
+
+           
+          
           </div>
         </div>
       </section>
@@ -212,7 +217,7 @@ function App() {
                 <div className="bg-slate-100 p-3 rounded-full">
                   <BookOpen className="h-6 w-6 text-navy-900" />
                 </div>
-                <h3 className="text-xl font-bold text-navy-900 ml-4">Content</h3>
+                <h3 className="text-xl font-bold text-navy-900 ml-4">Domains</h3>
               </div>
               
               <ul className="space-y-4">
@@ -221,9 +226,9 @@ function App() {
                     <div className="bg-amber-400 rounded-full w-2 h-2"></div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium text-navy-900">IoT Architecture for Smart Manufacturing</h4>
+                    <h4 className="font-medium text-navy-900">Healthcare Management</h4>
                     <p className="text-slate-600 text-sm mt-1">
-                      Designing scalable and secure IoT infrastructures for modern manufacturing facilities.
+                    ARIIOT leverages AI, machine learning, and blockchain for smart healthcare, focusing on predictive analytics, telemedicine, and cybersecurity.
                     </p>
                   </div>
                 </li>
@@ -232,9 +237,9 @@ function App() {
                     <div className="bg-amber-400 rounded-full w-2 h-2"></div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium text-navy-900">Edge Computing in Industrial Applications</h4>
+                    <h4 className="font-medium text-navy-900">Video Analytics</h4>
                     <p className="text-slate-600 text-sm mt-1">
-                      Implementing edge computing solutions to reduce latency and enhance real-time decision making.
+                    ARIIOT researches AI-driven video analytics for surveillance, traffic management, and behavior analysis, offering consultancy in smart city security, retail, and automated quality inspection.
                     </p>
                   </div>
                 </li>
@@ -243,9 +248,9 @@ function App() {
                     <div className="bg-amber-400 rounded-full w-2 h-2"></div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium text-navy-900">Data Analytics for Predictive Maintenance</h4>
+                    <h4 className="font-medium text-navy-900">Cold Chain Management</h4>
                     <p className="text-slate-600 text-sm mt-1">
-                      Leveraging machine learning algorithms to predict equipment failures and optimize maintenance schedules.
+                    ARIIOT explores AI, IoT, and blockchain for cold chain monitoring, offering consultancy in smart storage, AI-driven logistics, and energy-efficient supply chain solutions.
                     </p>
                   </div>
                 </li>
@@ -267,7 +272,7 @@ function App() {
                     <div className="bg-amber-400 rounded-full w-2 h-2"></div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium text-navy-900">Smart Factory Simulation Platform</h4>
+                    <h4 className="font-medium text-navy-900"> Video Analytics - IRetail  </h4>
                     <p className="text-slate-600 text-sm mt-1">
                       Developing a digital twin environment for testing IoT implementations before physical deployment.
                     </p>
