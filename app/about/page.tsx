@@ -56,46 +56,10 @@ function App() {
                 manufacturing.
               </p>
               
-              <div className="flex items-center mt-8">
-                <div className="flex -space-x-2">
-                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" className="w-8 h-8 rounded-full border-2 border-white" alt="Researcher" />
-                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" className="w-8 h-8 rounded-full border-2 border-white" alt="Researcher" />
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" className="w-8 h-8 rounded-full border-2 border-white" alt="Researcher" />
-                </div>
-                <p className="text-slate-600 ml-4">20+ Researchers contributing to this initiative</p>
-              </div>
+              
             </div>
             
-            <div className="relative hidden md:block">
-              <div className="bg-white rounded-3xl shadow-lg p-6 max-w-md ml-auto">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <div className="bg-amber-100 p-3 rounded-full">
-                      <Lightbulb className="h-6 w-6 text-amber-500" />
-                    </div>
-                    <div className="ml-3">
-                      <h3 className="text-navy-900 font-medium">IoT Research Hub</h3>
-                      <p className="text-slate-500 text-sm">Connecting devices, transforming industries</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="mt-6">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm text-slate-500">Research Progress</span>
-                    <span className="text-sm text-slate-500">66%</span>
-                  </div>
-                  <div className="w-full bg-slate-200 rounded-full h-2">
-                    <div className="bg-navy-900 h-2 rounded-full" style={{ width: '66%' }}></div>
-                  </div>
-                </div>
-                
-                <div className="mt-6 flex justify-end">
-                  <ArrowRight className="h-5 w-5 text-slate-400" />
-                </div>
-              </div>
             </div>
-          </div>
         </div>
       </section>
 
