@@ -277,7 +277,7 @@ function App() {
 
         <nav className="hidden md:flex space-x-8">
           <div
-            onClick={() => navigateTo("/")}
+            onClick={() => navigateTo("home")}
             onMouseEnter={() => handleNavHover("home")}
             onMouseLeave={() => handleNavHover("faculty")}
             className={`cursor-pointer transition-colors duration-300 ${
