@@ -267,7 +267,7 @@ function App() {
     title: "Director (ARIOT)",
     cabin: "First Floor, Block III",
     email: "vandana.reddy@christuniversity.in",
-    image: directorImage,
+    image: "/2178.png",
     education: ["PhD in CSE", "M.Tech in CSE", "B.E in CSE"],
     research: [
       "Energy Efficiency through Data Scheduling for Plantation System",
