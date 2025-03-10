@@ -126,11 +126,13 @@ function App() {
         <div className="flex items-center gap-4">
           <a href="/">
             <img
+            
               src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294"
               alt="Christ University Logo"
               className="w-14 h-14 object-contain"
             />
           </a>
+        
           <h1 className="text-xl font-bold text-[#162750]">
             CHRIST UNIVERSITY
           </h1>

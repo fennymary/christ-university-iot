@@ -30,16 +30,16 @@ function App() {
             </span>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-[#0a1e3c] hover:text-[#0a1e3c]/80">
+            <a href="#" className="text-[#0a1e3c] hover:text-[#c8a85c]/80">
               Home
             </a>
-            <a href="#" className="text-[#0a1e3c] hover:text-[#0a1e3c]/80">
+            <a href="#" className="text-[#0a1e3c] hover:text-[#c8a85c]/80">
               About
             </a>
-            <a href="#" className="text-[#0a1e3c] hover:text-[#0a1e3c]/80">
+            <a href="#" className="text-[#0a1e3c] hover:text-[#c8a85c]/80">
               Faculty
             </a>
-            <a href="#" className="text-[#0a1e3c] hover:text-[#0a1e3c]/80">
+            <a href="#" className="text-[#0a1e3c] hover:text-[#c8a85c]/80">
               Collaboration
             </a>
             <a href="#" className="text-[#c19434] hover:text-[#c19434]/80">

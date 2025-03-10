@@ -62,7 +62,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/');
               }} 
-             className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+             className="text-[#c8a85c] cursor-pointer"
             >
               Home
             </a>
@@ -72,7 +72,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/about');
               }} 
-              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+              className="text-[#151e39] hover:text-[#c8a85c]/80 cursor-pointer"
             >
               About
             </a>
@@ -82,7 +82,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/faculty');
               }} 
-              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+              className="text-[#1e2949] hover:text-[#c8a85c]/80 cursor-pointer"
             >
               Faculty
             </a>
@@ -92,7 +92,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/collaboration');
               }} 
-              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+              className="text-[#1e2949] hover:text-[#c8a85c]/80 cursor-pointer"
             >
               Collaboration
             </a>
@@ -102,7 +102,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/consultation');
               }} 
-              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+              className="text-[#1e2949] hover:text-[#c8a85c]/80 cursor-pointer"
             >
               Consultation
             </a>
@@ -112,7 +112,7 @@ export default function Home() {
                 e.preventDefault();
                 navigateTo('/profile');
               }} 
-              className="text-[#1e2949] hover:text-[#1e2949]/80 cursor-pointer"
+              className="text-[#1e2949] hover:text-[#c8a85c]/80 cursor-pointer"
             >
               <UserCircle className="w-6 h-6" />
             </a>

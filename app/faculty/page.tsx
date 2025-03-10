@@ -332,7 +332,7 @@ function App() {
             className={`cursor-pointer transition-colors duration-300 ${
               activeNavItem === "home"
                 ? "text-[#c8a85c]"
-                : "text-[#0a1633] hover:text-[#c8a85c]"
+                : "text-[#0f1e45] hover:text-[#c8a85c]"
             }`}
           >
             Home
@@ -356,7 +356,7 @@ function App() {
             className={`cursor-pointer transition-colors duration-300 font-medium ${
               activeNavItem === "faculty"
                 ? "text-[#c8a85c]"
-                : "text-[#0a1633] hover:text-[#c8a85c]"
+                : "text-[#0f1e45] hover:text-[#c8a85c]"
             }`}
           >
             Faculty
@@ -368,7 +368,7 @@ function App() {
             className={`cursor-pointer transition-colors duration-300 ${
               activeNavItem === "collaboration"
                 ? "text-[#c8a85c]"
-                : "text-[#0a1633] hover:text-[#c8a85c]"
+                : "text-[#0f1e45] hover:text-[#c8a85c]"
             }`}
           >
             Collaboration
@@ -380,7 +380,7 @@ function App() {
             className={`cursor-pointer transition-colors duration-300 ${
               activeNavItem === "consultation"
                 ? "text-[#c8a85c]"
-                : "text-[#0a1633] hover:text-[#c8a85c]"
+                : "text-[#0f1e45] hover:text-[#c8a85c]"
             }`}
           >
             Consultation
