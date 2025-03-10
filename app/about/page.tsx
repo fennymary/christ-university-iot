@@ -1,41 +1,103 @@
 "use client";
-import React from 'react';
-import { Bell, LightbulbIcon, Search, Users, BookOpen, Award, ArrowRight, Lightbulb, Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react'
+import { Bell, LightbulbIcon,ChevronRight, Search, Users, BookOpen, Award, ArrowRight, Lightbulb, Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail,Menu } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-slate-100">
       {/* Header/Navigation */}
-      <header className="bg-white py-4 px-6 md:px-12 shadow-sm">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294" 
-                alt="Christ University Logo" 
-                className="w-12 h-12 rounded-full"
-              />
-              <div>
-                <h1 className="text-navy-900 font-bold text-lg">CHRIST UNIVERSITY</h1>
-              </div>
-            </div>
-            
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="/home" className="text-slate-600 hover:text-navy-900">Home</a>
-              <a href="/about" className="text-amber-500 font-medium">About</a>
-              <a href="/faculty" className="text-slate-600 hover:text-navy-900">Faculty</a>
-              <a href="/collaboration" className="text-slate-600 hover:text-navy-900">Collaboration</a>
-              <a href="/consultation" className="text-slate-600 hover:text-navy-900">Consultation</a>
-            </nav>
-            
-            <div className="flex items-center">
-              <div className="bg-amber-400 rounded-full p-2">
-                <Bell className="text-white h-5 w-5" />
-              </div>
-            </div>
-          </div>
-        </div>
+<header className="bg-white py-4 px-6 md:px-12 shadow-sm">
+  <div className="container mx-auto">
+    <div className="flex items-center justify-between">
+      
+      
+      {/* Left - Christ University Logo */}
+      <div className="flex items-center space-x-3">
+        <img 
+          src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294" 
+          alt="Christ University Logo" 
+          className="w-12 h-12 rounded-full"
+        />
+        <h1 className="text-navy-900 font-bold text-lg">CHRIST UNIVERSITY</h1>
+      </div>
+
+      {/* Center - Navigation */}
+      <nav className="hidden md:flex items-center space-x-8">
+        <a href="/home" className="hover:text-[#d3b77b] transition-colors">Home</a>
+        <a href="/about" className="text-[#c8a85c] font-medium">About</a>
+        <a href="/faculty" className="hover:text-[#d3b77b] transition-colors">Faculty</a>
+        <a href="/collaboration" className="hover:text-[#d3b77b] transition-colors">Collaboration</a>
+        <a href="/consultation" className="hover:text-[#d3b77b] transition-colors">Consultation</a> 
+      </nav>
+
+      {/* Right - IT Lab Logo */}
+      <div>
+        <img 
+          src="/it-lab-logo.png" 
+          alt="IT Lab Logo" 
+          className="w-12 h-12"
+        />
+      </div>
+
+    </div>
+  </div>
+
+
+
+        {/* Mobile Menu Button */}
+  <div className="ml-auto">
+  <Button 
+    variant="ghost" 
+    size="icon" 
+    className="md:hidden text-[#0f1e45]"
+    onClick={() => setIsMenuOpen(!isMenuOpen)}
+  >
+    <Menu size={24} />
+  </Button>
+  </div>
       </header>
+
+      {/*done*/}
+{/* Mobile Menu */}
+{isMenuOpen && (
+  <div className="md:hidden fixed inset-0 bg-white z-50 p-6 flex flex-col">
+    <div className="flex justify-between items-center mb-8">
+      <div className="flex items-center">
+        <div className="h-12 w-12 bg-[#0f1e45] rounded-full flex items-center justify-center text-white font-bold text-xl">
+          CU
+        </div>
+        <div className="ml-2 text-xs text-[#0f1e45]">
+          <div className="font-bold text-lg">CHRIST UNIVERSITY</div>
+         
+        </div>
+      </div>
+      
+      
+      <Button 
+        variant="ghost" 
+        size="icon" 
+        className="text-[#0f1e45]"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        <ChevronRight size={24} />
+      </Button>
+    </div>
+    
+    <div className="space-y-6 text-lg font-medium text-[#0f1e45]">
+      <a href="home" className="block py-2 border-b border-gray-100">Home</a>
+      <a href="about" className="block py-2 border-b border-gray-100">About</a>
+      <a href="faculty" className="block py-2 border-b border-gray-100">Faculty</a>
+      <a href="collabration" className="block py-2 border-b border-gray-100">Collaboration</a>
+      <a href="consultation" className="block py-2 border-b border-gray-100">Consultation</a>
+    </div>
+  </div>
+)}
+
+{/* done*/}
+
+
 
       {/* Hero Section */}
       <section className="py-8 px-6 md:px-12">
@@ -47,7 +109,7 @@ function App() {
           
           <div className="grid md:grid-cols-2 gap-12 mt-6">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-navy-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold text-navy-900 leading-tight ">
                 Advanced<br />Research For Industrial<br />IoT
               </h1>
               <p className="text-slate-600 mt-6 max-w-lg">
@@ -62,7 +124,7 @@ function App() {
                   <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" className="w-8 h-8 rounded-full border-2 border-white" alt="Researcher" />
                   <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=48&h=48&q=80" className="w-8 h-8 rounded-full border-2 border-white" alt="Researcher" />
                 </div>
-                <p className="text-slate-600 ml-4">20+ Researchers contributing to this initiative</p>
+                <p className="text-slate-600 ml-4"> 9 Researchers contributing to this initiative</p>
               </div>
             </div>
             
