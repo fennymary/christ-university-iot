@@ -158,16 +158,16 @@ export default function Home() {
 
 {/* Header */}
 <header className="relative z-10 flex justify-between items-center p-4 md:p-6">
+  {/* IT Lab Logo (Left) */}
   <div className="flex items-center">
-    <div className="h-12 md:h-16 w-12 md:w-16 bg-[#0f1e45] rounded-full flex items-center justify-center text-white font-bold text-xl">
-      CU
-    </div>
-    <div className="ml-2 text-xs md:text-sm text-[#0f1e45]">
-      <div className="font-bold text-lg md:text-xl">CHRIST UNIVERSITY</div>
-      
-    </div>
+    <img 
+      src="/it-lab-logo.png" 
+      alt="IT Lab Logo" 
+      className="h-12 md:h-16 w-auto"
+    />
   </div>
-  
+
+  {/* Navigation (Center) */}
   <nav className="hidden md:flex space-x-8 text-[#0f1e45] font-medium">
     <Link href="home" className="hover:text-[#d3b77b] transition-colors">Home</Link>
     <Link href="about" className="hover:text-[#d3b77b] transition-colors">About</Link>
@@ -176,6 +176,16 @@ export default function Home() {
     <Link href="consultation" className="hover:text-[#d3b77b] transition-colors">Consultation</Link>
   </nav>
 
+  {/* Christ University Logo (Right) */}
+  <div className="flex items-center">
+    <img 
+      src="/christ-university-logo.png" 
+      alt="Christ University Logo" 
+      className="h-12 md:h-16 w-auto"
+    />
+  </div>
+
+  {/* Mobile Menu Button */}
   <Button 
     variant="ghost" 
     size="icon" 
