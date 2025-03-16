@@ -32,7 +32,7 @@ const Header = () => {
                 {/* Christ University Logo (Right) */}
                 <div className="flex items-center">
                     <img
-                        src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294"
+                        src="https://christuniversity.in/images/logo.jpg"
                         alt="Christ University Logo"
                         className="h-12 md:h-16 w-auto"
                     />
