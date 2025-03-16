@@ -121,43 +121,7 @@ function App() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Header */}
-      <header className="flex items-center justify-between px-6 py-4 bg-white">
-        <div className="flex items-center gap-4">
-          <a href="/">
-            <img
-            
-              src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294"
-              alt="Christ University Logo"
-              className="w-14 h-14 object-contain"
-            />
-          </a>
-        
-          <h1 className="text-xl font-bold text-[#162750]">
-            CHRIST UNIVERSITY
-          </h1>
-        </div>
-        <nav className="hidden md:flex items-center space-x-8">
-          <a href="/" className="text-[#162750] hover:text-[#d4b47c]">
-            Home
-          </a>
-          <a href="#" className="text-[#162750] hover:text-[#d4b47c]">
-            About
-          </a>
-          <a href="#" className="text-[#162750] hover:text-[#d4b47c]">
-            Faculty
-          </a>
-          <a href="#" className="text-[#c19434] hover:text-[#c19434]/80">
-            Collaboration
-          </a>
-          <a href="#" className="text-[#162750] hover:text-[#d4b47c]">
-            Consultation
-          </a>
-        </nav>
-        <button className="p-2 rounded-full bg-[#d4b47c] text-white">
-          <Sun size={20} />
-        </button>
-      </header>
+
 
       {/* Hero Section */}
       <div className="bg-[#d7dee4] py-16">

@@ -1,14 +1,14 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import { 
-  ChevronRight, 
-  Menu, 
-  ArrowRight, 
-  Calendar, 
-  MapPin, 
-  Users, 
-  BookOpen, 
+import {
+  ChevronRight,
+  Menu,
+  ArrowRight,
+  Calendar,
+  MapPin,
+  Users,
+  BookOpen,
   Lightbulb,
   Search,
   Bell,
@@ -23,19 +23,19 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/tabs';
-import { Progress } from '@/components/progress';
-import { Badge } from '@/components/badge';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/avatar';
+import { Card } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Progress } from '@/components/ui/progress';
+import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 
-import { 
+import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger 
-} from '@/components/dropdown-menu';
+  DropdownMenuTrigger
+} from '@/components/ui/dropdown-menu';
 
 export default function Home() {
   const shapesRef = useRef<HTMLDivElement>(null);
@@ -156,82 +156,10 @@ export default function Home() {
         <div className="shape absolute top-[30%] left-[30%] w-20 h-20 bg-[#e9f0f2] rounded-full opacity-80"></div>
       </div>
 
-{/* Header */}
-<header className="relative z-10 flex justify-between items-center p-4 md:p-6">
-  {/* IT Lab Logo (Left) */}
-  <div className="flex items-center">
-    <img 
-      src="/it-lab-logo.png" 
-      alt="IT Lab Logo" 
-      className="h-12 md:h-16 w-auto"
-    />
-  </div>
-
-  {/* Navigation (Center) */}
-  <nav className="hidden md:flex space-x-8 text-[#0f1e45] font-medium">
-    <Link href="home" className="hover:text-[#d3b77b] transition-colors">Home</Link>
-    <Link href="about" className="hover:text-[#d3b77b] transition-colors">About</Link>
-    <Link href="faculty" className="hover:text-[#d3b77b] transition-colors">Faculty</Link>
-    <Link href="collaboration" className="hover:text-[#d3b77b] transition-colors">Collaboration</Link>
-    <Link href="consultation" className="hover:text-[#d3b77b] transition-colors">Consultation</Link>
-  </nav>
-
-  {/* Christ University Logo (Right) */}
-  <div className="flex items-center">
-    <img 
-      src="/christ-university-logo.png" 
-      alt="Christ University Logo" 
-      className="h-12 md:h-16 w-auto"
-    />
-  </div>
-
-  {/* Mobile Menu Button */}
-  <Button 
-    variant="ghost" 
-    size="icon" 
-    className="md:hidden text-[#0f1e45]"
-    onClick={() => setIsMenuOpen(!isMenuOpen)}
-  >
-    <Menu size={24} />
-  </Button>
-</header>
+      {/* Header */}
 
 
-{/*done*/}
-{/* Mobile Menu */}
-{isMenuOpen && (
-  <div className="md:hidden fixed inset-0 bg-white z-50 p-6 flex flex-col">
-    <div className="flex justify-between items-center mb-8">
-      <div className="flex items-center">
-        <div className="h-12 w-12 bg-[#0f1e45] rounded-full flex items-center justify-center text-white font-bold text-xl">
-          CU
-        </div>
-        <div className="ml-2 text-xs text-[#0f1e45]">
-          <div className="font-bold text-lg">CHRIST UNIVERSITY</div>
-         
-        </div>
-      </div>
-      <Button 
-        variant="ghost" 
-        size="icon" 
-        className="text-[#0f1e45]"
-        onClick={() => setIsMenuOpen(false)}
-      >
-        <ChevronRight size={24} />
-      </Button>
-    </div>
-    
-    <div className="space-y-6 text-lg font-medium text-[#0f1e45]">
-      <Link href="home" className="block py-2 border-b border-gray-100">Home</Link>
-      <Link href="about" className="block py-2 border-b border-gray-100">About</Link>
-      <Link href="faculty" className="block py-2 border-b border-gray-100">Faculty</Link>
-      <Link href="collabration" className="block py-2 border-b border-gray-100">Collaboration</Link>
-      <Link href="consultation" className="block py-2 border-b border-gray-100">Consultation</Link>
-    </div>
-  </div>
-)}
 
-{/* done*/}
 
 
       {/* Main Content */}
@@ -243,16 +171,16 @@ export default function Home() {
               {/*<Badge className="bg-[#d3b77b] text-white hover:bg-[#c4a86c]">New</Badge>
               <span className="text-sm text-[#0f1e45]">Research Initiative 2025</span>*/}
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0f1e45] mb-4 leading-tight drop-shadow-md">
               Advanced<br />Research For Industrial IoT
             </h1>
-            
+
             <p className="text-gray-700 mb-6 max-w-lg">
               Pioneering innovative solutions at the intersection of IoT, AI, and industrial applications to transform the future of smart manufacturing.
             </p>
-            
-           {/* <div className="flex flex-wrap gap-4">
+
+            {/* <div className="flex flex-wrap gap-4">
               <Button className="bg-[#0f1e45] text-white hover:bg-[#1a2a50] rounded-full px-6">
                 Explore Research
               </Button>
@@ -283,7 +211,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           {/*<div className="w-full md:w-96 h-64 md:h-80 bg-[#e9f0f2] rounded-3xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 relative">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-3/4 h-3/5 bg-[#f5f9fa] rounded-3xl relative flex flex-col items-center justify-center p-4">
@@ -310,51 +238,51 @@ export default function Home() {
               </Button>
             </div>
           </div>*/}
-          
+
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-  {/* Upcoming Events (Links to Home Page) */}
-  <Link href="/home" className="w-full md:w-82 h-32 bg-[#d3b77b] rounded-3xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
-    <div className="flex items-center space-x-3 px-6">
-      <Calendar className="text-white" size={24} />
-      <span className="text-white font-medium">Upcoming Events</span>
-    </div>
-  </Link>
+          {/* Upcoming Events (Links to Home Page) */}
+          <Link href="/home" className="w-full md:w-82 h-32 bg-[#d3b77b] rounded-3xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
+            <div className="flex items-center space-x-3 px-6">
+              <Calendar className="text-white" size={24} />
+              <span className="text-white font-medium">Upcoming Events</span>
+            </div>
+          </Link>
 
 
 
-  {/* Publications (Links to About Page) */}
-  <Link href="/about" className="w-full md:w-82 h-32 bg-[#e9f0f2] rounded-3xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
-    <div className="flex items-center space-x-3 px-6">
-      <BookOpen className="text-[#d3b77b]" size={24} />
-      <span className="text-[#0f1e45] font-medium">Publications</span>
-    </div>
-  </Link>
-</section>
+          {/* Publications (Links to About Page) */}
+          <Link href="/about" className="w-full md:w-82 h-32 bg-[#e9f0f2] rounded-3xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 flex items-center justify-center cursor-pointer">
+            <div className="flex items-center space-x-3 px-6">
+              <BookOpen className="text-[#d3b77b]" size={24} />
+              <span className="text-[#0f1e45] font-medium">Publications</span>
+            </div>
+          </Link>
+        </section>
 
 
         {/* Image Card with Overlay */}
         {/* should customize */}
         {/* link to collaboration page */}
-       
 
-<section className="mt-20 mb-16 flex justify-end">
-  <Link href="/collaboration" className="w-full md:w-2/3 lg:w-1/2 overflow-hidden rounded-3xl shadow-2xl transform transition-all hover:scale-105 relative group block">
-    <img 
-      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
-      alt="Students collaborating" 
-      className="w-full h-full object-cover cursor-pointer"
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-[#0f1e45]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-      <h3 className="text-white text-xl font-bold mb-2">Collaborative Research Environment</h3>
-      <p className="text-white/90 text-sm mb-4">Our state-of-the-art facilities foster innovation and teamwork among researchers and students.</p>
-      <Button className="self-start bg-white text-[#0f1e45] hover:bg-white/90 rounded-full">
-        Learn More
-      </Button>
-    </div>
-  </Link>
-</section>
+
+        <section className="mt-20 mb-16 flex justify-end">
+          <Link href="/collaboration" className="w-full md:w-2/3 lg:w-1/2 overflow-hidden rounded-3xl shadow-2xl transform transition-all hover:scale-105 relative group block">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="Students collaborating"
+              className="w-full h-full object-cover cursor-pointer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0f1e45]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <h3 className="text-white text-xl font-bold mb-2">Collaborative Research Environment</h3>
+              <p className="text-white/90 text-sm mb-4">Our state-of-the-art facilities foster innovation and teamwork among researchers and students.</p>
+              <Button className="self-start bg-white text-[#0f1e45] hover:bg-white/90 rounded-full">
+                Learn More
+              </Button>
+            </div>
+          </Link>
+        </section>
 
 
         {/* Tabs Section */}
@@ -374,7 +302,7 @@ export default function Home() {
                 </TabsTrigger>
               </TabsList>
             </div>
-            
+
             <TabsContent value="research" className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Card className="bg-[#e9f0f2] rounded-3xl p-6 shadow-lg transform transition-all hover:scale-105">
@@ -386,9 +314,9 @@ export default function Home() {
                     <Badge variant="outline" className="bg-white/50">Sensors</Badge>
                     <Badge variant="outline" className="bg-white/50">Prototyping</Badge>
                   </div>
-                  
+
                 </Card>
-                
+
                 <Card className="bg-[#d3b77b] rounded-3xl p-6 shadow-lg transform transition-all hover:scale-105">
                   <Users className="text-white mb-4" size={32} />
                   <h3 className="text-xl font-bold text-white mb-2">Collaboration</h3>
@@ -398,9 +326,9 @@ export default function Home() {
                     <Badge variant="outline" className="bg-white/20 text-white border-white/30">Academia</Badge>
                     <Badge variant="outline" className="bg-white/20 text-white border-white/30">Startups</Badge>
                   </div>
-                  
+
                 </Card>
-                
+
                 <Card className="bg-[#e9f0f2] rounded-3xl p-6 shadow-lg transform transition-all hover:scale-105">
                   <BookOpen className="text-[#d3b77b] mb-4" size={32} />
                   <h3 className="text-xl font-bold text-[#0f1e45] mb-2">Research Areas</h3>
@@ -416,76 +344,76 @@ export default function Home() {
                 </Card>
               </div>
             </TabsContent>
-            
+
             <TabsContent value="projects" className="space-y-6">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    
-    {/* Project 1: Video Analytics - IRetail */}
-    <Card className="bg-white rounded-3xl overflow-hidden shadow-lg">
-      <div className="h-48 overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1556742521-9713bf272865?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" 
-          alt="Video Analytics - IRetail" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="p-6">
-        <div className="flex justify-between items-start mb-3">
-          <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100">Active</Badge>
-        </div>
-        <h3 className="text-lg font-bold text-[#0f1e45] mb-2">Video Analytics - IRetail</h3>
-        <p className="text-gray-600 text-sm mb-4">
-          Integrated Video Analytics Solution for Enhanced Retail Store Optimization and Customer Engagement.
-        </p>
-      </div>
-    </Card>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-    {/* Project 2: Medical Imaging (Automation) - iHealthcare */}
-    <Card className="bg-white rounded-3xl overflow-hidden shadow-lg">
-      <div className="h-48 overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1584466980601-01c3e6c57ad1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" 
-          alt="Medical Imaging - iHealthcare" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="p-6">
-        <div className="flex justify-between items-start mb-3">
-          <Badge className="bg-green-100 text-green-800 hover:bg-green-100">Completed</Badge>
-        </div>
-        <h3 className="text-lg font-bold text-[#0f1e45] mb-2">Medical Imaging (Automation) - iHealthcare</h3>
-        <p className="text-gray-600 text-sm mb-4">
-          Ensuring consistently high-quality images and robust patient privacy measures has emerged as a pivotal concern.
-        </p>
-      </div>
-    </Card>
+                {/* Project 1: Video Analytics - IRetail */}
+                <Card className="bg-white rounded-3xl overflow-hidden shadow-lg">
+                  <div className="h-48 overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1556742521-9713bf272865?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                      alt="Video Analytics - IRetail"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex justify-between items-start mb-3">
+                      <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100">Active</Badge>
+                    </div>
+                    <h3 className="text-lg font-bold text-[#0f1e45] mb-2">Video Analytics - IRetail</h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                      Integrated Video Analytics Solution for Enhanced Retail Store Optimization and Customer Engagement.
+                    </p>
+                  </div>
+                </Card>
 
-  </div>
+                {/* Project 2: Medical Imaging (Automation) - iHealthcare */}
+                <Card className="bg-white rounded-3xl overflow-hidden shadow-lg">
+                  <div className="h-48 overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1584466980601-01c3e6c57ad1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                      alt="Medical Imaging - iHealthcare"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex justify-between items-start mb-3">
+                      <Badge className="bg-green-100 text-green-800 hover:bg-green-100">Completed</Badge>
+                    </div>
+                    <h3 className="text-lg font-bold text-[#0f1e45] mb-2">Medical Imaging (Automation) - iHealthcare</h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                      Ensuring consistently high-quality images and robust patient privacy measures has emerged as a pivotal concern.
+                    </p>
+                  </div>
+                </Card>
 
-  <div className="flex justify-center">
-    <Button 
-      variant="outline" 
-      className="rounded-full border-[#d3b77b] text-[#d3b77b]"
-      onClick={() => window.location.href = "/collaboration"} // Redirects to Collaboration page
-    >
-      View All Projects <ArrowRight size={16} className="ml-2" />
-    </Button>
-  </div>
-</TabsContent>
-  
+              </div>
 
-            
-<TabsContent value="partners" className="space-y-6">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div className="bg-white rounded-xl p-6 flex items-center justify-center h-32 shadow-md hover:shadow-lg transition-shadow">
-      <div className="text-center">
-        <div className="font-bold text-xl text-[#0f1e45]">AdvanTech</div>
-        <div className="text-xs text-gray-500">Research Partner</div>
-      </div>
-    </div>
-  </div>
+              <div className="flex justify-center">
+                <Button
+                  variant="outline"
+                  className="rounded-full border-[#d3b77b] text-[#d3b77b]"
+                  onClick={() => window.location.href = "/collaboration"} // Redirects to Collaboration page
+                >
+                  View All Projects <ArrowRight size={16} className="ml-2" />
+                </Button>
+              </div>
+            </TabsContent>
 
-</TabsContent>
+
+
+            <TabsContent value="partners" className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-white rounded-xl p-6 flex items-center justify-center h-32 shadow-md hover:shadow-lg transition-shadow">
+                  <div className="text-center">
+                    <div className="font-bold text-xl text-[#0f1e45]">AdvanTech</div>
+                    <div className="text-xs text-gray-500">Research Partner</div>
+                  </div>
+                </div>
+              </div>
+
+            </TabsContent>
 
           </Tabs>
         </section>
@@ -523,31 +451,31 @@ export default function Home() {
         </section>
 
         {/* Stats Section */}
-<section className="mb-16 bg-[#0f1e45] rounded-3xl p-8 text-white">
-  <h2 className="text-2xl font-bold mb-8 text-center">Research Impact</h2>
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-    <div>
-      <div className="text-4xl font-bold text-[#d3b77b] mb-2">4</div>
-      <div className="text-sm">Research Projects</div>
-    </div>
+        <section className="mb-16 bg-[#0f1e45] rounded-3xl p-8 text-white">
+          <h2 className="text-2xl font-bold mb-8 text-center">Research Impact</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+            <div>
+              <div className="text-4xl font-bold text-[#d3b77b] mb-2">4</div>
+              <div className="text-sm">Research Projects</div>
+            </div>
 
-    <div>
-      <div className="text-4xl font-bold text-[#d3b77b] mb-2">₹15Cr</div>
-      <div className="text-sm">Research Funding</div>
-    </div>
+            <div>
+              <div className="text-4xl font-bold text-[#d3b77b] mb-2">₹15Cr</div>
+              <div className="text-sm">Research Funding</div>
+            </div>
 
-    <div>
-      <div className="text-4xl font-bold text-[#d3b77b] mb-2">12</div>
-      <div className="text-sm">Industry Partners</div>
-    </div>
-  </div>
-</section>
+            <div>
+              <div className="text-4xl font-bold text-[#d3b77b] mb-2">12</div>
+              <div className="text-sm">Industry Partners</div>
+            </div>
+          </div>
+        </section>
 
 
         {/* Event Details Section */}
         <section className="mt-24">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0f1e45] mb-8">Lab Venue</h2>
-          
+
           <div className="flex flex-col md:flex-row justify-between">
             <div className="mb-6 md:mb-0">
               {/* <h3 className="font-medium text-[#0f1e45] mb-2">Lab Venue</h3> */}
@@ -559,7 +487,7 @@ export default function Home() {
                 <MapPin size={14} className="mr-1" /> Get Directions
               </Button>*/}
             </div>
-            
+
             <div className="mb-6 md:mb-0">
               <Link href="http://www.christuniversity.in" className="text-[#0f1e45] hover:text-[#d3b77b] transition-colors block mb-2">
                 www.christuniversity.in
@@ -576,7 +504,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            
+
             <div>
               <h3 className="font-medium text-[#0f1e45] mb-2">
                 CHRIST<br />
@@ -648,8 +576,8 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          
-          
+
+
           <div>
             <h4 className="font-medium mb-4 text-[#d3b77b]">Quick Links</h4>
             <ul className="space-y-2 text-sm">
@@ -661,7 +589,7 @@ export default function Home() {
               {/* <li><Link href="#" className="hover:text-[#d3b77b] transition-colors">Contact</Link></li> */}
             </ul>
           </div>
-          
+
           <div className="flex justify-evenly"></div>
           <div>
             <h4 className="font-medium mb-4 text-[#d3b77b]">Contact Us</h4>
@@ -685,7 +613,7 @@ export default function Home() {
             </address>
           </div>
         </div>
-        
+
         <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400 mb-4 md:mb-0">
             © 2025 CHRIST (Deemed to be University). All rights reserved.

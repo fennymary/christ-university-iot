@@ -15,44 +15,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center">
-            <a href="/">
-              <img
-                src="https://alexandraawe.weebly.com/uploads/1/0/1/0/101020644/published/logo.jpeg?1515974294"
-                alt="Christ University Logo"
-                className="h-12 w-12 mr-3"
-              />
-            </a>
-            <span className="text-[#0a1e3c] font-bold text-xl">
-              CHRIST UNIVERSITY
-            </span>
-          </div>
-          <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-[#0a1e3c] hover:text-[#c8a85c]/80">
-              Home
-            </a>
-            <a href="#" className="text-[#0a1e3c] hover:text-[#c8a85c]/80">
-              About
-            </a>
-            <a href="#" className="text-[#0a1e3c] hover:text-[#c8a85c]/80">
-              Faculty
-            </a>
-            <a href="#" className="text-[#0a1e3c] hover:text-[#c8a85c]/80">
-              Collaboration
-            </a>
-            <a href="#" className="text-[#c19434] hover:text-[#c19434]/80">
-              Consultation
-            </a>
-          </nav>
-          <div className="flex items-center">
-            <button className="p-2 rounded-full bg-[#ffc107]">
-              <Settings className="h-5 w-5 text-white" />
-            </button>
-          </div>
-        </div>
-      </header>
+
 
       {/* Hero Section */}
       <section className="bg-[#e8f0f7] py-12">
