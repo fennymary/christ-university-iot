@@ -26,12 +26,12 @@ const Footer = () => {
             {/* Logo and Description */}
             <div>
               <div className="flex items-center mb-4">
-                <div
-                  className="bg-white rounded-full h-12 w-12 flex items-center justify-center text-[#0f172a] font-bold text-xl cursor-pointer"
+                <img
+                  src="https://christuniversity.in/images/logo.jpg"
+                  alt="CHRIST University Logo"
+                  className="h-12 w-auto cursor-pointer"
                   onClick={() => navigateTo("/")}
-                >
-                  CU
-                </div>
+                />
                 <div className="ml-3">
                   <h3 className="text-white font-bold">CHRIST UNIVERSITY</h3>
                 </div>

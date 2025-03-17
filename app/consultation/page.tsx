@@ -16,7 +16,6 @@ function App() {
     <div className="flex flex-col min-h-screen">
       {/* Header */}
 
-
       {/* Hero Section */}
       <section className="bg-[#e8f0f7] py-12">
         <div className="container mx-auto px-4">
@@ -50,6 +49,18 @@ function App() {
                 insights, or strategic guidance, our consultation services can
                 help you achieve your goals and overcome challenges.
               </p>
+              <div className="grid grid-cols-2 gap-4 mt-6">
+                <img
+                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80"
+                  alt="Industrial IoT Sensors"
+                  className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                  alt="Technical Consultation"
+                  className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                />
+              </div>
             </div>
             <div className="bg-[#f8f9fa] p-6 rounded-lg">
               <h3 className="text-xl font-bold text-[#0a1e3c] mb-3">
@@ -178,7 +189,6 @@ function App() {
           </div>
         </div>
       </main>
-
     </div>
   );
 }
