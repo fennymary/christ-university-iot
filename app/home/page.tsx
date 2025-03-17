@@ -236,36 +236,53 @@ export default function Home() {
                 {/* Inner event sections */}
                 <div 
                   className="bg-gray-100 p-4 rounded-lg shadow-sm mb-3 cursor-pointer hover:bg-gray-200 transition-all duration-300 relative overflow-hidden group"
-                  onClick={() => navigateTo('/events/symposium')}
+                  onClick={() => navigateTo('/events/advantechfdp')}
                 >
                   {/* Yellow accent on hover */}
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
                   
-                  <h4 className="font-semibold text-[#0f172a]">IoT Symposium</h4>
-                  <p className="text-gray-700 text-sm">Join industry leaders to discuss cutting-edge IoT advancements.</p>
+                  <h4 className="font-semibold text-[#0f172a]">Advantech FDP (Sponsored)- May 2025</h4>
+                  <p className="text-gray-700 text-sm">Participants: Paid participation (both internal and external)</p>
                 </div>
 
                 <div 
                   className="bg-gray-100 p-4 rounded-lg shadow-sm mb-3 cursor-pointer hover:bg-gray-200 transition-all duration-300 relative overflow-hidden group"
-                  onClick={() => navigateTo('/events/ai-manufacturing')}
+                  onClick={() => navigateTo('/events/wise-paas')}
                 >
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
                   
-                  <h4 className="font-semibold text-[#0f172a]">AI in Manufacturing</h4>
-                  <p className="text-gray-700 text-sm">Explore AI-powered automation in industrial settings.</p>
+                  <h4 className="font-semibold text-[#0f172a]">Certification course on WISE-PAAS - June 2025</h4>
+                  <p className="text-gray-700 text-sm">Participants: Paid participation of Rs. 999 per level (both internal and external)
+
+</p>
                 </div>
 
                 <div 
                   className="bg-gray-100 p-4 rounded-lg shadow-sm cursor-pointer hover:bg-gray-200 transition-all duration-300 relative overflow-hidden group"
-                  onClick={() => navigateTo('/events/workshop')}
+                  onClick={() => navigateTo('/events/training')}
                 >
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
                   
-                  <h4 className="font-semibold text-[#0f172a]">Smart Devices Workshop</h4>
-                  <p className="text-gray-700 text-sm">Hands-on training with the latest IoT-enabled devices.</p>
+                  <h4 className="font-semibold text-[#0f172a]">Training on:
+Logistics
+Healthcare
+Video Analyitcs 
+OT Security - July 2025
+</h4>
+                  <p className="text-gray-700 text-sm">Hands-on training with the latest IoT-enabled devices.Trainers from Advantech and participants are faulty from Dept. of CSE, SoET
+
+</p>
                 </div>
+                <div 
+                  className="bg-gray-100 p-4 rounded-lg shadow-sm mb-3 cursor-pointer hover:bg-gray-200 transition-all duration-300 relative overflow-hidden group"
+                  onClick={() => navigateTo('/events/hackathon')}
+                >
+                  <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
+                  
+                  <h4 className="font-semibold text-[#0f172a]">Initiation of Hackathon - March 2025</h4>
+                  <p className="text-gray-700 text-sm">Participation (both internal and external)</p>
               </div>
-              
+              </div>
               {/* IoT Research Hub Card */}
               <div 
                 className="bg-white p-6 rounded-3xl shadow-md cursor-pointer hover:shadow-lg transition-all duration-300 relative overflow-hidden group"

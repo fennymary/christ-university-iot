@@ -72,6 +72,7 @@ function App() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [selectedFaculty]);
+  
 
   const facultyMembers: Faculty[] = [
     {
