@@ -12,18 +12,16 @@ import {
 
 function App() {
   const students = [
-    { name: "John Doe", batch: "2023", company: "Google", package: "24 LPA" },
+    { name: "John Doe", dept: "CSE(IoT)", position: "Office Bearer" },
     {
       name: "Jane Smith",
-      batch: "2023",
-      company: "Microsoft",
-      package: "22 LPA",
+      dept: "CSE",
+      position: "Chair",
     },
     {
       name: "Mike Johnson",
-      batch: "2023",
-      company: "Amazon",
-      package: "20 LPA",
+      dept: "ECE",
+      position: "Vice chair",
     },
     // Add more students as needed
   ];
@@ -50,8 +48,8 @@ function App() {
               <blockquote className="text-gray-700 italic border-l-4 border-[#ffd700] pl-4">
                 "The Advanced Research IoT Lab at CHRIST University provided me
                 with the perfect blend of theoretical knowledge and practical
-                experience.I'm forever grateful for the
-                guidance and support from the faculty."
+                experience.I'm forever grateful for the guidance and support
+                from the faculty."
               </blockquote>
             </div>
           </div>
@@ -77,24 +75,22 @@ function App() {
 
         {/* Student List */}
         <section className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold mb-6">Our Successful Students</h2>
+          <h2 className="text-2xl font-bold mb-6">Student Representatives</h2>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead className="bg-[#0a192f] text-white">
                 <tr>
                   <th className="px-6 py-3 text-left">Name</th>
-                  <th className="px-6 py-3 text-left">Batch</th>
-                  <th className="px-6 py-3 text-left">Company</th>
-                  <th className="px-6 py-3 text-left">Package</th>
+                  <th className="px-6 py-3 text-left">Department</th>
+                  <th className="px-6 py-3 text-left">Position</th>
                 </tr>
               </thead>
               <tbody>
                 {students.map((student, index) => (
                   <tr key={index} className="border-b hover:bg-gray-50">
                     <td className="px-6 py-4">{student.name}</td>
-                    <td className="px-6 py-4">{student.batch}</td>
-                    <td className="px-6 py-4">{student.company}</td>
-                    <td className="px-6 py-4">{student.package}</td>
+                    <td className="px-6 py-4">{student.dept}</td>
+                    <td className="px-6 py-4">{student.position}</td>
                   </tr>
                 ))}
               </tbody>

@@ -14,7 +14,7 @@ const Header = () => {
         {/* IT Lab Logo (Left) */}
         <div className="flex items-center">
           <img
-            src="/it-lab-logo.png"
+            src="/Screenshot 2025-03-17 152004.png"
             alt="IT Lab Logo"
             className="h-12 md:h-16 w-auto"
           />
@@ -59,11 +59,13 @@ const Header = () => {
 
         {/* Christ University Logo (Right) */}
         <div className="flex items-center">
-          <img
-            src="https://christuniversity.in/images/logo.jpg"
-            alt="Christ University Logo"
-            className="h-12 md:h-16 w-auto"
-          />
+          <Link href="/">
+            <img
+              src="https://christuniversity.in/images/logo.jpg"
+              alt="Christ University Logo"
+              className="h-12 md:h-16 w-auto cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}

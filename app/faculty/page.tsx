@@ -264,7 +264,7 @@ function App() {
   const directorARIOT = {
     id: 3,
     name: "Dr. Vandana Reddy",
-    title: "Director (ARIOT)",
+    title: "Director (ARIIOT)",
     cabin: "First Floor, Block III",
     email: "vandana.reddy@christuniversity.in",
     image: "/2178.png",
@@ -302,8 +302,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-200">
-
-
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
         <div className="mb-12">
@@ -581,7 +579,6 @@ function App() {
           </div>
         </div>
       )}
-
     </div>
   );
 }
