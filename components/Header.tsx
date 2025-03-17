@@ -167,11 +167,13 @@ const Header = () => {
       <header className="relative z-10 flex justify-between items-center p-4 md:p-6">
         {/* IT Lab Logo (Left) */}
         <div className="flex items-center">
-          <img
-            src="/Screenshot 2025-03-17 152004.png"
-            alt="IT Lab Logo"
-            className="h-12 md:h-16 w-auto"
-          />
+          <Link href="/">
+            <img
+              src="/Screenshot 2025-03-17 152004.png"
+              alt="IT Lab Logo"
+              className="h-12 md:h-16 w-auto"
+            />
+          </Link>
         </div>
 
         {/* Navigation (Center) */}
@@ -194,7 +196,7 @@ const Header = () => {
 
         {/* Christ University Logo (Right) */}
         <div className="flex items-center">
-          <Link href="/">
+          <Link href="https://christuniversity.in/">
             <img
               src="https://christuniversity.in/images/logo.jpg"
               alt="Christ University Logo"
