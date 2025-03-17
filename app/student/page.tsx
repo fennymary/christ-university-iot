@@ -157,7 +157,7 @@ function App() {
               <h2 className="text-2xl font-bold mb-2">Joshua PK Kurian</h2>
               <div className="flex items-center gap-2 text-gray-600 mb-4">
                 <MapPin size={20} />
-                <span>Intern at AdvanTech</span>
+                <span>Intern at Advantech</span>
               </div>
               <blockquote className="text-gray-700 italic border-l-4 border-[#ffd700] pl-4">
                 "The Advanced Research IoT Lab at CHRIST University provided me
