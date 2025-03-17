@@ -196,7 +196,11 @@ const Header = () => {
 
         {/* Christ University Logo (Right) */}
         <div className="flex items-center">
-          <Link href="https://christuniversity.in/">
+          <Link
+            href="https://christuniversity.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="https://christuniversity.in/images/logo.jpg"
               alt="Christ University Logo"
@@ -204,7 +208,6 @@ const Header = () => {
             />
           </Link>
         </div>
-
         {/* Mobile Menu Button */}
         <Button
           variant="ghost"
