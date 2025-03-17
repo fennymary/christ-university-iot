@@ -80,8 +80,7 @@ function App() {
       title: "(Dept of CSE)",
       cabin: "220/10,FIRST Floor,BLOCK II",
       email: "rakoth.kandan@christuniversity.in",
-      image:
-        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E5163.jpg",
+      image: "/Screenshot 2025-03-17 214716.png",
       education: [
         "PhD from Annamalai University",
         "M.Tech in CSE",
@@ -135,8 +134,7 @@ function App() {
       title: "(Dept of CSE)",
       cabin: "250/34,THIRD Floor,BLOCK II",
       email: "manu.elappila@christuniversity.in",
-      image:
-        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E5177.jpg",
+      image: "/Screenshot 2025-03-17 214828.png",
       education: ["Ph.D from NIT Rourkela", "M.Tech in CSE", "B.Tech in IT"],
       research: [
         "Development of AI Enabled Contactless Remote Health Monitoring System for Neonatal care",
@@ -182,8 +180,7 @@ function App() {
       title: "(Dept of CSE)",
       cabin: "48,GROUND Floor,BLOCK III",
       email: "sharon.roji@christuniversity.in",
-      image:
-        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E6206.jpg",
+      image: "/Screenshot 2025-03-17 214932.png",
       education: ["M.E CSE", "B.E CSE"],
       research: [],
       publications: [
@@ -211,8 +208,7 @@ function App() {
       title: "(Dept of ECE)",
       cabin: "19,GROUND Floor,DEVADAN BLOCK",
       email: "praghash.k@christuniversity.in",
-      image:
-        "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E5933.jpg",
+      image: "/Screenshot 2025-03-17 215036.png",
       education: [
         "Ph.D from Anna University",
         "M.Tech in Communication Systems",
@@ -245,8 +241,7 @@ function App() {
     title: "Director (IIIC)",
     cabin: "Third Floor, Block V",
     email: "cherukuri.ravindranath@christuniversity.in",
-    image:
-      "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E3219.jpg",
+    image: "/Screenshot 2025-03-17 214353.png",
     education: ["PhD", "M-Tech", "B-Tech"],
     research: [],
     publications: [
@@ -362,7 +357,7 @@ function App() {
         </div>
 
         <h2 className="text-3xl font-bold text-[#1e2949] mb-8">
-          Director (ARIOT)
+          Director (ARIIOT)
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mb-12">
           <div className="md:col-start-2 md:col-end-3">

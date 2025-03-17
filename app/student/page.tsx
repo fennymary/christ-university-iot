@@ -149,7 +149,7 @@ function App() {
         <section className="bg-white rounded-lg shadow-lg p-8 mb-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <img
-              src="/JoshuaPKKurian.jpg"
+              src="/jos.png"
               alt="Student Profile"
               className="rounded-full w-48 h-48 object-cover"
             />
