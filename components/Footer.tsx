@@ -29,12 +29,9 @@ const Footer = () => {
                 <img
                   src="https://christuniversity.in/images/logo.jpg"
                   alt="CHRIST University Logo"
-                  className="h-12 w-auto cursor-pointer"
+                  className="h-14 w-auto cursor-pointer"
                   onClick={() => navigateTo("/")}
                 />
-                <div className="ml-3">
-                  <h3 className="text-white font-bold">CHRIST UNIVERSITY</h3>
-                </div>
               </div>
               <p className="text-gray-300 mb-6">
                 Pioneering research in Industrial IoT and smart technologies for
