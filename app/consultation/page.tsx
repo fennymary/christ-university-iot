@@ -51,12 +51,12 @@ function App() {
               </p>
               <div className="grid grid-cols-2 gap-4 mt-6">
                 <img
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80"
+                  src="https://th.bing.com/th/id/OIP.Wr1eKs2VHyEN_R7FtGI_eAHaE8?w=4200&h=2800&rs=1&pid=ImgDetMain"
                   alt="Industrial IoT Sensors"
                   className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                  src="https://th.bing.com/th/id/OIP.WI6-zzckHV8bP_ib1r0ubwHaE8?rs=1&pid=ImgDetMain"
                   alt="Technical Consultation"
                   className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                 />
