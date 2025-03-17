@@ -37,21 +37,20 @@ function App() {
         <section className="bg-white rounded-lg shadow-lg p-8 mb-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <img
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=300&h=300"
+              src="/JoshuaPKKurian.jpg"
               alt="Student Profile"
               className="rounded-full w-48 h-48 object-cover"
             />
             <div>
-              <h2 className="text-2xl font-bold mb-2">Sarah Anderson</h2>
+              <h2 className="text-2xl font-bold mb-2">Joshua PK Kurian</h2>
               <div className="flex items-center gap-2 text-gray-600 mb-4">
                 <MapPin size={20} />
-                <span>Software Engineer at Google</span>
+                <span>Intern at AdvanTech</span>
               </div>
               <blockquote className="text-gray-700 italic border-l-4 border-[#ffd700] pl-4">
                 "The Advanced Research IoT Lab at CHRIST University provided me
                 with the perfect blend of theoretical knowledge and practical
-                experience. The hands-on projects and industry exposure helped
-                me secure my dream job at Google. I'm forever grateful for the
+                experience.I'm forever grateful for the
                 guidance and support from the faculty."
               </blockquote>
             </div>
