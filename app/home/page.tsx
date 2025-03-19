@@ -170,7 +170,6 @@ The Faculty Development Program (FDP) on "Integrating IoT into Curriculum: Hands
                 >
                   {/* Yellow accent on hover */}
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
-
                   <h4 className="font-semibold text-[#0f172a]">Advantech FDP (Sponsored) - May 2025 </h4>
                   <p className="text-gray-700 text-sm">Paid participation (both internal and external)</p>
                 </div>
@@ -180,7 +179,6 @@ The Faculty Development Program (FDP) on "Integrating IoT into Curriculum: Hands
                   onClick={() => navigateTo('/events/wise-paas')}
                 >
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
-
                   <h4 className="font-semibold text-[#0f172a]">Certification course on WISE-PAAS - June 2025</h4>
                   <p className="text-gray-700 text-sm">Paid participation of Rs. 999 per level (both internal and external)</p>
                 </div>
@@ -190,7 +188,6 @@ The Faculty Development Program (FDP) on "Integrating IoT into Curriculum: Hands
                   onClick={() => navigateTo('/events/trainers')}
                 >
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
-
                   <h4 className="font-semibold text-[#0f172a]">Training on:
 Logistics
 Healthcare
@@ -207,14 +204,15 @@ OT Security - July 2025</h4>
                   <h4 className="font-semibold text-[#0f172a]">Initiation of Hackathon - March 2025
                   </h4>
                   <p className="text-gray-700 text-sm">Participation (both internal and external)</p>
+                  <h4 className="font-semibold text-[#0f172a]">Smart Devices Workshop</h4>
+                  <p className="text-gray-700 text-sm">Hands-on training with the latest IoT-enabled devices.</p>
                 </div>
               </div>
 
               {/* IoT Research Hub Card */}
               <div
                 className="bg-white p-6 rounded-3xl shadow-md cursor-pointer hover:shadow-lg transition-all duration-300 relative overflow-hidden group"
-                onClick={() => navigateTo('/research-hub')}
-              >
+                onClick={() => navigateTo('/research-hub')}>
                 {/* Yellow corner accent */}
                 <div className="absolute -top-10 -right-10 w-20 h-20 bg-[#d3b77b]/20 rounded-full transform group-hover:scale-110 transition-transform duration-500"></div>
                 <div className="absolute -bottom-10 -left-10 w-20 h-20 bg-blue-500/10 rounded-full transform group-hover:scale-110 transition-transform duration-500"></div>
@@ -246,8 +244,7 @@ OT Security - July 2025</h4>
                 <img
                   src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                   alt="IoT device research team"
-                  className="w-full h-64 object-cover"
-                />
+                  className="w-full h-64 object-cover"/>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <p className="text-white font-semibold">Advanced IoT device testing in our lab</p>
                 </div>

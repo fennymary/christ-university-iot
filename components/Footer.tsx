@@ -26,6 +26,7 @@ const Footer = () => {
             {/* Logo and Description */}
             <div>
               <div className="flex items-center mb-4">
+<<<<<<< HEAD
                 <div
                   className="bg-white rounded-full h-12 w-12 flex items-center justify-center text-[#0f172a] font-bold text-xl cursor-pointer"
                   onClick={() => navigateTo("/")}
@@ -35,6 +36,14 @@ const Footer = () => {
                 <div className="ml-3">
                   <h3 className="text-white font-bold">CHRIST UNIVERSITY</h3>
                 </div>
+=======
+                <img
+                  src="https://christuniversity.in/images/logo.jpg"
+                  alt="CHRIST University Logo"
+                  className="h-14 w-auto cursor-pointer"
+                  onClick={() => navigateTo("/")}
+                />
+>>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
               </div>
               <p className="text-gray-300 mb-6">
                 Pioneering research in Industrial IoT and smart technologies for
