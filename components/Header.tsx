@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -8,6 +9,8 @@ import { Button } from "@/components/ui/button"; // Adjust the import path as ne
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 =======
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
 // "use client";
 // import React, { useState } from "react";
 // import Link from "next/link";
@@ -170,7 +173,10 @@ const Header = () => {
     { href: "/consultation", label: "Consultation" },
     { href: "/student", label: "Students" },
   ];
+<<<<<<< HEAD
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
 
   return (
     <>
@@ -179,12 +185,15 @@ const Header = () => {
         {/* IT Lab Logo (Left) */}
         <div className="flex items-center">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <img
             src="/it-lab-logo.png"
             alt="IT Lab Logo"
             className="h-12 md:h-16 w-auto"
           />
 =======
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
           <Link href="/">
             <img
               src="/Screenshot 2025-03-17 152004.png"
@@ -192,11 +201,15 @@ const Header = () => {
               className="h-12 md:h-16 w-auto"
             />
           </Link>
+<<<<<<< HEAD
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
         </div>
 
         {/* Navigation (Center) */}
         <nav className="hidden md:flex space-x-8 text-[#0f1e45] font-medium">
+<<<<<<< HEAD
 <<<<<<< HEAD
           <Link href="/home" className="hover:text-[#d3b77b] transition-colors">
             Home
@@ -232,6 +245,8 @@ const Header = () => {
             Students
           </Link>
 =======
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -246,11 +261,15 @@ const Header = () => {
               {link.label}
             </Link>
           ))}
+<<<<<<< HEAD
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
         </nav>
 
         {/* Christ University Logo (Right) */}
         <div className="flex items-center">
+<<<<<<< HEAD
 <<<<<<< HEAD
           <img
             src="https://christuniversity.in/images/logo.jpg"
@@ -260,6 +279,8 @@ const Header = () => {
         </div>
 
 =======
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
           <Link
             href="https://christuniversity.in/"
             target="_blank"
@@ -272,7 +293,10 @@ const Header = () => {
             />
           </Link>
         </div>
+<<<<<<< HEAD
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
         {/* Mobile Menu Button */}
         <Button
           variant="ghost"
@@ -308,6 +332,7 @@ const Header = () => {
 
           <div className="space-y-6 text-lg font-medium text-[#0f1e45]">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Link href="/home" className="block py-2 border-b border-gray-100">
               Home
             </Link>
@@ -339,6 +364,8 @@ const Header = () => {
               Students
             </Link>
 =======
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -351,7 +378,10 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+<<<<<<< HEAD
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
           </div>
         </div>
       )}

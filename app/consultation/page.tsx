@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 "use client";
 import React from "react";
 import {
@@ -186,6 +187,8 @@ function App() {
 
 export default App;
 =======
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
 "use client";
 import React, { useState } from "react";
 import {
@@ -471,4 +474,7 @@ function App() {
 }
 
 export default App;
+<<<<<<< HEAD
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04

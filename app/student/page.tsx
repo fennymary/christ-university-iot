@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 "use client";
 =======
 // "use client";
@@ -109,6 +110,8 @@
 
 // export default App;
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
 import React from "react";
 import {
   GraduationCap,
@@ -121,6 +124,7 @@ import {
 } from "lucide-react";
 
 function App() {
+<<<<<<< HEAD
 <<<<<<< HEAD
   const students = [
     { name: "John Doe", batch: "2023", company: "Google", package: "24 LPA" },
@@ -138,6 +142,8 @@ function App() {
     },
     // Add more students as needed
 =======
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
   const classLinks = [
     {
       className: "3BTCS IOT",
@@ -159,7 +165,10 @@ function App() {
       spreadsheetUrl:
         "https://docs.google.com/spreadsheets/d/1ZVB5T33p9ovUmFRNcMqbsETMwayKj31n/edit?gid=1794057867#gid=1794057867",
     },
+<<<<<<< HEAD
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
   ];
 
   return (
@@ -172,29 +181,40 @@ function App() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <img
 <<<<<<< HEAD
+<<<<<<< HEAD
               src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=300&h=300"
 =======
               src="/jos.png"
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+              src="/jos.png"
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
               alt="Student Profile"
               className="rounded-full w-48 h-48 object-cover"
             />
             <div>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <h2 className="text-2xl font-bold mb-2">Sarah Anderson</h2>
               <div className="flex items-center gap-2 text-gray-600 mb-4">
                 <MapPin size={20} />
                 <span>Software Engineer at Google</span>
 =======
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
               <h2 className="text-2xl font-bold mb-2">Joshua PK Kurian</h2>
               <div className="flex items-center gap-2 text-gray-600 mb-4">
                 <MapPin size={20} />
                 <span>Intern at Advantech</span>
+<<<<<<< HEAD
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
               </div>
               <blockquote className="text-gray-700 italic border-l-4 border-[#ffd700] pl-4">
                 "The Advanced Research IoT Lab at CHRIST University provided me
                 with the perfect blend of theoretical knowledge and practical
+<<<<<<< HEAD
 <<<<<<< HEAD
                 experience. The hands-on projects and industry exposure helped
                 me secure my dream job at Google. I'm forever grateful for the
@@ -203,6 +223,10 @@ function App() {
                 experience. I'm forever grateful for the guidance and support
                 from the faculty."
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+                experience. I'm forever grateful for the guidance and support
+                from the faculty."
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
               </blockquote>
             </div>
           </div>
@@ -217,10 +241,14 @@ function App() {
           </p>
           <a
 <<<<<<< HEAD
+<<<<<<< HEAD
             href="https://forms.google.com/your-form-link"
 =======
             href="https://docs.google.com/forms/d/e/1FAIpQLSceVLk5J9jvoww-q1eUqq17CNkuBrnru35GaEFh-XsNXbQ6vw/viewform?usp=sharing"
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+            href="https://docs.google.com/forms/d/e/1FAIpQLSceVLk5J9jvoww-q1eUqq17CNkuBrnru35GaEFh-XsNXbQ6vw/viewform?usp=sharing"
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#ffd700] text-[#0a192f] px-6 py-3 rounded-lg font-semibold hover:bg-[#e5c100] transition-colors"
@@ -233,14 +261,19 @@ function App() {
         {/* Student List */}
         <section className="bg-white rounded-lg shadow-lg p-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <h2 className="text-2xl font-bold mb-6">Our Successful Students</h2>
 =======
           <h2 className="text-2xl font-bold mb-6">Student List</h2>
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+          <h2 className="text-2xl font-bold mb-6">Student List</h2>
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead className="bg-[#0a192f] text-white">
                 <tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <th className="px-6 py-3 text-left">Name</th>
                   <th className="px-6 py-3 text-left">Batch</th>
@@ -256,6 +289,8 @@ function App() {
                     <td className="px-6 py-4">{student.company}</td>
                     <td className="px-6 py-4">{student.package}</td>
 =======
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
                   <th className="px-6 py-3 text-left">Class</th>
                   <th className="px-6 py-3 text-left">List of students</th>
                 </tr>
@@ -277,7 +312,10 @@ function App() {
                         <ExternalLink size={16} />
                       </a>
                     </td>
+<<<<<<< HEAD
 >>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
+=======
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
                   </tr>
                 ))}
               </tbody>

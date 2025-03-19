@@ -33,7 +33,11 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
+<<<<<<< HEAD
     "app/consultation/page.jsx"
+=======
+    "app/consultation/page.tsx"
+>>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
   ],
   "exclude": [
     "node_modules"
