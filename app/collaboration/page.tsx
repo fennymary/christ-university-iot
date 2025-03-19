@@ -41,14 +41,6 @@ function App() {
 
   return (
     <div className="flex flex-col min-h-screen">
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
-=======
->>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#1a365d] to-[#2d4a8a] py-18">
         <div className="container mx-auto px-7">
@@ -228,13 +220,6 @@ function App() {
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 9c73e4adff757e94a6a97fa51ff666a825e67553
-=======
->>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
     </div>
   );
 }
