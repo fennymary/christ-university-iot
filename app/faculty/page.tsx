@@ -51,7 +51,6 @@
       };
     }, [selectedFaculty]);
 
-<<<<<<< HEAD
     // Clean up event listener
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -151,7 +150,6 @@
       research: [
         "Retrofitting of conventional CNC Milling Machine to digitalized transformation for smart manufacturing",
       ],
-=======
     // Handle click outside modal
     useEffect(() => {
       function handleClickOutside(event: MouseEvent) {
@@ -345,12 +343,10 @@
       image: "/Screenshot 2025-03-17 214353.png",
       education: ["PhD", "M-Tech", "B-Tech"],
       research: [],
->>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
       publications: [
         "Mohanty, A., & Cherukuri, R. C. (2024). Whispered Speech Emotion Recognition with Gender Detection using BiLSTM and DCNN. Journal of Information Systems and Telecommunication (JIST), 12(46), 152–161",
         "Boppuru, P. R., Kukatlapalli, P. K., Chowdary, C. R., & Hussain, J. (2023). AI-based YOLO V4 Intelligent Traffic Light Control System. Journal of Automation Mobile Robotics & Intelligent Systems, 53–61",
         "Venkataswamy, R., Janamala, V., & Chowdary, C. R. (2023). Realization of humanoid doctor and real-time diagnostics of disease using Internet of Things, Edge Impulse platform, and ChatGPT. Annals of Biomedical Engineering, 51(8), 1–3",
-<<<<<<< HEAD
         "Venkataswamy, R., Rao, U., & Meena, P. (2022). Transformer performance enhancement by optimized charging strategy for electric vehicles. Archives of Electrical Engineering, 71(1), 37–56",
         "Venkataswamy, R., Rao, K. U., & Meena, P. (2020). Internet of things based metaheuristic reliability centered maintenance of distribution transformers. IOP Conference Series Earth and Environmental Science, 463(1), 012047.",
         "Venkataswamy, R., Rao, K. U., & Meena, P. (2019). Development of Internet of Things Platform and its application in remote monitoring and control of transformer operation. In Lecture notes in networks and systems (pp. 165–183).",
@@ -396,14 +392,15 @@
       education: [
         "Ph.D from Anna University",
         "M.Tech in Communication Systems",
-        "B.E in ECE",
-=======
+        "B.E in ECE"],
+      research:[],
+      publications:[
         "Boppuru, P. R., Kukatlapalli, P. K., Kukatlapalli, P. K., & Chowdary, C. R. (2023). Machine learning and artificial intelligence techniques for detecting driver drowsiness. Journal of Automation Mobile Robotics & Intelligent Systems, 64–73",
         "Kumar, K. P., Chowdary, C. R., Pillai, V. J., Sarathchandra, K., & Prathap, B. R. (2021). Symbiotic view of provenance in cyber infrastructure and information security. Turkish Journal of Computer and Mathematics Education, 12(2), 3261–3267",
         "Kumar, K. P., Pillai, V. J., Chandra, K. S., & Chowdary, C. R. (2021). Disaster recovery and risk management over private networks using data provenance: Cyber security perspective. Indian Journal of Science and Technology, 14(8), 725–737",
         "Kumar, K. P., & Chowdary, C. R. (2020). Design of new access control approach for provenance based on digital consortium decision making via secret sharing. Journal of Computational and Theoretical Nanoscience, 17(9), 4172–4178",
         "Kumar, K. P., & Cherukuri, R. C. (2019). Secure provenance-based communication using visual encryption. International Journal of Innovative Computing and Applications, 10(3/4), 194",
->>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
+
       ],
     };
 
@@ -433,7 +430,6 @@
         "Reddy, V., & Gayathri, P. (2019). Integration of internet of things with wireless sensor network. *International Journal of Electrical and Computer Engineering, 9*(1), 439–444.",
         "Reddy, V., & Gayathri, P. (2018). A review on energy optimization techniques used in WSN. *ARPN Journal of Engineering and Applied Sciences, 13*(14), 4351–4359.",
       ],
-<<<<<<< HEAD
     },
   ];
   const directorIIIC = {
@@ -484,7 +480,7 @@
       "Reddy, V., & Gayathri, P. (2018). A review on energy optimization techniques used in WSN. *ARPN Journal of Engineering and Applied Sciences, 13*(14), 4351–4359.",
     ],
   };
-=======
+
     };
 
     // Function to handle navigation
@@ -492,14 +488,14 @@
       // Use window.location for navigation
       window.location.href = path;
     };
->>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
+
 
     // Function to handle nav item hover
     const handleNavHover = (item: string) => {
       setActiveNavItem(item);
     };
 
-<<<<<<< HEAD
+
   // Function to handle nav item hover
   const handleNavHover = (item: string) => {
     setActiveNavItem(item);
@@ -729,7 +725,7 @@
                     <h3 className="font-bold text-[#1e2949] text-lg">
                       Education
                     </h3>
-=======
+
     return (
       <div className="min-h-screen bg-slate-200">
         {/* Main Content */}
@@ -757,7 +753,7 @@
                       alt={directorIIIC.name}
                       className="w-full h-full object-cover"
                     />
->>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
+
                   </div>
                   <h3 className="mt-4 font-bold text-[#1e2949] text-xl">
                     {directorIIIC.name}
@@ -967,7 +963,6 @@
                     </ul>
                   </div>
 
-<<<<<<< HEAD
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <FileText className="w-5 h-5 text-[#1e2949]" />
@@ -984,7 +979,6 @@
                       )
                     )}
                   </ul>
-=======
                   {/* Only show Research Project section if there are research items */}
                   {selectedFaculty.research.length > 0 && (
                     <div className="mb-6">
@@ -1023,12 +1017,12 @@
                       )}
                     </ul>
                   </div>
->>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
+
                 </div>
               </div>
             </div>
           </div>
-<<<<<<< HEAD
+
         </div>
       )}
     </div>
@@ -1036,11 +1030,11 @@
 }
 
 export default App;
-=======
+
         )}
       </div>
     );
   }
 
   export default App;
->>>>>>> 6e1797c8b37ed14f994e4aef96dfd81c3b3ccd04
+
