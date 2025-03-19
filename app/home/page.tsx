@@ -116,54 +116,62 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-[#0f172a] mb-4">
                   Announcement Details
                 </h3>
-                <p className="text-gray-700 mb-4">
-                  <p className="text-gray-700">
-                    <strong>Faculty Development Program</strong>
-                  </p>
-                  Proposing for FDP with finding agencies to widen the
-                  prospectives The Faculty Development Program (FDP) on
-                  "Integrating IoT into Curriculum: Hands-On Training with
-                  Advantech" is designed to empower educators with the knowledge
-                  and skills necessary to incorporate Internet of Things (IoT)
-                  technologies into their teaching practices.
-                </p>
+
+                {/* Main Content Container */}
                 <div className="mt-6">
-                  <p className="text-gray-700">
-                    <strong>Executive Certification Course on IOT</strong>
+                  {/* Faculty Development Program */}
+                  <div className="text-gray-700 mb-4">
+                    <p className="font-semibold">Faculty Development Program</p>
+                    <p>
+                      Proposing for FDP with finding agencies to widen the
+                      prospectives. The Faculty Development Program (FDP) on
+                      "Integrating IoT into Curriculum: Hands-On Training with
+                      Advantech" is designed to empower educators with the
+                      knowledge and skills necessary to incorporate Internet of
+                      Things (IoT) technologies into their teaching practices.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Executive Certification Course on IoT */}
+                <div className="mt-6">
+                  <p className="text-gray-700 font-semibold">
+                    Executive Certification Course on IoT
                   </p>
                 </div>
+
+                {/* Course Phases */}
                 <div className="mt-6">
-                  <p className="text-gray-700">
-                    <strong>This course is planned in 3 phases</strong>
-                  </p>
-                  <p className="text-gray-700">
-                    <strong>Phase 1:</strong>
-                  </p>
-                  <p className="text-gray-700">
-                    40 Hours on basics of programming required for IOT
+                  <p className="text-gray-700 font-semibold">
+                    This course is planned in 3 phases:
                   </p>
                 </div>
+
+                {/* Phase 1 */}
                 <div className="mt-6">
                   <p className="text-gray-700">
-                    <strong>Phase 2:</strong>
-                  </p>
-                  <p className="text-gray-700">
-                    {" "}
-                    40 Hours on Sensors and Machine interface
+                    <strong>Phase 1:</strong> 40 Hours on basics of programming
+                    required for IoT
                   </p>
                 </div>
+
+                {/* Phase 2 */}
                 <div className="mt-6">
                   <p className="text-gray-700">
-                    <strong>Phase 3:</strong>
+                    <strong>Phase 2:</strong> 40 Hours on Sensors and Machine
+                    interface
                   </p>
+                </div>
+
+                {/* Phase 3 */}
+                <div className="mt-6">
                   <p className="text-gray-700">
-                    {" "}
-                    40 Hours on Sensor Data Analytics
+                    <strong>Phase 3:</strong> 40 Hours on Sensor Data Analytics
                   </p>
                 </div>
               </div>
 
-              {/* IoT Researchers Image */}
+              {/* IoT Researchers Image - Moved Outside and Below Announcement Box */}
               <div className="relative rounded-3xl overflow-hidden mb-8">
                 {/* Decorative corner shape */}
                 <div className="absolute top-0 right-0 w-16 h-16 bg-[#d3b77b]/40 rounded-bl-3xl z-10"></div>
@@ -173,6 +181,7 @@ export default function Home() {
                   alt="IoT device researchers"
                   className="w-full h-64 object-cover"
                 />
+
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <p className="text-white font-semibold">
                     Our researchers working with IoT devices
