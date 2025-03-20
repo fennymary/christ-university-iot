@@ -278,42 +278,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* IoT Research Hub Card */}
-              <div
-                className="bg-white p-6 rounded-3xl shadow-md cursor-pointer hover:shadow-lg transition-all duration-300 relative overflow-hidden group"
-                onClick={() => navigateTo("/research-hub")}
-              >
-                {/* Yellow corner accent */}
-                <div className="absolute -top-10 -right-10 w-20 h-20 bg-[#d3b77b]/20 rounded-full transform group-hover:scale-110 transition-transform duration-500"></div>
-                <div className="absolute -bottom-10 -left-10 w-20 h-20 bg-blue-500/10 rounded-full transform group-hover:scale-110 transition-transform duration-500"></div>
-
-                <div className="flex justify-between items-start mb-6 relative z-10">
-                  <div className="bg-[#fef3c7] p-3 rounded-full group-hover:bg-[#d3b77b]/40 transition-colors duration-300">
-                    <LightbulbIcon className="h-6 w-6 text-[#d97706]" />
-                  </div>
-                  <ArrowRight className="h-6 w-6 text-gray-400 group-hover:text-[#d3b77b] group-hover:translate-x-1 transition-all duration-300" />
-                </div>
-
-                <h3 className="text-xl font-bold text-[#0f172a] mb-2 relative z-10">
-                  IoT Research Hub
-                </h3>
-                <p className="text-gray-600 mb-4 relative z-10">
-                  Connecting devices, transforming industries
-                </p>
-
-                <div className="mb-2 relative z-10">
-                  <p className="text-sm text-gray-600 mb-1">
-                    Research Progress
-                  </p>
-                  <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
-                    <div
-                      className="bg-blue-600 h-2.5 rounded-full group-hover:bg-[#d3b77b] transition-colors duration-500"
-                      style={{ width: "66%" }}
-                    ></div>
-                  </div>
-                </div>
-                <p className="text-right text-gray-600 relative z-10">66%</p>
-              </div>
+              
 
               {/* Additional IoT Researchers Image */}
               <div className="relative rounded-3xl overflow-hidden">

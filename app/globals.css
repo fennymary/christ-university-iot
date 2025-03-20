@@ -73,33 +73,35 @@
   }
 }
 
-@keyframes float1 {
-  0%,
-  100% {
-    transform: translateY(0) rotate(12deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(12deg);
-  }
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0); }
 }
 
-@keyframes float2 {
-  0%,
-  100% {
-    transform: translateY(0) rotate(-12deg);
-  }
-  50% {
-    transform: translateY(-7px) rotate(-12deg);
-  }
+@keyframes floatLeftRight {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(0); }
 }
 
-.animate-float1 {
-  animation: float1 6s ease-in-out infinite;
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-.animate-float2 {
-  animation: float2 5s ease-in-out infinite;
+.animate-float {
+  animation: floatUpDown 4s ease-in-out infinite;
 }
+
+.animate-slide {
+  animation: floatLeftRight 5s ease-in-out infinite;
+}
+
+.animate-rotate {
+  animation: rotate 8s linear infinite;
+}
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {

@@ -63,97 +63,24 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-  {/*const upcomingEvents = [
-    {
-      id: 1,
-      title: "IoT Innovation Summit",
-      date: "May 15, 2025",
-      location: "Main Auditorium",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
-    },
-    {
-      id: 2,
-      title: "AI Research Symposium",
-      date: "June 3, 2025",
-      location: "Block B Conference Hall",
-      image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
-    },
-    {
-      id: 3,
-      title: "Industry Connect Workshop",
-      date: "June 20, 2025",
-      location: "Innovation Lab",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
-    }
-  ];
 
-  const researchTeams = [
-    {
-      id: 1,
-      name: "Smart City Solutions",
-      members: 8,
-      projects: 4,
-      lead: "Dr. Anita Sharma",
-      avatar: "AS"
-    },
-    {
-      id: 2,
-      name: "Industrial Automation",
-      members: 6,
-      projects: 3,
-      lead: "Dr. Rajesh Kumar",
-      avatar: "RK"
-    },
-    {
-      id: 3,
-      name: "IoT Security",
-      members: 5,
-      projects: 2,
-      lead: "Dr. Priya Menon",
-      avatar: "PM"
-    }
-  ];
-
-  const publications = [
-    {
-      id: 1,
-      title: "Advances in Industrial IoT Security Frameworks",
-      authors: "Kumar, R., Sharma, A., et al.",
-      journal: "Journal of IoT Research",
-      year: 2024,
-      citations: 28
-    },
-    {
-      id: 2,
-      title: "Smart City Implementation: A Case Study of Bangalore",
-      authors: "Menon, P., Sharma, A., et al.",
-      journal: "Urban Technology Review",
-      year: 2024,
-      citations: 15
-    },
-    {
-      id: 3,
-      title: "Machine Learning Approaches for Industrial Automation",
-      authors: "Kumar, R., Menon, P., et al.",
-      journal: "AI in Manufacturing",
-      year: 2023,
-      citations: 42
-    }
-  ];*/}
 
   return (
     <div className="min-h-screen bg-[#d6dce6] relative overflow-hidden">
       {/* Animated background shapes */}
       <div ref={shapesRef} className="absolute inset-0 z-0 overflow-hidden">
-        <div className="shape absolute top-[20%] right-[10%] w-32 h-32 bg-[#87909b] rounded-full opacity-80"></div>
+        <div className="shape absolute top-[20%] right-[10%] w-32 h-32 bg-[#87909b] rounded-full opacity-90"></div>
+        <div className="shape absolute top-[5%] right-[30%] w-32 h-32 bg-[#97989b] rounded-3xl opacity-50"></div>
+
+
         <div className="shape absolute top-[60%] left-[5%] w-40 h-20 bg-[#d3b77b] rounded-full opacity-70"></div>
-        <div className="shape absolute bottom-[15%] right-[15%] w-48 h-48 bg-[#e9f0f2] rounded-3xl opacity-80"></div>
+        <div className="shape absolute bottom-[15%] right-[19%] w-48 h-48 bg-[#e9f0f2] rounded-3xl opacity-80"></div>
         <div className="shape absolute top-[40%] right-[20%] w-64 h-32 bg-[#d3b77b] rounded-full opacity-70"></div>
         <div className="shape absolute bottom-[30%] left-[10%] w-48 h-48 bg-[#e9f0f2] rounded-3xl opacity-80"></div>
         <div className="shape absolute top-[10%] left-[20%] w-32 h-16 bg-[#d3b77b] rounded-full opacity-70"></div>
         <div className="shape absolute bottom-[10%] right-[30%] w-24 h-24 bg-[#e9f0f2] rounded-full opacity-80"></div>
         <div className="shape absolute top-[70%] right-[5%] w-36 h-36 bg-[#d3b77b] rounded-3xl opacity-70"></div>
-        <div className="shape absolute top-[30%] left-[30%] w-20 h-20 bg-[#e9f0f2] rounded-full opacity-80"></div>
+        <div className="shape absolute top-[30%] left-[20%] w-32 h-32 bg-[#e9f0f2] rounded-full opacity-80"></div>
       </div>
 
       {/* Header */}
@@ -212,32 +139,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/*<div className="w-full md:w-96 h-64 md:h-80 bg-[#e9f0f2] rounded-3xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 relative">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-3/4 h-3/5 bg-[#f5f9fa] rounded-3xl relative flex flex-col items-center justify-center p-4">
-                <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-gray-400 rounded-full"></div>
-                <div className="w-12 h-12 rounded-full bg-[#d3b77b] mb-4 flex items-center justify-center">
-                  <Lightbulb className="text-white" size={24} />
-                </div>
-                <div className="text-center">
-                  <h3 className="text-[#0f1e45] font-medium mb-1">IoT Research Hub</h3>
-                  <p className="text-xs text-gray-500">Connecting devices, transforming industries</p>
-                </div>
-                <div className="mt-4 w-full">
-                  <div className="text-xs text-gray-500 mb-1 flex justify-between">
-                    <span>Research Progress</span>
-                    <span>{progress}%</span>
-                  </div>
-                  <Progress value={progress} className="h-1.5" />
-                </div>
-              </div>
-            </div>
-            <div className="absolute bottom-4 right-4">
-              <Button size="sm" variant="ghost" className="bg-white/80 rounded-full h-8 w-8 p-0">
-                <ArrowRight size={16} className="text-[#0f1e45]" />
-              </Button>
-            </div>
-          </div>*/}
+
 
         </section>
 
@@ -460,12 +362,12 @@ export default function Home() {
             </div>
 
             <div>
-              <div className="text-4xl font-bold text-[#d3b77b] mb-2">₹15Cr</div>
+              <div className="text-4xl font-bold text-[#d3b77b] mb-2">{/*value for research funding*/}</div>
               <div className="text-sm">Research Funding</div>
             </div>
 
             <div>
-              <div className="text-4xl font-bold text-[#d3b77b] mb-2">12</div>
+              <div className="text-4xl font-bold text-[#d3b77b] mb-2">1</div>
               <div className="text-sm">Industry Partners</div>
             </div>
           </div>
@@ -473,74 +375,21 @@ export default function Home() {
 
 
         {/* Event Details Section */}
-        <section className="mt-24">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0f1e45] mb-8">Lab Venue</h2>
-
-          <div className="flex flex-col md:flex-row justify-between">
-            <div className="mb-6 md:mb-0">
-              {/* <h3 className="font-medium text-[#0f1e45] mb-2">Lab Venue</h3> */}
-              <p className="text-gray-700">
-                222, 2nd block, 1st<br />
-                floor
-              </p>
-              {/* <Button variant="outline" size="sm" className="mt-4 rounded-full border-[#d3b77b] text-[#d3b77b]"> 
-                <MapPin size={14} className="mr-1" /> Get Directions
-              </Button>*/}
-            </div>
-
-            <div className="mb-6 md:mb-0">
-              <Link href="http://www.christuniversity.in" className="text-[#0f1e45] hover:text-[#d3b77b] transition-colors block mb-2">
-                www.christuniversity.in
-              </Link>
-              <div className="flex space-x-3 mt-4">
-                <Button variant="ghost" size="icon" className="rounded-full h-8 w-8 bg-[#e9f0f2]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#0f1e45]"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                </Button>
-                <Button variant="ghost" size="icon" className="rounded-full h-8 w-8 bg-[#e9f0f2]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#0f1e45]"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-                </Button>
-                <Button variant="ghost" size="icon" className="rounded-full h-8 w-8 bg-[#e9f0f2]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#0f1e45]"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                </Button>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="font-medium text-[#0f1e45] mb-2">
-                CHRIST<br />
-                (Deemed to be University)
-              </h3>
-              <p className="text-gray-700">
-                Kengeri Banglore Campus<br />
-                Kanmanike, Off Kanakapura Road,<br />
-                Bangalore, Karnataka - 560074
-              </p>
-              <div className="flex items-center mt-4">
-                <Button size="sm" className="rounded-full bg-[#d3b77b] text-white">
-                  Contact Us
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Newsletter Section */}
-        <section className="mt-16 bg-[#e9f0f2] rounded-3xl p-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+        <section className="mt-16 bg-[#e9f0f2] rounded-full p-8 mx-auto max-w-lg shadow-m">
+          <div className="flex flex-col items-center text-center">
             <div className="mb-6 md:mb-0 md:mr-8">
-              <h3 className="text-xl font-bold text-[#0f1e45] mb-2">Stay Updated</h3>
-              <p className="text-gray-700 max-w-md">Subscribe to our newsletter to receive updates on research opportunities, events, and publications.</p>
+              <h3 className="text-lg font-bold text-[#0f1e45] mb-5">Lab Venue</h3>
+              <p className="text-base text-gray-700">
+                222, 2nd block, <br />
+                1st floor
+              </p>
+
+              {/* <p className="text-gray-700 max-w-md">Subscribe to our newsletter to receive updates on research opportunities, events, and publications.</p> */}
             </div>
-            {/*<div className="w-full md:w-auto flex flex-col sm:flex-row gap-3">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                className="px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#d3b77b]"
-              />
-              <Button className="bg-[#d3b77b] text-white rounded-full hover:bg-[#c4a86c]">
-                Subscribe
-              </Button>
-            </div>*/}
+            
           </div>
         </section>
       </main>
