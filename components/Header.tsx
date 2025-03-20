@@ -171,13 +171,13 @@ const Header = () => {
             <img
               src="/Screenshot 2025-03-17 152004.png"
               alt="IT Lab Logo"
-              className="h-12 md:h-16 w-auto"
+              className="h-12 md:h-20 w-auto"
             />
           </Link>
         </div>
 
         {/* Navigation (Center) */}
-        <nav className="hidden md:flex space-x-8 text-[#0f1e45] font-medium">
+        <nav className="hidden md:flex space-x-5 text-[#0f1e45] font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
