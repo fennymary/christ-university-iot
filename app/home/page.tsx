@@ -198,10 +198,10 @@ export default function Home() {
 
               <div className="relative">
                 {/* Corner accent */}
-                <div className="absolute -top-2 -left-2 w-8 h-8 bg-[#d3b77b] rounded-br-xl z-10 opacity-70"></div>
+                {/* <div className="absolute -top-2 -left-2 w-8 h-8 bg-blue-200 rounded-br-xl z-10 opacity-70"></div> */}
 
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  src="https://hbr.org/resources/images/article_assets/2024/06/Automation-by-Broadcom-AI-WLA-Hero-Image-1200x675-1.png"
                   alt="Woman with laptop"
                   className="rounded-3xl w-full h-64 object-cover"
                 />
