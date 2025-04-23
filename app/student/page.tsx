@@ -34,12 +34,12 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f8f9fa]">
+    <div className="min-h-screen bg-[#e0e0e1]">
       {/* Header */}
 
       <main className="container mx-auto px-4 py-8">
         {/* Featured Student */}
-        <section className="bg-white rounded-lg shadow-lg p-8 mb-12">
+        <section className="bg-white rounded-lg shadow-xl p-8 mb-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <img
               src="/jos.png"
@@ -63,7 +63,7 @@ function App() {
         </section>
 
         {/* Registration Section */}
-        <section className="bg-[#0a192f] text-white rounded-lg shadow-lg p-8 mb-12">
+        <section className="bg-[#0a192f] text-white rounded-lg shadow-2xl p-8 mb-12">
           <h2 className="text-2xl font-bold mb-4">Join Our Program</h2>
           <p className="mb-6">
             Are you interested in being part of our success story? Register now
@@ -81,7 +81,7 @@ function App() {
         </section>
 
         {/* Student List */}
-        <section className="bg-white rounded-lg shadow-lg p-8">
+        <section className="bg-white rounded-lg shadow-2xl p-8">
           <h2 className="text-2xl font-bold mb-6">Student List</h2>
           <div className="overflow-x-auto">
             <table className="w-full">

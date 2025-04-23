@@ -235,26 +235,7 @@
         ],
       },
     ];
-    const directorIIIC = {
-      id: 2,
-      name: "Dr. Cherukuri Ravindranath Chowdary",
-      title: "Director (IIIC)",
-      cabin: "Third Floor, Block V",
-      email: "cherukuri.ravindranath@christuniversity.in",
-      image: "/Screenshot 2025-03-17 214353.png",
-      education: ["PhD", "M-Tech", "B-Tech"],
-      research: [],
-      publications: [
-        "Mohanty, A., & Cherukuri, R. C. (2024). Whispered Speech Emotion Recognition with Gender Detection using BiLSTM and DCNN. Journal of Information Systems and Telecommunication (JIST), 12(46), 152–161",
-        "Boppuru, P. R., Kukatlapalli, P. K., Chowdary, C. R., & Hussain, J. (2023). AI-based YOLO V4 Intelligent Traffic Light Control System. Journal of Automation Mobile Robotics & Intelligent Systems, 53–61",
-        "Venkataswamy, R., Janamala, V., & Chowdary, C. R. (2023). Realization of humanoid doctor and real-time diagnostics of disease using Internet of Things, Edge Impulse platform, and ChatGPT. Annals of Biomedical Engineering, 51(8), 1–3",
-        "Boppuru, P. R., Kukatlapalli, P. K., Kukatlapalli, P. K., & Chowdary, C. R. (2023). Machine learning and artificial intelligence techniques for detecting driver drowsiness. Journal of Automation Mobile Robotics & Intelligent Systems, 64–73",
-        "Kumar, K. P., Chowdary, C. R., Pillai, V. J., Sarathchandra, K., & Prathap, B. R. (2021). Symbiotic view of provenance in cyber infrastructure and information security. Turkish Journal of Computer and Mathematics Education, 12(2), 3261–3267",
-        "Kumar, K. P., Pillai, V. J., Chandra, K. S., & Chowdary, C. R. (2021). Disaster recovery and risk management over private networks using data provenance: Cyber security perspective. Indian Journal of Science and Technology, 14(8), 725–737",
-        "Kumar, K. P., & Chowdary, C. R. (2020). Design of new access control approach for provenance based on digital consortium decision making via secret sharing. Journal of Computational and Theoretical Nanoscience, 17(9), 4172–4178",
-        "Kumar, K. P., & Cherukuri, R. C. (2019). Secure provenance-based communication using visual encryption. International Journal of Innovative Computing and Applications, 10(3/4), 194",
-      ],
-    };
+
 
     const directorARIOT = {
       id: 3,
@@ -300,7 +281,7 @@
         {/* Main Content */}
         <main className="container mx-auto px-4 py-8">
           <div className="mb-12">
-            <h1 className="text-4xl font-bold text-[#1e2949] mb-2">
+            <h1 className="text-4xl font-bold text-[#1e2949] mb-2 ">
               Advanced Research For Industrial IoT
             </h1>
             <p className="text-[#7f8899] max-w-2xl mb-8">
@@ -309,52 +290,7 @@
               manufacturing.
             </p>
           </div>
-          <h2 className="text-3xl font-bold text-[#1e2949] mb-8">
-            Director (IIIC)
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mb-12">
-            <div className="md:col-start-2 md:col-end-3">
-              <div className="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
-                <div className="bg-slate-100 p-8 flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
-                    <img
-                      src={directorIIIC.image}
-                      alt={directorIIIC.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="mt-4 font-bold text-[#1e2949] text-xl">
-                    {directorIIIC.name}
-                  </h3>
-                  <p className="text-[#7f8899]">{directorIIIC.title}</p>
-                </div>
-
-                <div className="p-6">
-                  <div className="flex items-start gap-3 mb-3">
-                    <MapPin className="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0" />
-                    <p className="text-[#7f8899] text-sm">{directorIIIC.cabin}</p>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="w-5 h-5 text-[#1e2949] flex-shrink-0" />
-                    <a
-                      href={`mailto:${directorIIIC.email}`}
-                      className="text-[#1e2949] hover:underline text-sm"
-                    >
-                      {directorIIIC.email}
-                    </a>
-                  </div>
-                  <div className="mt-5 flex justify-center">
-                    <button
-                      className="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium"
-                      onClick={() => setSelectedFaculty(directorIIIC)}
-                    >
-                      View Profile
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           <h2 className="text-3xl font-bold text-[#1e2949] mb-8">
             Director (ARIIOT)
