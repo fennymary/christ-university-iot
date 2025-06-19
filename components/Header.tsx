@@ -32,7 +32,7 @@ const Header = () => {
         <div className="flex items-center">
           <Link href="/">
             <img
-              src="/Screenshot 2025-03-17 152004.png"
+              src="/ariiot.png"
               alt="IT Lab Logo"
               className="h-12 md:h-20 w-auto"
             />
