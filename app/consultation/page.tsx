@@ -117,7 +117,7 @@ function App() {
                 />
               </div>
             </div>
-            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+            <div className="bg-[#f4f5f6] p-6 rounded-lg">
               <h3 className="text-xl font-bold text-[#0a1e3c] mb-3">
                 Request a Consultation
               </h3>
@@ -205,7 +205,7 @@ function App() {
             Our Consultation Areas
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+            <div className="border border-gray-200 rounded-lg shadow-inner p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-[#0a1e3c] mb-3">
                 Industrial IoT Solutions
               </h3>
@@ -215,7 +215,7 @@ function App() {
                 manufacturing solutions.
               </p>
             </div>
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+            <div className="border border-gray-200 rounded-lg shadow-inner p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-[#0a1e3c] mb-3">
                 AI & Machine Learning
               </h3>
@@ -225,7 +225,7 @@ function App() {
                 optimization.
               </p>
             </div>
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+            <div className="border border-gray-200 rounded-lg shadow-inner p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-[#0a1e3c] mb-3">
                 Research Partnerships
               </h3>
@@ -236,7 +236,7 @@ function App() {
             </div>
           </div>
 
-          <div className="bg-[#f8f9fa] p-8 rounded-lg">
+          <div className="bg-[#e9f1f5] p-8 rounded-lg">
             <h2 className="text-2xl font-bold text-[#0a1e3c] mb-4">
               Why Choose Our Consultation Services?
             </h2>

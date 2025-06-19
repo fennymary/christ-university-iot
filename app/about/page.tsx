@@ -269,7 +269,7 @@ import { Button } from "@/components/ui/button"
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <div className="min-h-screen bg-slate-100">
+    <div className="min-h-screen bg-slate-200 shadow-inner">
       {/* Header/Navigation */}
 
       {/*done*/}
@@ -330,7 +330,7 @@ function App() {
                 <br />
                 IoT
               </h1>
-              <p className="text-slate-600 mt-6 max-w-lg">
+              <p className="text-slate-800 mt-6 max-w-lg">
                 Pioneering innovative solutions at the intersection of IoT, AI, and industrial applications to transform
                 the future of smart manufacturing.
               </p>
@@ -353,7 +353,7 @@ function App() {
                     alt="Researcher"
                   />
                 </div>
-                <p className="text-slate-600 ml-4"> 9 Researchers contributing to this initiative</p>
+                <p className="text-slate-800 ml-4"> 9 Researchers contributing to this initiative</p>
               </div>
             </div>
 
@@ -367,25 +367,25 @@ function App() {
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold text-navy-900 mb-8">About Laboratory</h2>
 
-          <div className="bg-white rounded-3xl shadow-sm p-8">
-            <p className="text-slate-600 leading-relaxed">
+          <div className="bg-slate-100 rounded-3xl shadow-2xl p-8">
+            <p className="text-slate-700 leading-relaxed">
               The Advanced Research in Industrial IoT (ARIIoT) lab, sponsored by Advantech India, aims to serve as a hub
               for cutting-edge research and development in Industrial Internet of Things (IIoT). The lab envisions
               fostering innovation, collaboration, and knowledge dissemination to address industry challenges and
               advance technology adoption in IIoT.
             </p>
-            <p className="text-slate-600 leading-relaxed mt-4">
+            <p className="text-slate-700 leading-relaxed mt-4">
               Established in 2025, our laboratory serves as a hub for collaboration between academia and industry
               partners, fostering knowledge exchange and technological innovation. We are committed to training the next
               generation of IoT specialists through hands-on research experiences and industry-relevant projects.
             </p>
-            <p className="text-slate-600 leading-relaxed mt-4">
+            <p className="text-slate-700 leading-relaxed mt-4">
               Our lab focuses on research, consultancy, and project collaboration opportunities for faculty and students
               in three strategic domains: Healthcare Management, Video Analytics, and Cold Chain Management. The
               objective is to create impactful research contributions, provide industry consultancy, and develop
               real-world projects in these verticals.
             </p>
-            <p className="text-slate-600 leading-relaxed mt-4">
+            <p className="text-slate-700 leading-relaxed mt-4">
               ARIIOT aims to bridge the gap between academia and industry by enabling research, consultancy, and
               projects in these critical domains. By engaging faculty and students in real-world problem-solving, we
               drive innovation and contribute to technological advancements with a significant societal impact. This

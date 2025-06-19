@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, ChevronRight } from "lucide-react";
@@ -9,6 +9,11 @@ import { cn } from "@/lib/utils";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  // Add effect to close menu when pathname changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   const navLinks = [
     { href: "/home", label: "Home" },
@@ -29,13 +34,13 @@ const Header = () => {
             <img
               src="/Screenshot 2025-03-17 152004.png"
               alt="IT Lab Logo"
-              className="h-12 md:h-16 w-auto"
+              className="h-12 md:h-20 w-auto"
             />
           </Link>
         </div>
 
         {/* Navigation (Center) */}
-        <nav className="hidden md:flex space-x-8 text-[#0f1e45] font-medium">
+        <nav className="hidden md:flex space-x-5 text-[#0f1e45] font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
