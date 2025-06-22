@@ -169,22 +169,28 @@ export default function Home() {
         {/* link to collaboration page */}
 
 
-        <section className="mt-20 mb-16 flex justify-end">
-          <Link href="/collaboration" className="w-full md:w-2/3 lg:w-1/2 overflow-hidden rounded-3xl shadow-2xl transform transition-all hover:scale-105 relative group block">
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="Students collaborating"
-              className="w-full h-full object-cover cursor-pointer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0f1e45]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-              <h3 className="text-white text-xl font-bold mb-2">Collaborative Research Environment</h3>
-              <p className="text-white/90 text-sm mb-4">Our state-of-the-art facilities foster innovation and teamwork among researchers and students.</p>
-              <Button className="self-start bg-white text-[#0f1e45] hover:bg-white/90 rounded-full">
-                Learn More
-              </Button>
-            </div>
-          </Link>
-        </section>
+       <section className="mt-20 mb-16 flex justify-end">
+  <Link
+    href="/collaboration"
+    className="w-full md:w-2/3 lg:w-1/2 overflow-hidden rounded-3xl shadow-2xl transform transition-all hover:scale-105 relative group block"
+  >
+    <img
+  src="/labimg1.jpg"
+  alt="Students collaborating"
+  className="w-full h-[30rem] object-cover cursor-pointer"
+/>
+
+    <div className="absolute inset-0 bg-gradient-to-t from-[#0f1e45]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+      <h3 className="text-white text-xl font-bold mb-2">Collaborative Research Environment</h3>
+      <p className="text-white/90 text-sm mb-4">Our state-of-the-art facilities foster innovation and teamwork among researchers and students.</p>
+      <Button className="self-start bg-white text-[#0f1e45] hover:bg-white/90 rounded-full">
+        Learn More
+      </Button>
+    </div>
+  </Link>
+</section>
+
+
 
 
         {/* Tabs Section */}
