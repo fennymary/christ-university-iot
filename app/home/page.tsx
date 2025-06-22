@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   Facebook,
   Twitter,
@@ -11,11 +11,42 @@ import {
   LightbulbIcon,
   ArrowRight,
   UserCircle,
+  Play,
+  Zap,
+  Target,
+  Award,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/autoplay';
+import { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper/modules';
+
+const labImages = [
+  "/labimg71.jpg",
+  "/labimg72.jpg", 
+  "/labimg73.jpg",
+  "/labimg74.jpg",
+  "/labimg75.jpg",
+  "/labimg76.jpg",
+  "/labimg77.jpg",
+  "/labimg78.jpg",
+
+];
+const testingImages = [
+  "/labimg3.jpg",
+  "/labimg4.jpg",
+  "/labimg5.jpg",
+  "/labimg6.jpg",
+];
+
 
 export default function Home() {
   const router = useRouter();
+  const [activeSlide, setActiveSlide] = useState(0);
 
   // Navigation function to handle page routing
   const navigateTo = (path: string) => {
@@ -42,8 +73,6 @@ export default function Home() {
       {/* Decorative Lines */}
       <div className="absolute top-1/4 right-10 w-40 h-1 bg-[#d3b77b]/40 rotate-45 -z-10"></div>
       <div className="absolute bottom-1/3 left-10 w-32 h-1 bg-blue-600/30 -rotate-45 -z-10"></div>
-
-      {/* Header */}
 
       {/* Main Content */}
       <main className="flex-grow bg-[#e2e8f0] relative z-10">
@@ -171,20 +200,41 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* IoT Researchers Image - Moved Outside and Below Announcement Box */}
-              <div className="relative rounded-3xl overflow-hidden mb-8">
+              {/* Clean Carousel with Static Text */}
+              <div className="relative rounded-3xl overflow-hidden mb-8 h-[32rem] w-full">
                 {/* Decorative corner shape */}
                 <div className="absolute top-0 right-0 w-16 h-16 bg-[#d3b77b]/40 rounded-bl-3xl z-10"></div>
 
-                <img
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  alt="IoT device researchers"
-                  className="w-full h-64 object-cover"
-                />
+                <Swiper
+  spaceBetween={30}
+  slidesPerView={1}
+  pagination={{ clickable: true }}
+  loop={true}
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+  modules={[Pagination, Navigation, Autoplay]}
+  className="h-full w-full"
+>
+  {labImages.map((src, idx) => (
+  <SwiperSlide key={idx} className="relative flex justify-center items-center">
+    <img
+      src={src}
+      className="h-full w-auto object-cover rounded-2xl"
+    />
+    
+  </SwiperSlide>
+))}
 
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                  <p className="text-white font-semibold">
-                    Our researchers working with IoT devices
+</Swiper>
+
+
+                {/* Static Text Caption Below Carousel */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-3xl z-20">
+                  <p className="text-white font-semibold text-center">
+                    Our researchers working in the lab
                   </p>
                 </div>
               </div>
@@ -197,9 +247,6 @@ export default function Home() {
               <div className="absolute bottom-40 right-20 w-16 h-16 bg-blue-500/20 rounded-full blur-sm -z-10"></div>
 
               <div className="relative">
-                {/* Corner accent */}
-                {/* <div className="absolute -top-2 -left-2 w-8 h-8 bg-blue-200 rounded-br-xl z-10 opacity-70"></div> */}
-
                 <img
                   src="https://hbr.org/resources/images/article_assets/2024/06/Automation-by-Broadcom-AI-WLA-Hero-Image-1200x675-1.png"
                   alt="Woman with laptop"
@@ -222,9 +269,7 @@ export default function Home() {
                   className="bg-gray-100 p-4 rounded-lg shadow-sm mb-3 cursor-pointer hover:bg-gray-200 transition-all duration-300 relative overflow-hidden group"
                   onClick={() => navigateTo("/events/fdp")}
                 >
-                  {/* Yellow accent on hover */}
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
-
                   <h4 className="font-semibold text-[#0f172a]">
                     Advantech FDP (Sponsored) - May 2025{" "}
                   </h4>
@@ -238,7 +283,6 @@ export default function Home() {
                   onClick={() => navigateTo("/events/wise-paas")}
                 >
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
-
                   <h4 className="font-semibold text-[#0f172a]">
                     Certification course on WISE-PAAS - June 2025
                   </h4>
@@ -253,13 +297,12 @@ export default function Home() {
                   onClick={() => navigateTo("/events/trainers")}
                 >
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
-
                   <h4 className="font-semibold text-[#0f172a]">
                     Training on: Logistics Healthcare Video Analyitcs OT
                     Security - July 2025
                   </h4>
                   <p className="text-gray-700 text-sm">
-                    Trainers from Advantech and participants are faulty from
+                    Trainers from Advantech and participants are faculty from
                     Dept. of CSE, SoET
                   </p>
                 </div>
@@ -268,7 +311,6 @@ export default function Home() {
                   onClick={() => navigateTo("/events/trainers")}
                 >
                   <div className="absolute left-0 top-0 h-full w-1 bg-[#d3b77b] group-hover:w-1.5 transition-all duration-300"></div>
-
                   <h4 className="font-semibold text-[#0f172a]">
                     Initiation of Hackathon - March 2025
                   </h4>
@@ -278,28 +320,62 @@ export default function Home() {
                 </div>
               </div>
 
-              
+              {/* IoT Testing Carousel */}
 
-              {/* Additional IoT Researchers Image */}
-              <div className="relative rounded-3xl overflow-hidden">
-                {/* Corner accent */}
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-[#d3b77b] rounded-tl-xl z-10 opacity-70"></div>
+  <div className="relative rounded-3xl overflow-hidden h-[38rem] w-full">
+  <Swiper
+    spaceBetween={30}
+    slidesPerView={1}
+    pagination={{ clickable: true }}
+    loop={true}
+    autoplay={{
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    }}
+    modules={[Pagination, Navigation, Autoplay]}
+    className="h-full w-full"
+  >
+    {testingImages.map((src, idx) => (
+      <SwiperSlide key={idx} className="flex items-center justify-center h-full">
+  <div className="flex items-center justify-center h-full w-full">
+    <img
+      src={src}
+      className="max-h-full max-w-full object-contain rounded-2xl"
+    />
+  </div>
+  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-2xl z-10">
+    <p className="text-white font-semibold text-center">
+      Advanced IoT device testing in our lab
+    </p>
+  </div>
+</SwiperSlide>
+    ))}
+  </Swiper>
+</div>
 
-                <img
-                  src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  alt="IoT device research team"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                  <p className="text-white font-semibold">
-                    Advanced IoT device testing in our lab
-                  </p>
-                </div>
-              </div>
+
+
+ 
+
+
             </div>
           </div>
         </div>
       </main>
+
+     <style jsx global>{`
+  .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.5) !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #d3b77b !important;
+    transform: scale(1.2) !important;
+  }
+`}</style>
+
     </div>
   );
 }
