@@ -550,20 +550,9 @@ function App() {
                       balamurugan.m@christuniversity.in
                     </td>
                   </tr>
-                  <tr className="border-b border-slate-100">
-                    <td className="py-3 px-4 text-slate-800">2</td>
-                    <td className="py-3 px-4 text-slate-800">Dr Cherukuri Ravindranath Chowdary</td>
-                    <td className="py-3 px-4 text-slate-800">
-                      Professor, Dept. of CSE, SoET, CHRIST (Deemed to be University), Bangalore
-                    </td>
-                    <td className="py-3 px-4 text-slate-800">
-                      +91 8966869766
-                      <br />
-                      cherukuri.ravindranath@christuniversity.in
-                    </td>
-                  </tr>
+                  
                   <tr>
-                    <td className="py-3 px-4 text-slate-800">3</td>
+                    <td className="py-3 px-4 text-slate-800">2</td>
                     <td className="py-3 px-4 text-slate-800">Dr Vandana Reddy</td>
                     <td className="py-3 px-4 text-slate-800">
                       Assistant Professor, Dept. of CSE, SoET, CHRIST (Deemed to be University), Bangalore
