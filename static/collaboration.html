@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial IoT Lab - Collaboration</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-800': '#0d2150',
+                        'navy-900': '#0a1b3d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header id="mainHeader" class="relative z-20 flex justify-between items-center p-4 md:p-6 bg-transparent transition-all duration-300">
+        <!-- IT Lab Logo (Left) -->
+        <div class="flex items-center">
+            <a href="index.html">
+                <img src="images/ariiot.png" alt="IT Lab Logo" class="h-12 md:h-20 w-auto">
+            </a>
+        </div>
+
+        <!-- Navigation (Center) -->
+        <nav id="desktopNav" class="hidden md:flex space-x-5 text-[#0f1e45] font-medium">
+            <a href="index.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Home</a>
+            <a href="home.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Events</a>
+            <a href="about.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">About</a>
+            <a href="faculty.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Faculty</a>
+            <a href="collaboration.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Collaboration</a>
+            <a href="consultation.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Consultation</a>
+            <a href="student.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Students</a>
+        </nav>
+
+        <!-- Christ University Logo (Right) -->
+        <div class="flex items-center">
+            <a href="https://christuniversity.in/" target="_blank" rel="noopener noreferrer">
+                <img src="https://christuniversity.in/images/logo.jpg" alt="Christ University Logo" class="h-12 md:h-16 w-auto cursor-pointer">
+            </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuButton" class="md:hidden text-[#0f1e45] p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden fixed inset-0 bg-white z-50 p-6 flex flex-col hidden">
+        <div class="flex justify-between items-center mb-8">
+            <div class="flex items-center">
+                <div class="h-12 w-12 bg-[#0f1e45] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    CU
+                </div>
+                <div class="ml-2 text-xs text-[#0f1e45]">
+                    <div class="font-bold text-lg">CHRIST UNIVERSITY</div>
+                </div>
+            </div>
+            <button id="closeMobileMenu" class="text-[#0f1e45] p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div class="space-y-6 text-lg font-medium text-[#0f1e45]">
+            <a href="index.html" class="nav-link block py-2 border-b border-gray-100">Home</a>
+            <a href="home.html" class="nav-link block py-2 border-b border-gray-100">Events</a>
+            <a href="faculty.html" class="nav-link block py-2 border-b border-gray-100">Faculty</a>
+            <a href="collaboration.html" class="nav-link block py-2 border-b border-gray-100">Collaboration</a>
+            <a href="consultation.html" class="nav-link block py-2 border-b border-gray-100">Consultation</a>
+            <a href="student.html" class="nav-link block py-2 border-b border-gray-100">Students</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-[#1a365d] to-[#2d4a8a] py-18">
+        <div class="container mx-auto px-7">
+            <div class="flex items-center justify-between">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl font-bold mb-5 text-white">
+                        Devic Earth Private Limited
+                    </h1>
+                    <p class="text-xl text-gray-200">
+                        Devic Earth Pvt. Ltd. is a Bengaluru-based green technology
+                        company specializing in innovative solutions for air pollution
+                        control.
+                    </p>
+                </div>
+                <img src="https://devic-earth.com/wp-content/uploads/2024/08/Logo.png" alt="Devic Earth Logo" class="w-64 h-64 object-contain">
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <i data-lucide="wind" class="w-12 h-12 text-[#4CAF50] mx-auto mb-4"></i>
+                    <h3 class="text-3xl font-bold text-[#1a365d] mb-2">30-66%</h3>
+                    <p class="text-gray-600">Reduction in Air Pollutants</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <i data-lucide="factory" class="w-12 h-12 text-[#4CAF50] mx-auto mb-4"></i>
+                    <h3 class="text-3xl font-bold text-[#1a365d] mb-2">2018</h3>
+                    <p class="text-gray-600">Established in Bengaluru</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <i data-lucide="lightbulb" class="w-12 h-12 text-[#4CAF50] mx-auto mb-4"></i>
+                    <h3 class="text-3xl font-bold text-[#1a365d] mb-2">$8.2M</h3>
+                    <p class="text-gray-600">Company Valuation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pure Skies Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-[#1a365d]">
+                        Pure Skies Technology Of Devic
+                    </h2>
+                    <p class="text-gray-600 mb-6">
+                        Their flagship product utilizes advanced pulsed radio wave
+                        technology to enhance air quality over extensive areas,
+                        effectively reducing particulate matter such as PM2.5 and PM10.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="zap" class="text-[#4CAF50] w-5 h-5"></i>
+                            <span class="text-gray-700">
+                                Advanced pulsed radio wave technology
+                            </span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="globe" class="text-[#4CAF50] w-5 h-5"></i>
+                            <span class="text-gray-700">Wide area coverage</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="building-2" class="text-[#4CAF50] w-5 h-5"></i>
+                            <span class="text-gray-700">
+                                Suitable for various industries
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1530533718754-001d2668365a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Industrial Air Quality" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-[#1a365d]">
+                    Featured Collaborative Projects
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Innovative solutions across multiple sectors to improve air
+                    quality and environmental conditions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1: Healthcare Management -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Healthcare Management" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-[#1a365d]">
+                            Healthcare Management
+                        </h3>
+                        <p class="text-gray-600 mb-4">Advanced IoT solutions for healthcare facility air quality management and monitoring.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Video Analytics -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://sptel.com/wp-content/uploads/2024/08/video-analytics-for-security-featured-images.jpg" alt="Video Analytics" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-[#1a365d]">
+                            Video Analytics
+                        </h3>
+                        <p class="text-gray-600 mb-4">AI-powered analytics for monitoring and improving air quality metrics in real-time.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Cold Chain Management -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Cold Chain Management" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-[#1a365d]">
+                            Cold Chain Management
+                        </h3>
+                        <p class="text-gray-600 mb-4">Environmental monitoring solutions for temperature-controlled environments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Partners -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-[#1a365d]">
+                    Key Partner
+                </h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Advantech" class="w-48 h-48 object-cover rounded-lg">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3 text-[#1a365d]">
+                                Advantech
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Global leader in industrial computing and IoT solutions,
+                                offering comprehensive products and services across various
+                                sectors. Specializing in industrial automation, embedded
+                                computing, and intelligent systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-[#162750] text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">
+                Interested in Collaborating?
+            </h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8">
+                We're always looking for new partners to join our research
+                initiatives in Industrial IoT and smart manufacturing.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="consultation.html" class="inline-block bg-[#d4b47c] hover:bg-[#d7dee4] hover:text-[#162750] text-white font-semibold px-8 py-3 rounded-md transition-colors">
+                    Contact Our Research Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0f172a] text-white py-12 relative z-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- Logo and Description -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://christuniversity.in/images/logo.jpg" alt="CHRIST University Logo" class="h-14 w-auto cursor-pointer" onclick="navigateTo('index.html')">
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        Pioneering research in Industrial IoT and smart technologies for a better tomorrow.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a id="facebookLink" href="#" class="bg-[#172554] p-2 rounded-full hover:bg-[#1e3a8a] transition-colors duration-300">
+                            <i data-lucide="facebook" class="h-5 w-5 text-white"></i>
+                        </a>
+                        <a id="twitterLink" href="#" class="bg-[#172554] p-2 rounded-full hover:bg-[#1e3a8a] transition-colors duration-300">
+                            <i data-lucide="twitter" class="h-5 w-5 text-white"></i>
+                        </a>
+                        <a id="instagramLink" href="#" class="bg-[#172554] p-2 rounded-full hover:bg-[#1e3a8a] transition-colors duration-300">
+                            <i data-lucide="instagram" class="h-5 w-5 text-white"></i>
+                        </a>
+                        <a id="linkedinLink" href="#" class="bg-[#172554] p-2 rounded-full hover:bg-[#1e3a8a] transition-colors duration-300">
+                            <i data-lucide="linkedin" class="h-5 w-5 text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-[#d3b77b] font-bold text-xl mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="home.html" class="text-gray-300 hover:text-white transition-colors duration-300">Events</a></li>
+                        <li><a href="faculty.html" class="text-gray-300 hover:text-white transition-colors duration-300">Faculty</a></li>
+                        <li><a href="collaboration.html" class="text-gray-300 hover:text-white transition-colors duration-300">Collaboration</a></li>
+                        <li><a href="consultation.html" class="text-gray-300 hover:text-white transition-colors duration-300">Consultation</a></li>
+                        <li><a href="student.html" class="text-gray-300 hover:text-white transition-colors duration-300">Students</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h3 class="text-[#d3b77b] font-bold text-xl mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="h-5 w-5 text-gray-300 mr-3 mt-1 flex-shrink-0"></i>
+                            <p class="text-gray-300">
+                                CHRIST (Deemed to be University)<br>
+                                Kengeri Campus, Bangalore<br>
+                                Karnataka - 560074
+                            </p>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="h-5 w-5 text-gray-300 mr-3 flex-shrink-0"></i>
+                            <p class="text-gray-300">+91 80 4012 9100</p>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="h-5 w-5 text-gray-300 mr-3 flex-shrink-0"></i>
+                            <a href="mailto:research@christuniversity.in" class="text-gray-300 hover:text-white transition-colors duration-300">
+                                research@christuniversity.in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-[#172554] mb-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    © 2025 CHRIST (Deemed to be University). All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Use</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-[#d3b77b] text-white p-3 rounded-full shadow-lg hover:bg-[#c4a86c] transition-colors duration-300 hidden z-30">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/header-footer.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial IoT Lab - Faculty</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-800': '#0d2150',
+                        'navy-900': '#0a1b3d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-slate-200">
+    <!-- Header -->
+    <header id="mainHeader" class="relative z-20 flex justify-between items-center p-4 md:p-6 bg-transparent transition-all duration-300">
+        <!-- IT Lab Logo (Left) -->
+        <div class="flex items-center">
+            <a href="index.html">
+                <img src="images/ariiot.png" alt="IT Lab Logo" class="h-12 md:h-20 w-auto">
+            </a>
+        </div>
+
+        <!-- Navigation (Center) -->
+        <nav id="desktopNav" class="hidden md:flex space-x-5 text-[#0f1e45] font-medium">
+            <a href="index.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Home</a>
+            <a href="home.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Events</a>
+            <a href="about.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">About</a>
+            <a href="faculty.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Faculty</a>
+            <a href="collaboration.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Collaboration</a>
+            <a href="consultation.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Consultation</a>
+            <a href="student.html" class="nav-link transition-colors relative hover:text-[#d3b77b]">Students</a>
+        </nav>
+
+        <!-- Christ University Logo (Right) -->
+        <div class="flex items-center">
+            <a href="https://christuniversity.in/" target="_blank" rel="noopener noreferrer">
+                <img src="https://christuniversity.in/images/logo.jpg" alt="Christ University Logo" class="h-12 md:h-16 w-auto cursor-pointer">
+            </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuButton" class="md:hidden text-[#0f1e45] p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden fixed inset-0 bg-white z-50 p-6 flex flex-col hidden">
+        <div class="flex justify-between items-center mb-8">
+            <div class="flex items-center">
+                <div class="h-12 w-12 bg-[#0f1e45] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    CU
+                </div>
+                <div class="ml-2 text-xs text-[#0f1e45]">
+                    <div class="font-bold text-lg">CHRIST UNIVERSITY</div>
+                </div>
+            </div>
+            <button id="closeMobileMenu" class="text-[#0f1e45] p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div class="space-y-6 text-lg font-medium text-[#0f1e45]">
+            <a href="index.html" class="nav-link block py-2 border-b border-gray-100">Home</a>
+            <a href="home.html" class="nav-link block py-2 border-b border-gray-100">Events</a>
+            <a href="about.html" class="nav-link block py-2 border-b border-gray-100">About</a>
+            <a href="faculty.html" class="nav-link block py-2 border-b border-gray-100">Faculty</a>
+            <a href="collaboration.html" class="nav-link block py-2 border-b border-gray-100">Collaboration</a>
+            <a href="consultation.html" class="nav-link block py-2 border-b border-gray-100">Consultation</a>
+            <a href="student.html" class="nav-link block py-2 border-b border-gray-100">Students</a>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="mb-12">
+            <h1 class="text-4xl font-bold text-[#1e2949] mb-2">
+                Advanced Research For Industrial IoT
+            </h1>
+            <p class="text-[#7f8899] max-w-2xl mb-8">
+                Pioneering innovative solutions at the intersection of IoT, AI, and
+                industrial applications to transform the future of smart
+                manufacturing.
+            </p>
+        </div>
+
+        <h2 class="text-3xl font-bold text-[#1e2949] mb-8">
+            Director (ARIIOT)
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mb-12">
+            <div class="md:col-start-2 md:col-end-3">
+                <div class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                    <div class="bg-slate-100 p-8 flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                            <img src="images/2178.png" alt="Dr. Vandana Reddy" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="mt-4 font-bold text-[#1e2949] text-xl">
+                            Dr. Vandana Reddy
+                        </h3>
+                        <p class="text-[#7f8899]">Director (ARIIOT)</p>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex items-start gap-3 mb-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0"></i>
+                            <p class="text-[#7f8899] text-sm">
+                                First Floor, Block III
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-[#1e2949] flex-shrink-0"></i>
+                            <a href="mailto:vandana.reddy@christuniversity.in" class="text-[#1e2949] hover:underline text-sm">
+                                vandana.reddy@christuniversity.in
+                            </a>
+                        </div>
+                        <div class="mt-5 flex justify-center">
+                            <button class="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium" onclick="openModal('director')">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold text-[#1e2949] mb-8">
+            Faculty Members
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Faculty Member 1 -->
+            <div class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div class="bg-slate-100 p-8 flex flex-col items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                        <img src="images/Screenshot 2025-03-17 214716.png" alt="Dr. Rakoth Kandan Sambandam" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 font-bold text-[#1e2949] text-xl">
+                        Dr. Rakoth Kandan Sambandam
+                    </h3>
+                    <p class="text-[#7f8899]">(Dept of CSE)</p>
+                </div>
+
+                <div class="p-6">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0"></i>
+                        <p class="text-[#7f8899] text-sm">220/10,FIRST Floor,BLOCK II</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-[#1e2949] flex-shrink-0"></i>
+                        <a href="mailto:rakoth.kandan@christuniversity.in" class="text-[#1e2949] hover:underline text-sm">
+                            rakoth.kandan@christuniversity.in
+                        </a>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <button class="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium" onclick="openModal('faculty1')">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 2 -->
+            <div class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div class="bg-slate-100 p-8 flex flex-col items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                        <img src="https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E5581.jpg" alt="Dr. Shamanth N" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 font-bold text-[#1e2949] text-xl">
+                        Dr. Shamanth N
+                    </h3>
+                    <p class="text-[#7f8899]">(Dept of CSE)</p>
+                </div>
+
+                <div class="p-6">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0"></i>
+                        <p class="text-[#7f8899] text-sm">51,GROUND Floor,BLOCK III</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-[#1e2949] flex-shrink-0"></i>
+                        <a href="mailto:shamanth.n@christuniversity.in" class="text-[#1e2949] hover:underline text-sm">
+                            shamanth.n@christuniversity.in
+                        </a>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <button class="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium" onclick="openModal('faculty2')">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 3 -->
+            <div class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div class="bg-slate-100 p-8 flex flex-col items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                        <img src="images/Screenshot 2025-03-17 214828.png" alt="Dr. Manu Elappila" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 font-bold text-[#1e2949] text-xl">
+                        Dr. Manu Elappila
+                    </h3>
+                    <p class="text-[#7f8899]">(Dept of CSE)</p>
+                </div>
+
+                <div class="p-6">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0"></i>
+                        <p class="text-[#7f8899] text-sm">250/34,THIRD Floor,BLOCK II</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-[#1e2949] flex-shrink-0"></i>
+                        <a href="mailto:manu.elappila@christuniversity.in" class="text-[#1e2949] hover:underline text-sm">
+                            manu.elappila@christuniversity.in
+                        </a>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <button class="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium" onclick="openModal('faculty3')">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 4 -->
+            <div class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div class="bg-slate-100 p-8 flex flex-col items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                        <img src="https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E1737.jpg" alt="Dr. Venkataswamy R" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 font-bold text-[#1e2949] text-xl">
+                        Dr. Venkataswamy R
+                    </h3>
+                    <p class="text-[#7f8899]">(Dept of EEE)</p>
+                </div>
+
+                <div class="p-6">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0"></i>
+                        <p class="text-[#7f8899] text-sm">88,THIRD Floor,BLOCK III</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-[#1e2949] flex-shrink-0"></i>
+                        <a href="mailto:venkataswamy.r@christuniversity.in" class="text-[#1e2949] hover:underline text-sm">
+                            venkataswamy.r@christuniversity.in
+                        </a>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <button class="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium" onclick="openModal('faculty4')">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 5 -->
+            <div class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div class="bg-slate-100 p-8 flex flex-col items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                        <img src="images/Screenshot 2025-03-17 214932.png" alt="Prof. Sharon Roji Priya C" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 font-bold text-[#1e2949] text-xl">
+                        Prof. Sharon Roji Priya C
+                    </h3>
+                    <p class="text-[#7f8899]">(Dept of CSE)</p>
+                </div>
+
+                <div class="p-6">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0"></i>
+                        <p class="text-[#7f8899] text-sm">48,GROUND Floor,BLOCK III</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-[#1e2949] flex-shrink-0"></i>
+                        <a href="mailto:sharon.roji@christuniversity.in" class="text-[#1e2949] hover:underline text-sm">
+                            sharon.roji@christuniversity.in
+                        </a>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <button class="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium" onclick="openModal('faculty5')">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 6 -->
+            <div class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div class="bg-slate-100 p-8 flex flex-col items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                        <img src="https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E6692.jpg" alt="Prof. Shruti Jalapur" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 font-bold text-[#1e2949] text-xl">
+                        Prof. Shruti Jalapur
+                    </h3>
+                    <p class="text-[#7f8899]">(Dept of CSE)</p>
+                </div>
+
+                <div class="p-6">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0"></i>
+                        <p class="text-[#7f8899] text-sm">636,193,Fourth Floor,BLOCK VI</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-[#1e2949] flex-shrink-0"></i>
+                        <a href="mailto:shruti.jalapur@christuniversity.in" class="text-[#1e2949] hover:underline text-sm">
+                            shruti.jalapur@christuniversity.in
+                        </a>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <button class="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium" onclick="openModal('faculty6')">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Member 7 - Centered in last row -->
+            <div class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300 md:col-start-2 md:col-end-3">
+                <div class="bg-slate-100 p-8 flex flex-col items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                        <img src="images/Screenshot 2025-03-17 215036.png" alt="Dr. Praghash K" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 font-bold text-[#1e2949] text-xl">
+                        Dr. Praghash K
+                    </h3>
+                    <p class="text-[#7f8899]">(Dept of ECE)</p>
+                </div>
+
+                <div class="p-6">
+                    <div class="flex items-start gap-3 mb-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0"></i>
+                        <p class="text-[#7f8899] text-sm">19,GROUND Floor,DEVADAN BLOCK</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-[#1e2949] flex-shrink-0"></i>
+                        <a href="mailto:praghash.k@christuniversity.in" class="text-[#1e2949] hover:underline text-sm">
+                            praghash.k@christuniversity.in
+                        </a>
+                    </div>
+                    <div class="mt-5 flex justify-center">
+                        <button class="text-[#1e2949] hover:text-[#1e2949]/80 text-sm font-medium" onclick="openModal('faculty7')">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0f172a] text-white py-12 relative z-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- Logo and Description -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://christuniversity.in/images/logo.jpg" alt="CHRIST University Logo" class="h-14 w-auto cursor-pointer" onclick="navigateTo('index.html')">
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        Pioneering research in Industrial IoT and smart technologies for a better tomorrow.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a id="facebookLink" href="#" class="bg-[#172554] p-2 rounded-full hover:bg-[#1e3a8a] transition-colors duration-300">
+                            <i data-lucide="facebook" class="h-5 w-5 text-white"></i>
+                        </a>
+                        <a id="twitterLink" href="#" class="bg-[#172554] p-2 rounded-full hover:bg-[#1e3a8a] transition-colors duration-300">
+                            <i data-lucide="twitter" class="h-5 w-5 text-white"></i>
+                        </a>
+                        <a id="instagramLink" href="#" class="bg-[#172554] p-2 rounded-full hover:bg-[#1e3a8a] transition-colors duration-300">
+                            <i data-lucide="instagram" class="h-5 w-5 text-white"></i>
+                        </a>
+                        <a id="linkedinLink" href="#" class="bg-[#172554] p-2 rounded-full hover:bg-[#1e3a8a] transition-colors duration-300">
+                            <i data-lucide="linkedin" class="h-5 w-5 text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-[#d3b77b] font-bold text-xl mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="home.html" class="text-gray-300 hover:text-white transition-colors duration-300">Events</a></li>
+                        <li><a href="faculty.html" class="text-gray-300 hover:text-white transition-colors duration-300">Faculty</a></li>
+                        <li><a href="collaboration.html" class="text-gray-300 hover:text-white transition-colors duration-300">Collaboration</a></li>
+                        <li><a href="consultation.html" class="text-gray-300 hover:text-white transition-colors duration-300">Consultation</a></li>
+                        <li><a href="student.html" class="text-gray-300 hover:text-white transition-colors duration-300">Students</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h3 class="text-[#d3b77b] font-bold text-xl mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="h-5 w-5 text-gray-300 mr-3 mt-1 flex-shrink-0"></i>
+                            <p class="text-gray-300">
+                                CHRIST (Deemed to be University)<br>
+                                Kengeri Campus, Bangalore<br>
+                                Karnataka - 560074
+                            </p>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="h-5 w-5 text-gray-300 mr-3 flex-shrink-0"></i>
+                            <p class="text-gray-300">+91 80 4012 9100</p>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="h-5 w-5 text-gray-300 mr-3 flex-shrink-0"></i>
+                            <a href="mailto:research@christuniversity.in" class="text-gray-300 hover:text-white transition-colors duration-300">
+                                research@christuniversity.in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-[#172554] mb-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    © 2025 CHRIST (Deemed to be University). All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Use</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-[#d3b77b] text-white p-3 rounded-full shadow-lg hover:bg-[#c4a86c] transition-colors duration-300 hidden z-30">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Faculty Profile Modal -->
+    <div id="facultyModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-3xl shadow-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto">
+            <div class="relative h-full">
+                <button class="absolute top-4 right-4 bg-white rounded-full p-1 shadow-md hover:bg-gray-100 z-10" onclick="closeModal()">
+                    <i data-lucide="x" class="h-6 w-6 text-[#1e2949]"></i>
+                </button>
+
+                <div class="bg-[#d8dee3] p-8 flex flex-col items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-sm">
+                        <img id="modalImage" src="" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <h2 id="modalName" class="mt-4 font-bold text-[#1e2949] text-2xl"></h2>
+                    <p id="modalTitle" class="text-[#7f8899]"></p>
+                </div>
+
+                <div class="p-8">
+                    <div class="flex items-start gap-3 mb-4">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-[#1e2949] mt-0.5 flex-shrink-0"></i>
+                        <p id="modalCabin" class="text-[#7f8899]"></p>
+                    </div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <i data-lucide="mail" class="w-5 h-5 text-[#1e2949] flex-shrink-0"></i>
+                        <a id="modalEmail" href="" class="text-[#1e2949] hover:underline"></a>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="book-open" class="w-5 h-5 text-[#1e2949]"></i>
+                            <h3 class="font-bold text-[#1e2949] text-lg">Education</h3>
+                        </div>
+                        <ul id="modalEducation" class="list-disc pl-10 space-y-1"></ul>
+                    </div>
+
+                    <div id="modalResearchSection" class="mb-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="award" class="w-5 h-5 text-[#1e2949]"></i>
+                            <h3 class="font-bold text-[#1e2949] text-lg">Research Project</h3>
+                        </div>
+                        <ul id="modalResearch" class="list-disc pl-10 space-y-1"></ul>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-2 mb-3">
+                            <i data-lucide="file-text" class="w-5 h-5 text-[#1e2949]"></i>
+                            <h3 class="font-bold text-[#1e2949] text-lg">Publications</h3>
+                        </div>
+                        <ul id="modalPublications" class="list-disc pl-10 space-y-2"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/faculty-modal.js"></script>
+    <script src="js/header-footer.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
